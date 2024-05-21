@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     63946,       1101]
-NotebookOptionsPosition[     62394,       1064]
-NotebookOutlinePosition[     63065,       1087]
-CellTagsIndexPosition[     63022,       1084]
+NotebookDataLength[    239666,       4301]
+NotebookOptionsPosition[    236683,       4239]
+NotebookOutlinePosition[    237459,       4264]
+CellTagsIndexPosition[    237416,       4261]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -755,23 +755,15 @@ MK4vudrypX0u41P2MswJTZQfbDNrKFdc+1d06P4+TY/\
 2vHQ4E5R2fqAiJS2831GxwXt5GYYv356etb8dlx8W75c52/j/C908Ivh"|>,
  GeneratedCell->True,
  CellAutoOverwrite->
-  True,ExpressionUUID->"2e52c295-5334-4b2d-a986-f61d86fa406e"],
-
-Cell["\<\
-What sorts of applications people build on Ethereum? Give me a few examples\
-\>", "ChatInput",
- CellDingbat->Cell[
-   BoxData[
-    TemplateBox[{}, "ChatInputCellDingbat"]], Background -> None],
- CellChangeTimes->{{3.9252659461041393`*^9, 3.9252659783781137`*^9}},
- CellLabel->"In[4]:=",ExpressionUUID->"907b2140-14c2-476f-a6bf-a1ff1aa2d042"]
+  True,ExpressionUUID->"2e52c295-5334-4b2d-a986-f61d86fa406e"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell["Sample applications", "Section",
- CellChangeTimes->{{3.9252666975161963`*^9, 
-  3.92526670124583*^9}},ExpressionUUID->"e3bec527-5f5f-4bdd-92a0-\
+ CellChangeTimes->{{3.9252666975161963`*^9, 3.92526670124583*^9}, {
+  3.92526736006327*^9, 
+  3.925267366843486*^9}},ExpressionUUID->"e3bec527-5f5f-4bdd-92a0-\
 4d92ff5bd3ac"],
 
 Cell[TextData[{
@@ -1059,9 +1051,3193 @@ iE6K7D1CDeRtOpq3Q3uDl89OXmQ/kMhw5vyI17+hwn+F5O5Pqs="|>,
  GeneratedCell->True,
  CellAutoOverwrite->
   True,ExpressionUUID->"c35ea2fc-e540-4b97-9eb7-5d57beab5cb8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Smart contract - Ethereum", "Section",
+ CellChangeTimes->{{3.925267327657296*^9, 3.925267333586873*^9}, {
+  3.9252673861491013`*^9, 3.925267390040292*^9}, {3.9252683094372177`*^9, 
+  3.925268317673684*^9}},ExpressionUUID->"87b4f322-fc5b-437d-905f-\
+a2942ea428d1"],
+
+Cell[TextData[{
+ "Building an application on Ethereum involves several steps, from \
+understanding the basic concepts of blockchain to deploying your smart \
+contract on the Ethereum network. Here's a step-by-step guide to help you get \
+started:\n\n",
+ StyleBox["Step 1: Understand the Basics", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\nBefore diving into development, it's essential to have a good \
+understanding of blockchain technology and how Ethereum works. This includes:\
+\n\n1. ",
+ StyleBox["Ethereum Blockchain",
+  FontWeight->Bold],
+ ": Learn about Ethereum's architecture, including its consensus mechanism \
+(Proof of Stake as of Ethereum 2.0), block structure, and how transactions \
+are processed.\n2. ",
+ StyleBox["Smart Contracts",
+  FontWeight->Bold],
+ ": Understand what smart contracts are, how they work, and why they are \
+central to Ethereum's functionality.\n3. ",
+ StyleBox["Decentralized Applications (DApps)",
+  FontWeight->Bold],
+ ": Learn about the components of a DApp, including the frontend, backend, \
+and how they interact with the Ethereum blockchain.\n\n",
+ StyleBox["Step 2: Set Up Your Development Environment", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\nYou'll need several tools and libraries to start developing on Ethereum:\n\
+\n1. ",
+ StyleBox["Node.js and npm",
+  FontWeight->Bold],
+ ": Ensure you have Node.js and npm installed, as they are required for \
+managing packages and running development servers.\n2. ",
+ StyleBox["Truffle Suite",
+  FontWeight->Bold],
+ ": Truffle is a popular development framework for Ethereum that provides \
+tools for compiling, deploying, and testing smart contracts.\n3. ",
+ StyleBox["Ganache",
+  FontWeight->Bold],
+ ": Ganache is a personal Ethereum blockchain for development that you can \
+use to deploy contracts, develop applications, and run tests.\n4. ",
+ StyleBox["MetaMask",
+  FontWeight->Bold],
+ ": A browser extension that acts as a wallet for managing your Ethereum \
+accounts and interacting with DApps.\n\n",
+ StyleBox["Step 3: Write Smart Contracts", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\nSmart contracts are written in Solidity, a programming language \
+specifically designed for Ethereum. Here\[CloseCurlyQuote]s a simple example \
+of a Solidity contract: \n",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell["// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\n\
+contract SimpleStorage {\n    uint256 storedData;\n\n    function set(uint256 \
+x) public {\n        storedData = x;\n    }\n\n    function get() public view \
+returns (uint256) {\n        return storedData;\n    }\n}", 
+     "ChatPreformatted", Background -> GrayLevel[1], 
+     TaggingRules -> <|
+      "CellToStringType" -> "InlineCodeCell", "CodeLanguage" -> "solidity"|>]},
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"e7e0c1a0-5c18-4ea2-a305-504b137b46a6"],
+ "\n\n",
+ StyleBox["Step 4: Compile and Deploy Smart Contracts", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n1. ",
+ StyleBox["Create a Truffle Project",
+  FontWeight->Bold],
+ ": Use Truffle to create a new project. \n",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     BoxData[
+      DynamicModuleBox[{$CellContext`attached$$, $CellContext`cell$$}, 
+       TagBox[
+        Cell[
+        "mkdir my-dapp\ncd my-dapp\ntruffle init", "ExternalLanguage", 
+         CellEvaluationLanguage -> "Shell", FontSize -> 13, Background -> 
+         None, CellFrame -> None], 
+        EventHandlerTag[{"MouseEntered" :> (Quiet[
+             Needs["Wolfram`Chatbook`" -> None]]; 
+           Symbol["Wolfram`Chatbook`ChatbookAction"]["AttachCodeButtons", 
+             Dynamic[$CellContext`attached$$], $CellContext`cell$$, 
+             Cell[
+             "mkdir my-dapp\ncd my-dapp\ntruffle init", "ExternalLanguage", 
+              FontSize -> 14, CellEvaluationLanguage -> "Shell"], "Shell"]), 
+          Method -> "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> 
+          True}]], 
+       Initialization :> {$CellContext`cell$$ = (FinishDynamic[]; 
+          EvaluationCell[])}, DynamicModuleValues :> {}, 
+       TaggingRules -> <|
+        "CellToStringType" -> "InlineInteractiveCodeCell", "CodeLanguage" -> 
+         "Shell"|>, 
+       UnsavedVariables :> {$CellContext`attached$$, $CellContext`cell$$}]]]},
+   
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"9d869f98-7e72-40ae-9fb0-b901947c0cfd"],
+ "\n2. ",
+ StyleBox["Compile the Contract",
+  FontWeight->Bold],
+ ": Place your Solidity contract in the ",
+ StyleBox["contracts", "TI"],
+ " directory and compile it. \n",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     BoxData[
+      DynamicModuleBox[{$CellContext`attached$$, $CellContext`cell$$}, 
+       TagBox[
+        Cell[
+        "truffle compile", "ExternalLanguage", CellEvaluationLanguage -> 
+         "Shell", FontSize -> 13, Background -> None, CellFrame -> None], 
+        EventHandlerTag[{"MouseEntered" :> (Quiet[
+             Needs["Wolfram`Chatbook`" -> None]]; 
+           Symbol["Wolfram`Chatbook`ChatbookAction"]["AttachCodeButtons", 
+             Dynamic[$CellContext`attached$$], $CellContext`cell$$, 
+             Cell[
+             "truffle compile", "ExternalLanguage", FontSize -> 14, 
+              CellEvaluationLanguage -> "Shell"], "Shell"]), Method -> 
+          "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> True}]], 
+       Initialization :> {$CellContext`cell$$ = (FinishDynamic[]; 
+          EvaluationCell[])}, DynamicModuleValues :> {}, 
+       TaggingRules -> <|
+        "CellToStringType" -> "InlineInteractiveCodeCell", "CodeLanguage" -> 
+         "Shell"|>, 
+       UnsavedVariables :> {$CellContext`attached$$, $CellContext`cell$$}]]]},
+   
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"9b718788-eed1-4675-9b01-920ce6e256f2"],
+ "\n3. ",
+ StyleBox["Deploy the Contract",
+  FontWeight->Bold],
+ ": Write a migration script to deploy your contract. \n",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     BoxData[
+      DynamicModuleBox[{$CellContext`attached$$, $CellContext`cell$$}, 
+       TagBox[
+        Cell[
+        "const SimpleStorage = artifacts.require(\"SimpleStorage\");\n\n\
+module.exports = function (deployer) {\n  deployer.deploy(SimpleStorage);\n\
+};", "ExternalLanguage", CellEvaluationLanguage -> "NodeJS", FontSize -> 13, 
+         Background -> None, CellFrame -> None], 
+        EventHandlerTag[{"MouseEntered" :> (Quiet[
+             Needs["Wolfram`Chatbook`" -> None]]; 
+           Symbol["Wolfram`Chatbook`ChatbookAction"]["AttachCodeButtons", 
+             Dynamic[$CellContext`attached$$], $CellContext`cell$$, 
+             Cell[
+             "const SimpleStorage = artifacts.require(\"SimpleStorage\");\n\n\
+module.exports = function (deployer) {\n  deployer.deploy(SimpleStorage);\n\
+};", "ExternalLanguage", FontSize -> 14, CellEvaluationLanguage -> "NodeJS"], 
+             "NodeJS"]), Method -> "Preemptive", PassEventsDown -> Automatic, 
+          PassEventsUp -> True}]], 
+       Initialization :> {$CellContext`cell$$ = (FinishDynamic[]; 
+          EvaluationCell[])}, DynamicModuleValues :> {}, 
+       TaggingRules -> <|
+        "CellToStringType" -> "InlineInteractiveCodeCell", "CodeLanguage" -> 
+         "NodeJS"|>, 
+       UnsavedVariables :> {$CellContext`attached$$, $CellContext`cell$$}]]]},
+   
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"05a965e2-4446-46d0-a5d8-f7941a19dbe8"],
+ "\nThen, run the migration to deploy the contract on Ganache. \n",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     BoxData[
+      DynamicModuleBox[{$CellContext`attached$$, $CellContext`cell$$}, 
+       TagBox[
+        Cell[
+        "truffle migrate", "ExternalLanguage", CellEvaluationLanguage -> 
+         "Shell", FontSize -> 13, Background -> None, CellFrame -> None], 
+        EventHandlerTag[{"MouseEntered" :> (Quiet[
+             Needs["Wolfram`Chatbook`" -> None]]; 
+           Symbol["Wolfram`Chatbook`ChatbookAction"]["AttachCodeButtons", 
+             Dynamic[$CellContext`attached$$], $CellContext`cell$$, 
+             Cell[
+             "truffle migrate", "ExternalLanguage", FontSize -> 14, 
+              CellEvaluationLanguage -> "Shell"], "Shell"]), Method -> 
+          "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> True}]], 
+       Initialization :> {$CellContext`cell$$ = (FinishDynamic[]; 
+          EvaluationCell[])}, DynamicModuleValues :> {}, 
+       TaggingRules -> <|
+        "CellToStringType" -> "InlineInteractiveCodeCell", "CodeLanguage" -> 
+         "Shell"|>, 
+       UnsavedVariables :> {$CellContext`attached$$, $CellContext`cell$$}]]]},
+   
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"b963567b-4e8c-4de5-8ae5-75cb7e93daee"],
+ "\n\n",
+ StyleBox["Step 5: Interact with the Smart Contract", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\nYou can interact with your deployed contract using Truffle\
+\[CloseCurlyQuote]s console or by writing scripts. Here\[CloseCurlyQuote]s an \
+example of using Truffle console: \n",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     BoxData[
+      DynamicModuleBox[{$CellContext`attached$$, $CellContext`cell$$}, 
+       TagBox[
+        Cell[
+        "truffle console", "ExternalLanguage", CellEvaluationLanguage -> 
+         "Shell", FontSize -> 13, Background -> None, CellFrame -> None], 
+        EventHandlerTag[{"MouseEntered" :> (Quiet[
+             Needs["Wolfram`Chatbook`" -> None]]; 
+           Symbol["Wolfram`Chatbook`ChatbookAction"]["AttachCodeButtons", 
+             Dynamic[$CellContext`attached$$], $CellContext`cell$$, 
+             Cell[
+             "truffle console", "ExternalLanguage", FontSize -> 14, 
+              CellEvaluationLanguage -> "Shell"], "Shell"]), Method -> 
+          "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> True}]], 
+       Initialization :> {$CellContext`cell$$ = (FinishDynamic[]; 
+          EvaluationCell[])}, DynamicModuleValues :> {}, 
+       TaggingRules -> <|
+        "CellToStringType" -> "InlineInteractiveCodeCell", "CodeLanguage" -> 
+         "Shell"|>, 
+       UnsavedVariables :> {$CellContext`attached$$, $CellContext`cell$$}]]]},
+   
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"dd47319f-a75b-44b6-b8e5-61dd2102e06c"],
+ "\nWithin the console, you can interact with your contract: \n",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     BoxData[
+      DynamicModuleBox[{$CellContext`attached$$, $CellContext`cell$$}, 
+       TagBox[
+        Cell[
+        "let instance = await SimpleStorage.deployed();\nawait \
+instance.set(42);\nlet value = await instance.get();\n\
+console.log(value.toNumber()); // Should print 42", "ExternalLanguage", 
+         CellEvaluationLanguage -> "NodeJS", FontSize -> 13, Background -> 
+         None, CellFrame -> None], 
+        EventHandlerTag[{"MouseEntered" :> (Quiet[
+             Needs["Wolfram`Chatbook`" -> None]]; 
+           Symbol["Wolfram`Chatbook`ChatbookAction"]["AttachCodeButtons", 
+             Dynamic[$CellContext`attached$$], $CellContext`cell$$, 
+             Cell[
+             "let instance = await SimpleStorage.deployed();\nawait \
+instance.set(42);\nlet value = await instance.get();\n\
+console.log(value.toNumber()); // Should print 42", "ExternalLanguage", 
+              FontSize -> 14, CellEvaluationLanguage -> "NodeJS"], "NodeJS"]),
+           Method -> "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> 
+          True}]], 
+       Initialization :> {$CellContext`cell$$ = (FinishDynamic[]; 
+          EvaluationCell[])}, DynamicModuleValues :> {}, 
+       TaggingRules -> <|
+        "CellToStringType" -> "InlineInteractiveCodeCell", "CodeLanguage" -> 
+         "NodeJS"|>, 
+       UnsavedVariables :> {$CellContext`attached$$, $CellContext`cell$$}]]]},
+   
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"988efbd8-2bed-449c-abe2-a24c49d59886"],
+ "\n\n",
+ StyleBox["Step 6: Develop the Frontend", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n1. ",
+ StyleBox["Set Up a Frontend Framework",
+  FontWeight->Bold],
+ ": Use a frontend framework like React to build the user interface of your \
+DApp.\n2. ",
+ StyleBox["Connect to Ethereum",
+  FontWeight->Bold],
+ ": Use web3.js or ethers.js to connect your frontend to the Ethereum \
+blockchain.\n\nHere\[CloseCurlyQuote]s a simple example using web3.js: \n",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     BoxData[
+      DynamicModuleBox[{$CellContext`attached$$, $CellContext`cell$$}, 
+       TagBox[
+        Cell[
+        "import Web3 from 'web3';\n\nconst web3 = new Web3(Web3.givenProvider \
+|| \"http://localhost:7545\");\nconst contractABI = [/* ABI array here */];\n\
+const contractAddress = 'YOUR_CONTRACT_ADDRESS';\n\nconst contract = new \
+web3.eth.Contract(contractABI, contractAddress);\n\nasync function \
+setValue(value) {\n  const accounts = await web3.eth.getAccounts();\n  await \
+contract.methods.set(value).send({ from: accounts[0] });\n}\n\nasync function \
+getValue() {\n  const value = await contract.methods.get().call();\n  \
+console.log(value);\n}", "ExternalLanguage", CellEvaluationLanguage -> 
+         "NodeJS", FontSize -> 13, Background -> None, CellFrame -> None], 
+        EventHandlerTag[{"MouseEntered" :> (Quiet[
+             Needs["Wolfram`Chatbook`" -> None]]; 
+           Symbol["Wolfram`Chatbook`ChatbookAction"]["AttachCodeButtons", 
+             Dynamic[$CellContext`attached$$], $CellContext`cell$$, 
+             Cell[
+             "import Web3 from 'web3';\n\nconst web3 = new \
+Web3(Web3.givenProvider || \"http://localhost:7545\");\nconst contractABI = \
+[/* ABI array here */];\nconst contractAddress = 'YOUR_CONTRACT_ADDRESS';\n\n\
+const contract = new web3.eth.Contract(contractABI, contractAddress);\n\n\
+async function setValue(value) {\n  const accounts = await \
+web3.eth.getAccounts();\n  await contract.methods.set(value).send({ from: \
+accounts[0] });\n}\n\nasync function getValue() {\n  const value = await \
+contract.methods.get().call();\n  console.log(value);\n}", "ExternalLanguage",
+               FontSize -> 14, CellEvaluationLanguage -> "NodeJS"], 
+             "NodeJS"]), Method -> "Preemptive", PassEventsDown -> Automatic, 
+          PassEventsUp -> True}]], 
+       Initialization :> {$CellContext`cell$$ = (FinishDynamic[]; 
+          EvaluationCell[])}, DynamicModuleValues :> {}, 
+       TaggingRules -> <|
+        "CellToStringType" -> "InlineInteractiveCodeCell", "CodeLanguage" -> 
+         "NodeJS"|>, 
+       UnsavedVariables :> {$CellContext`attached$$, $CellContext`cell$$}]]]},
+   
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"aef80450-030e-4b79-9183-184c3c3644bd"],
+ "\n\n",
+ StyleBox["Step 7: Deploy to a Test Network", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\nBefore deploying to the main Ethereum network, deploy your DApp to a test \
+network like Ropsten, Rinkeby, or Kovan:\n\n1. ",
+ StyleBox["Configure Truffle",
+  FontWeight->Bold],
+ ": Update the ",
+ Cell[BoxData[
+  TemplateBox[{
+    RowBox[{"truffle", "-", 
+      RowBox[{"config", ".", "js"}]}]},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"f5781eeb-ec74-4e18-9f25-8ddda80d4a4c"],
+ " file to include the test network settings.\n2. ",
+ StyleBox["Deploy",
+  FontWeight->Bold],
+ ": Use Truffle to deploy your smart contract to the chosen test network. \n\
+",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     BoxData[
+      DynamicModuleBox[{$CellContext`attached$$, $CellContext`cell$$}, 
+       TagBox[
+        Cell[
+        "truffle migrate --network ropsten", "ExternalLanguage", 
+         CellEvaluationLanguage -> "Shell", FontSize -> 13, Background -> 
+         None, CellFrame -> None], 
+        EventHandlerTag[{"MouseEntered" :> (Quiet[
+             Needs["Wolfram`Chatbook`" -> None]]; 
+           Symbol["Wolfram`Chatbook`ChatbookAction"]["AttachCodeButtons", 
+             Dynamic[$CellContext`attached$$], $CellContext`cell$$, 
+             Cell[
+             "truffle migrate --network ropsten", "ExternalLanguage", 
+              FontSize -> 14, CellEvaluationLanguage -> "Shell"], "Shell"]), 
+          Method -> "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> 
+          True}]], 
+       Initialization :> {$CellContext`cell$$ = (FinishDynamic[]; 
+          EvaluationCell[])}, DynamicModuleValues :> {}, 
+       TaggingRules -> <|
+        "CellToStringType" -> "InlineInteractiveCodeCell", "CodeLanguage" -> 
+         "Shell"|>, 
+       UnsavedVariables :> {$CellContext`attached$$, $CellContext`cell$$}]]]},
+   
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"004e66cc-c1ac-4480-8242-266d3d327b49"],
+ "\n\n",
+ StyleBox["Step 8: Deploy to the Main Network", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\nOnce you\[CloseCurlyQuote]re confident that everything works correctly on \
+the test network, you can deploy your DApp to the main Ethereum network. Make \
+sure to review the deployment steps and costs involved.\n\n",
+ StyleBox["Step 9: Maintain and Upgrade", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\nAfter deployment, monitor your DApp for performance and security. Be \
+prepared to upgrade your smart contracts and frontend as necessary. Ethereum \
+provides mechanisms for contract upgrades, though they require careful \
+planning and execution.\n\nBy following these steps, you can build and deploy \
+a decentralized application on the Ethereum blockchain. Happy coding!"
+}], "ChatOutput",
+ CellDingbat->Cell[
+   BoxData[
+    PaneBox[
+     TemplateBox[{}, "ChatIconPlainChat"], ContentPadding -> False, 
+     FrameMargins -> 0, ImageSize -> {35, 35}, ImageSizeAction -> 
+     "ShrinkToFit", Alignment -> {Center, Center}]], Background -> None],
+ TaggingRules-><|
+  "CellToStringData" -> 
+   "Building an application on Ethereum involves several steps, from \
+understanding the basic concepts of blockchain to deploying your smart \
+contract on the Ethereum network. Here's a step-by-step guide to help you get \
+started:\n\n### Step 1: Understand the Basics\n\nBefore diving into \
+development, it's essential to have a good understanding of blockchain \
+technology and how Ethereum works. This includes:\n\n1. **Ethereum \
+Blockchain**: Learn about Ethereum's architecture, including its consensus \
+mechanism (Proof of Stake as of Ethereum 2.0), block structure, and how \
+transactions are processed.\n2. **Smart Contracts**: Understand what smart \
+contracts are, how they work, and why they are central to Ethereum's \
+functionality.\n3. **Decentralized Applications (DApps)**: Learn about the \
+components of a DApp, including the frontend, backend, and how they interact \
+with the Ethereum blockchain.\n\n### Step 2: Set Up Your Development \
+Environment\n\nYou'll need several tools and libraries to start developing on \
+Ethereum:\n\n1. **Node.js and npm**: Ensure you have Node.js and npm \
+installed, as they are required for managing packages and running development \
+servers.\n2. **Truffle Suite**: Truffle is a popular development framework \
+for Ethereum that provides tools for compiling, deploying, and testing smart \
+contracts.\n3. **Ganache**: Ganache is a personal Ethereum blockchain for \
+development that you can use to deploy contracts, develop applications, and \
+run tests.\n4. **MetaMask**: A browser extension that acts as a wallet for \
+managing your Ethereum accounts and interacting with DApps.\n\n### Step 3: \
+Write Smart Contracts\n\nSmart contracts are written in Solidity, a \
+programming language specifically designed for Ethereum. Here\
+\[CloseCurlyQuote]s a simple example of a Solidity contract:\n\n```solidity\n\
+// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract \
+SimpleStorage {\n    uint256 storedData;\n\n    function set(uint256 x) \
+public {\n        storedData = x;\n    }\n\n    function get() public view \
+returns (uint256) {\n        return storedData;\n    }\n}\n```\n\n### Step 4: \
+Compile and Deploy Smart Contracts\n\n1. **Create a Truffle Project**: Use \
+Truffle to create a new project.\n\n```bash\nmkdir my-dapp\ncd my-dapp\n\
+truffle init\n```\n\n2. **Compile the Contract**: Place your Solidity \
+contract in the `contracts` directory and compile it.\n\n```bash\ntruffle \
+compile\n```\n\n3. **Deploy the Contract**: Write a migration script to \
+deploy your contract.\n\n```javascript\nconst SimpleStorage = \
+artifacts.require(\"SimpleStorage\");\n\nmodule.exports = function (deployer) \
+{\n  deployer.deploy(SimpleStorage);\n};\n```\n\nThen, run the migration to \
+deploy the contract on Ganache.\n\n```bash\ntruffle migrate\n```\n\n### Step \
+5: Interact with the Smart Contract\n\nYou can interact with your deployed \
+contract using Truffle\[CloseCurlyQuote]s console or by writing scripts. Here\
+\[CloseCurlyQuote]s an example of using Truffle console:\n\n```bash\ntruffle \
+console\n```\n\nWithin the console, you can interact with your contract:\n\n\
+```javascript\nlet instance = await SimpleStorage.deployed();\nawait \
+instance.set(42);\nlet value = await instance.get();\n\
+console.log(value.toNumber()); // Should print 42\n```\n\n### Step 6: Develop \
+the Frontend\n\n1. **Set Up a Frontend Framework**: Use a frontend framework \
+like React to build the user interface of your DApp.\n2. **Connect to \
+Ethereum**: Use web3.js or ethers.js to connect your frontend to the Ethereum \
+blockchain.\n\nHere\[CloseCurlyQuote]s a simple example using web3.js:\n\n\
+```javascript\nimport Web3 from 'web3';\n\nconst web3 = new \
+Web3(Web3.givenProvider || \"http://localhost:7545\");\nconst contractABI = \
+[/* ABI array here */];\nconst contractAddress = 'YOUR_CONTRACT_ADDRESS';\n\n\
+const contract = new web3.eth.Contract(contractABI, contractAddress);\n\n\
+async function setValue(value) {\n  const accounts = await \
+web3.eth.getAccounts();\n  await contract.methods.set(value).send({ from: \
+accounts[0] });\n}\n\nasync function getValue() {\n  const value = await \
+contract.methods.get().call();\n  console.log(value);\n}\n```\n\n### Step 7: \
+Deploy to a Test Network\n\nBefore deploying to the main Ethereum network, \
+deploy your DApp to a test network like Ropsten, Rinkeby, or Kovan:\n\n1. \
+**Configure Truffle**: Update the `truffle-config.js` file to include the \
+test network settings.\n2. **Deploy**: Use Truffle to deploy your smart \
+contract to the chosen test network.\n\n```bash\ntruffle migrate --network \
+ropsten\n```\n\n### Step 8: Deploy to the Main Network\n\nOnce you\
+\[CloseCurlyQuote]re confident that everything works correctly on the test \
+network, you can deploy your DApp to the main Ethereum network. Make sure to \
+review the deployment steps and costs involved.\n\n### Step 9: Maintain and \
+Upgrade\n\nAfter deployment, monitor your DApp for performance and security. \
+Be prepared to upgrade your smart contracts and frontend as necessary. \
+Ethereum provides mechanisms for contract upgrades, though they require \
+careful planning and execution.\n\nBy following these steps, you can build \
+and deploy a decentralized application on the Ethereum blockchain. Happy \
+coding!", "ChatData" -> 
+   "OEM6eJzNfN1yHMeVpsemZLEte+\
+zR7KzmZiMNK4Ygt9GUaMm2IP9EEyBFjAASgQZFeSxbTHRld5dQXdWuqgbY8ihiLuZiIzZi72cfYN9h\
+X2GfYmNiYp9gH2C+75zMrKrupiRfbMQqHCZQlT8nz+\
+93Tp7C8M7eqDesqrSqbT521Y3zcun4aFkXD4tybuv46L6t3GlZzBd1dZOv8S4d743++\
+mBm64Mir92L+rR0i80Rf8URh2V65fLHRe0uiuIyLPojvnqEzYtydezyaT07SPD0cJXbeTreJOI/\
+PsjtReY468OyWC5Grq7TfFpVrzy0WcUFdcDx8cnIlVcpThSm/vBh6f64dPl4depym9Wr8r//C//\
+7n7/Bu0c2TzJXPlzm4zot8mr4nb3Ra9zltKiw+eMixwrflQelC7+/duaqIrtySdjir9eX+\
+citqsmr1Y1jnHB0436RrEY3+f8Hs2V+OeqNalsvq4MicaMb57bCE/l/eTq6+QD8qh/bORb+wVE+\
+zpaJ85zqcPcvj/KZK1MR37mrIqvwPK1Tm4l4XJaF52+c2Bf8fVSX4Jwy/fP/8gaYwBcqx/\
+Pi0uXV59/64d7ob/H0ybJeLOuNSf/3L/ZGN/FaR3eI+\
+v6JK6fuBNy300YEr5zgqNnw22Cll87o1ScLlw+\
+P9kY3eNLRq9NFvfduAW07WWZ1Oi8SiDXI9o2gPc9wXCxez4pk9AMIxEHjoF3HaX65N/\
+obXXF4enQATcwcBfH07Hh0Z1bXi2r/7l27SAcFxth0MC7md6/euTsGi+6O4+\
+gKzKOYoStuU1fegA1QrcCHRl1epSqDP+cF2R3OvfOsyCalnT/nQxL+\
+fGPM3uj19ozJX1SvhVXx841RVtQHYHOPg0bLi3naNa0fqnnwrQqp+\
+vHGnutDcARhYPNE1OOtjYlbRm1R+u96nzD5luo5lvfCPXQTCymq0HEIL+tGyN8fzYrrkzRP5+\
+kXWLB9sP8ATXPwAflUN4/StiWV2juIvdH3ziF8V8JiSldO5L//AyF9X3QSq5aiVq/\
+IjpDReVFkBzbLoi/obPo9vn6yUJHe2Bu96VlybPPpEuJ5cGWzpYUFDl/\
+BKYdZVly75MELN17W7tTWs64N/NAPOHM20bffGZKDP/LPhb2b0970u4CI83TuYJFVXdo0rw9+\
+CVd6Co6sPf5PUI9n7uKhq8dwBGR0tOS89qb6vwc4HQaNnC1l1I1AxzCBiPzg6qb3JQ5O+\
+LVw6u5TLH1Uu3l1ABa86qXy6odFMc3oY7HF0Rxz/h/v8wMKauQy13jrzunAg+/\
+TrYbAFp3iJoEvHbrG0+2DftQh5Hy1cMNvwaT5tNJIFO3kxnmxOKUtv3le2vHlaFwWWQZpPpu5/\
+DSz42bkKzJ98h0fN1qEbNI/+Xb1XQQ7zhjeJJU2L/J0bDPR+zZTwKLDtFpkdiWvXscr07xT9/\
+v6tbv4rGoeHo3FDb12Zq/vFy/gnr5dicFltnZ4EEx+9Ab35+C1/\
+Vw1LlOxp9Ff6nNTz5zBLtDH6Oiq3Q3XIxx4fgrMgJ2eX4dVYQDqzeq29917icvjoOc1ORNxRE26Xh0\
+VyxKx57v3l2lWH+WQNdwKzo+39MByJhz1xtkyg++AoyhXomJH0N5yUXIcFpFQCCY9ctli9CN/\
+PBlsGEPFVf5xmZZBsI2DvHFoa0ulei36/e/pO8bGG2cFtn11tKqg/0QdajSj//\
+XmT8yHLoezy8wRrX+px+/\
+17hgqkbtypVnhaAaxa4EXzkAiNXxEZay5yIrxpSkmeJa4vqmWJfBTnpi0NtdpTbkgjpoLaCa80CVm8\
+J2iDpFZ5q3UXGMrYxeLDFoG/d7vPX/+PLzscXE+\
+IEm0ZAOez4x7AabBdECTWTJwmmN77j6RPSIh2GSupCQwDFuaKp3m1b55660Xf7hn/rNZ/\
+eHeW29h3aOT0ydn58PH5z/unNpcy37WZPiHLApHMbvPb5uibK9qdt+6jcOJmPpmePxs+\
+NuRga7ahYv8sLJAldlqNjAPXliCg31zVIN/wFhm7synb73//uD99wwpgMjhlIWOSQHkU5u6CCt++\
+pzbf/qWATRGqMpWP+71fmKo4Wti/C1mz+wVDjEmwOAS1N4KLE+\
+hWmObmwsHBrqErxK8nRH79s2E3sEkUKq+\
+IYxBOOobPBtwZqZkjRFOa9fVDxzM0iRJSm0vXQWmYLKxlfn70ZPHOAo9N+\
+Vl9UEFw57bgXnkSlBZqmbYK5tmVAVPrVVhpiXWqYpxim0TP7Pa7/Xk4PQ2+/QDn03Us/W8b/\
+Jv6JwehjeNF9nXhwYjvfjI2pQOEXLPobYTgBFQC8A36I1kz/\
+3en3o3d2q45p39neLic7jqnT6eqDTqFDBtHyNu7izLTH+KoysxcY7Gs6QhA6/OcXBssoNXX/\
+L9zkT8y5+3AEepSYqFU6pwLmUKjTK7n+6c8pQ85Kc7okE74vmJcqtPd27L1j3Zfaf0jmZn/\
+3fhJG2iejd/3/tyg/PCtujttwhAtosxoiuHrjen0qsYqj+b7eIxvznfNvzsV/BBl95++q849zc58f/\
+Hx4SjyDLYAK2x790iqW5ZM0w89y4rWZKGrl+glT55cnwwPD7eN78U9wC47X4tZ/3lIsRKeWje+\
+fUOBhGz8uctA+61Btz7NWh88PhwePbh05MHj89H/\
+CXs1esNs2u7YoxwBuPTRL0OzKJauHE6Wck54vKV+PCZ+h059cD4FfSs8eWtqu2//\
+qwFH6Zgpn8sZ5BBv/y1uSCKcwgFPnzG17QFvyziz5JBh+sNDBKlqxThFO51Tv639sWjuK+\
+XbhUPM4drNkXeIkskKPKLg7ycrws6QgRyuHu4wwsHapxx0c3LoSBebFYJwAD5WM9pEiNESGpU1RJl4\
+n7w6RJkObh0Y5cyTIUl5opiAtygPulCFTD/\
+wDCuMXjVRA6ULeJW5d9SFhNMqWZygg1VjNzEvHKgMXK+\
+rOqWXgf1oVxk7sHTszPoVivMHRYmL2oD6C5zwL14GNKjtiKHdHrQMp7JcxAyCMdq8/\
+FogskkDRIEu7kqDqRrqoqlY2+\
+IfHfydHRuiEKRMIeBQo7uXzW87xNW5Cad6JoI9JcKTUAyj3JdlJcDg+\
+0jRRNEYWAB2RvK5QCrmlNgr3FRQnC1TEirCsaI90BmEkqvZysuzzVcMjCPH3z84KzNLhtOnXPzgEIo\
+G9vRc3BB7KEAiqjLFVnGZdOy8nqQwKi5hIcjIKbyuAGYtJDDJiqsyxwGfC3MmbmVKBAF5ElICq8MFf\
+bKEm7GQ9qrAhvMEUzhRkVgAkkuVuqKgoZE7VKUC4bbhPKyl2aqCDtbGXshpxAkM/G5BvyBcE3gYJ/\
+iwfuSEYGAyOTL+YUrP7NJ4sqW2K+FxLBPbbNLv/gORpJKnVftiERXQcX9MQLz/\
+SF0SX9sVSBnWpmdh5n1Km5YtLSEK4BzTZ5x42nFnChmGW/8xNxHqjAbz6gX922Vjqtm9M2YAbem/\
+LcfcMalzqjdeJYXWTHF/sw7EjiLvAZHWeIx0K4pWUOxQhuLMsEYqDQG5JVVIAz4WxYV5+\
+aupp4rRBJYW8IrAoPPkHIJPnY58gdlAaHSFE5hpQCUC0IzWePhfILjRjMxPHdRgT2Bxi7xmisMzDk9\
+1Fwhcd3ScKgFWD5ZZjL1ypZpsaxCNiTUM7WCs4Utj8vVoi7GyG9ABICA2c1SOPL7aT0uUlXmB6I9y/\
+ltzJpjE/GgiCu1LINVoffCVcQLmDEVom+uCnGT6nsxkAvN4aMGBnkF/\
+jMfwVweOimJVTx7Ix0E9ncG5s6dw0YoQvWdO/vmaS7k4WmS8hkYQqZd2MpVfv+\
+EOriFX33NLpXUJCWsuYCwyLtKOe9FKmEvR44YI60XcT84WHCbZ6GFqp6J64KYi7KapQuVrWXJD6Ohy\
+Pd4nPOWsHmU87Y2iQG16GPacpVWqSYson0q33TBwk7bycDPYU7Ogxf5WNRsdeuKMQGumaWRtJwrUzp\
+HEaXUrGmWTmdQ+\
+iuXiRW26ATtPyXtIwRe8pB0t8xoSa6rBk1Lu5gxjNCyUsYHATCc53zSJ8wzg8HAcEXEJnuRZn7RRyS\
+hZV/Qn2wJN0GHWhEkJcV1RxYh9YeHrlxnpqS+g94eNnkALwkTZxlyOV8EHSKsgPspJnv4n6w1d+\
+RgWs01YoBVVYHNG3lAgdtm0Y/wRzJ1xk8qgZq/\
+9Xq5KK4ZcSVckwwl6cxNYaK8H5FXx27KQgkjXRVo6zojjppmxYWlW6S1UEYtTVkUFELZLIvHWeagDy\
+BaayOUslwcpLx+USiY2evow5J0MoGF4wSfQ8pVkqpSKsF6P/EiuKxhUnQYOW5ed+\
+lquVifazferM20NJ+UVgsMPJyqciWCB55giLJ+SyjjdhdOf5TmXuXcFQv/\
+fT1lkU8Lnp73JJKqkJSEml4s6KeMTWkb8PPFlStxFrVubC8OsYbU56lKVG0OUAT/\
+hFFtlxqYGdwtaF/SxxAiP5s5+lDGxFulBoFSwStdkZLDNVvsq6D/\
+3jWQX3N6WeKgogybLwrGtdQifC/JJzqiJMC/CwmJEtxyA3ilIxXjADK5xeDlwfV1eOdY7v6aqPo//\
+uqAGElc/Xps0IIQPVnlssmeonfVRT+\
+myUrAkDkVkeAPJyVuroksc8GErAVGi4PpwtnMRVShpFd5AFiqQoIgOk5ZvW0qsBAWGyqGTkK6Zjqkt\
+oIkFk5ZWKivac31bqdVVRIX4VHLHD6HO8+LXINv0lqbGj9+\
+CZe4U9CYbZSGWDgqkGh6X3keNlwUCwG0serJnVrqtCGRRZniURpIxN4htgdppZriZUBkXCHQoVbbXW\
+5gAlGKoQjEWdPH6qwcJP04dA9KC2VpMQVU0gdojZDGOae8/t5e2ZGUF0LM/BgLlTzzMKuKLUTLe6/\
+lNoMSwUUy6cOqkThfKK1WSPte0JRSTXbN6QrIICdUQ+\
+bdJggRVSzOu28J9T6SQc3yuLR3MqIIRCQOAWWioEHUGcoRILnNggOd0Ftq4AvR9QyOQsCNDz5YH0im\
+bx7DZylyKsR9dOIRJ/\
+HkzEByLW3RKbhSymn081K4thNHqChnlOzS53sip3joLeI1AEdcX5ieLIWn3KEsLrBzztKvOMQJFqN0\
+fXaufvpdHusAfPYqe6hK6Xeiho1qFq5bR4r+Ip2LH78ot5mL+u9OfGz74N3D4UIQRiBLIMzPSQ2V6+\
+5HRZ2lErseUXM80H9osdkYCgQdI6AtyrrySV+04jb208q3uBjF5tcsmJQMXILi/WFLmL6FtqVQt+\
+joSIZBTqHAGMT9Qsx7jJTZtnXgH/Ag/SOUQF95E/\
+MwbG8CxF69zJ5suKb1Mq6ZUJNxi5Lpeh2XMVfLjHmkaGOqcHfDyEVzbK5BC8GSlfI9BYtxd3W+\
+jeCSqWY7U7uAMdXXRKIEmX4efGHisZ/\
+QBXzn38zteMbCUEd875NDJwjQ5M8RCCuS5Vi5dJxelNbsMglXO0BGc5g6piqcQK6tGbYVk/\
+Ds0EBiVZAIoqJFUUW5UEtBPSuWgm7JKkEA/hi86nATkg7BgP10anJ/J74wBkOimjk80Jg8yAg+\
+kR5bhGev2owr4erEZ41RWE2xFjyRKxENPp04NrORwklIrnym6d1TH5lJChihmwRYJs6qwYHbQlHryo\
+SVCV4ms7y2AF0gpoX3xTM2Euy3QResbVl5pgkuAl6fFUWliUgnkHU1sY3agGspCbhoWGrIvmD+\
+qRQ0WDQMRS0PGjipCrEa9LIA3gbHgkCs3IhtOXm/kYGwqh8BbTzUrcbUY8hp30d+Ddo6DTz+\
+GrT1X9/cDoAp9Sk71wzguyaMgiqcovIowr7WWKNJaPgKzAoKg8BtF9Ep6GlZwhlLks08H9hWgRBdAz\
+AyIhG22QBEAZ9s1yYRyHwFHmHocgHjcwHthABvdh+cP7pNsz+\
+2CKQzBcz33n7nvX4EAQGyyI50xAHddLBLCxV9TfhYVLc1cm46QvrA4HxqyX0QZhdydtv1Ju08iL6Rd\
+h+q13qBEu6Yg2fNQ9rYKictlhegTUsRARGFwszu/fOD2wENKqxXrEIusAdK/\
+WGnvANTDNNbJ9mes3nfoB5KmP72+zRY3tSuwUjyd+Gg1HWxx387dbK+\
+uMl2YuPKKxfvEtbcbpM85cVVKFU1dkoLV/yjIkIczZO9zK6waUyYAqq6n+YCg0YiyAPZfPf+\
+SLnWABJfFwmjuwyD0DQhBedGBxqEt2izLxUuczEP3pggA8/UvMLCByGGQLITYoM1/\
+7aJFEMmoxFGFgtKf6tqXWOL0vYZf7WWTFWUKxyp69SzslhOZ3JjrrG2K6FQL/\
+GYzZaJzQuzOzwcCqMeUkDKJl7uePMeF3siOZ4DjxpAHuYLp0LWvZdIW+\
+3LORegQyBcELdNrsi4pAlkAr7lTqosIKMiE0RDhRGc4yXq43Qd7WLrtgIGLthaEzikOswF3TV2DcSD\
+M+/5DAyg3OyOnhwLYz7q4G6pRCWAhCsEgqruMBgOlgHWc1/53fcgXxlFQWFmBO8voZmsqpaCb+\
+sGqIr7YBAKWCQgrpApXPvqg9xQEGGoX+lzv3kqHS8Z4bz3PJonsqVJgmrBVsY+\
+qxCahEhFcbosbTA2Qdfn7osC/vOT839QpyS/\
+rptLcG1sgvBQFZhjmtZwezVbIftyY0WvDFf0hRFsjR++SJ0YzsSOeULLou22xEAMIdbP2+\
+EoBnDEx0tRWT1MuyIgJEtF0wYIJXULC/SQSLFooT21Xmd5d1t1SpK8K1tMibSoE5gbaZnZK2+\
+bFcJNbXbZ9HC5c7s9PeQCwysLzUCwgxF+PPxE+Nk8a+\
+tLJTXUbrhZi3ovDXXiYBSqbkoowP5ubrnmTvqizWyyiyCPFZC0nvsuEZdfpWWR81cIuMJm2MLG1Fdg\
+/VkKonDST85O5aD+d72U8aqxsKvAfrV6cQ/qDNb9dbgab90PVE5uV9f0h1baX2PQhteXQwE+pnUdM+\
+qQEsMhxsKNzX0v2kScPSttvNZK6xiR3nlbRJtNi5LjdofHHz5RyYZHXx1bNOGTcpG4k02AHVRcTurV\
+eMEEIpa6K3ZPmd3T02J0W0ybGUbVKn5LBuJdsbRPrxfBagR9B4gjiAeZmhOtrppSfr+\
+VAayl6hrkq3S+zMBMJ05b7/gBLRtYKMFxI6VuB0fBpNJBpUWatq+luPXGSXMCqU13oVlQcQW5mSw/\
+g0vmSdSBbEV/knBFmRBw0yTWUq3+\
+NraGfEHziwikfXmMd1DeNUg3ArPEBNGyrHxJfU0ETeng5SnF3yClGMnlb8fmvya5+Oe/\
+bcL4hQtp0TepBH6TqgxgdV/Y5rThOIjYlqWVc37TWnqsv1qw/Zo1LZGiv+\
+2OWd4l5lQb6y5cQa4w7ncqiVuuHEHiQw/ddg/dw/R2k6UpgHyY6nnm/IgkkXwm7+Y/\
+VlNkmERdNG07bSy8sGNAS9H5LalJU9DUNsuWU2scTeW/\
+IIr9n1XoiN3vGWN4hXPsq9qn3oHKAeJp9GZrKC2dkCPve6TVVQKctI3I7hmbTjjgoihLwpj1i+\
+MQ6zq1onLV94nOus5gSb2vxbOMUUQua+VST29HYP018x5/iK5oHrwIF0W7hw8+\
+qW7r3XBaXVu9fR0tq5n/rewqB4d7nxrDwXoUEU5THuE+IkAq4UY/HrVEsumvC+\
+KFs4ouXtL7tO1xke89XOZTKRrqp0hm9/HDc6U85rJUqAuY+Nz5UgUTrVXX+MJVAqx0uZJ/\
+1f1Ln77hmu2rF++hQiz1tSZ+AefkUojUX+dO762ZxIdqQCpetChD32fTMgA59tn7QQipUT+\
+TTwtwNGjhY2+\
+QjUsPDdr8sGbkrMw5g2VjVMjVPpSPaOTNx2lZL0HpM2aeVYc76jqqdulFgIHUXNvsnwKzqVe68qtJH\
+sseZXqPhWSMesdYl0vIlzAnzfem0n4jB/\
+cFQl9x47HJ2a8wsqifmCmBvbu331rNSZqklxIts6xTH2PyOHaZaGqYzxWjGQxfpM4c5exG09L6sMFJ\
+DC+5xA635aSlTSs4mwtb1+wKilVB2AEAWrVSxZJEy6Nw7hUzw6798WOFvJjTOT8pp4hzXzS+/\
+okqNX8QFSw6A+JFHdJlgije7tHUNUOx8kzdtNzSSY1hw3nQDqa8shUH3VdfRQ2aO+\
+lRone5Kmo2JFI1Uu3qj+a8cb23KVdzArBU4gzBmHQ7Vb5KVFwKKYfDI+\
+Ul6zAyvBUFkEBmKV2Ze8FeEC1DypVvm5dt/oRs8yihcfpCwMeYO/\
+ExzIQvRkX27dgWzHN5ipRt3Xv7TjYpEanX1Upu0J1U90sVYpL2aHXtKxpN0LVY62/ExFBYh/\
+XXIXMePg3kx+pX6MbbaDloUrBe72eSaGtLkRZsTmJLUccTrH1lEPr0YueK1jrS+\
+XypdIUuLhbVpO7FBp4rp5mKT//brUxwoeze8sDsivxfiVPnscZBLoCfJW8ZWrcVZpiHaENE/\
+7E7aN1t9Q3DBrbifUWhFwj0PG0OQ7XKunvNGXLsU1YYtKRwYkt29W6L40vk5uvSR/\
+gKYkXYGvvEeLKUjgu5E2p1hMUP1uj857IROIvoL6W4jWa5ayudaHFltXneOpXw6ZooRVTcajua2LSM\
+t4hrPUeSBx9xJM37pTFAIyEOthEA0jC3FYaiKvr7MczPJNtZxE9lVZntCkeptsMW9iFAfQI6jh0tLc\
+QjKFXoTatx6MDwKsEAK2yOdMUUKGKUNMsIdn3jKZWvwikznw5ERtiqtYrQIKj2qyvcTA6/\
+QeXRA9fmzoaJ/ZIRR9u8eQcaq/vjWQF/5LkgZVuC3awoLr35eOvMgdaDuwmgVXdrE/\
+jyrObDR9IGZo48fLd5e2bbYH4DpczY1RVt29/7UMy/+Zo06N/+\
+7n7g48t3wEmlzQi85IdVPFHtFiEvfUk7TrgvqNY7pXh3uMiKVewrXxPQukfu9KLc0t4Lt9i7WO3xXz\
+NdMrHCqnRh0ofLxNM7ln1pvzQjDnyHmDmQqlVwaRvq9e5rPzkSUbnyzoXE9fu3pq2Ie0n+\
+gChZJGvn/8q2sBlkGs/lS0/S1urDcLVxJdTcgMm9EEJs7vuUW8VxFm5T3nvDwbUvEKS1a0vlY/\
+eURRKSOpIiie2Utc29wdu3ffuoia1q/XiAbl9wGVXNAbYJ+vdXEMGJaLISGS/\
+t4xspNTeY6dchK6Mtmzp41RRyQ48r+N86fMeeBwqw19Dblux8nZu1b+4DnPGXp1bqI+\
+v3ptB4Gk7Sl08R5YfIF9IpnpFaHC9FtyCLQUsr7/\
+Erpto8XbAVvww3NRKqHzQVRemrv8XvDOiCgxU2lyIZOwPoi6WYRd1v3wFuSf0fA4cOPtfJ+\
+WIuQUdv4Ffhi8e1IVLjE6Tc99dZKpXw4ZO4REFbUkABd+\
+SKXmqKyzxXT90cTi7GymoQuoWXkwkixmgJPdZ2YX0gdcLge9vz+\
+XGxkzo0941MlrDnL1bCrZGkkZBtmkn+GL2Pzwpcta1VbRBStZzX/STJ/+hJAu1Smtgi3vYVrMdc/\
+usWxuOlXlkrFe1QG3Kibue655+\
+QCaIkOTlxtT2x1aUmRBdlcc2vXdwLKCahv086xK5I6zWlVnflI463ia7jcbEMjdZBhTlMtFgspq2zP\
+933XxKvWXqvN9q061Z3Y6uVzG5tbPyKfq0IDyUM/Os//YsEAi2JtvCGbTrhAhVQ+efPn1f+ce/\
+uXTM6Pfxk7zhlC7vb09xjkrpy35wcnfcWpZ3OrQnjzR/eHvxi8PYHvV4MUCPZdYTAT5L/\
+xFzVLMG1e+/9zPBvwbiE35JjBl8E9wSFr3fDqBe3w223zuZ/zUzzK/PiA3n+\
+5doaiGy7cSpv7vht6pJ5Wlj6dmtFfdchSRf9Uj4Hb+\
+T57r7UwXjZLRdLqpobwhXHceBTq2ihp9pg4ru54uNWFiZYyPehDEQYAAiz3vwSGaqZr/\
+YSaHxvnMQf62D7gGBKqfiIQCKdaqDKpwRj/xH1huxDFfJ5VMnnPi8OLeljv2raJi1Q4F8qET6yCG/\
+WaXjmP3Sfp9PSl/6l76Fl6UJgIEP3+txeWR1H5arWNetXrD2lE/\
+FG3svu7nSG7NyGls2R4WVugKRbLkh/1ajLrm7tStWK8NtAf9jtLIWVvvxADwqEzp7/\
+pbKuOVJzFt8OEvGad41bOKiz3ZrCvSedbWuBsqtv+\
+iXZOJRX40hhoz9J0hCh6YtXPvEOcpubyRd1F6v4IaNvR2l7kU6+0lknrLG/TTPkjZ7rWcqPAQNX+\
+Lwf3f0W6ruOqaUE9NISZZnKQfrXNl3TiUE4+S7kpe/\
+DhAEdzLv38JzL6Ke9YY04RhzIBz1P5QDAdFdGDurisXzvtnv79geGLlK/ZVsgea3Nu/\
+fW5Pez2FIih37oQVHo3lY8Y+Nz/\
+OCDdfASNgKpViCXjP7MkVnM4iXtqf1npsrHCS29mCgbGZYGwTXkudNpIU6Ena7dxU+JYviJIF9V/\
+EU76GSKLBWJ8fdS2zHbywOPao3fakOs2rnHz9h/qhnTLY68pSFFGpjw4lfiJTlml/83kAY3/\
+3Vyaf7xH80O/1bW/t27oMhmvMLb//l7776346XZBN3h/SMs9ru7dwx/\
+0gsnqY7eufv7jbFJwj8CgvG3fvvk6dlnB08en58ND84/Gx4enj0YjRoao6EpnXJU8HMQzHW3tX1/\
+fX16KVut8nEnGn5MxVP1U/+kO0UsEpQ37gXlHfqXVGLj30efOpe/SFSJIeiy+DFPdv8kXN+PK//\
+u7d+bL+nvNqiaBqraBHVNaWM3MakBEYsStWFbslPXfn6+\
+H4KsdIXwT8SZx5rmNtloTJK9Us4JLdez4n4nvNAkdEnCxVYHCg2rWCBfhmM/Yz/\
+KxUqaXD4qrmz8AvHA97rEIC42JK2KGkS989vTphio+nMzSTXWt/8sTWfvyv81QG+\
+peuwtYKF9jLWCgD//GErv8s7qLw84Zm8vUFDqwddE8Iu2CLj8CdkbhfAkV0wBe5evbHDgJEJ5+\
+esy8odejL9c1++4m1p7m8gmFmwT1UslO5CavNFvafnZiOA9vQziMppFsQ7jcUwl1XYp1CRttP7+\
+vpyttv4D16fatNPrDSf8exDNan0zLwC5irJFoXY7rn1lEXsv7jP5d6xkJu12oC1C9A0jwc9a9l+\
+xaGDL1aA5ekzcmnYCn72FMK87VLG2LGmoB0fgcSnfAS+QT+ShwNn+UOP+\
+qvUXN7SZ3FeygohCsS0JwlovAK+VyF4WLcwjDJTrHmz1473R68fHJ/FP1Y1uyp+R4Z/G+neuWsLn"|>,
+ GeneratedCell->True,
+ CellAutoOverwrite->
+  True,ExpressionUUID->"0eed61b5-a022-48ca-940c-bf6ad8449f00"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Smart contract integration", "Section",
+ CellChangeTimes->{{3.925267900799389*^9, 
+  3.925267918298573*^9}},ExpressionUUID->"c94b0f29-bfad-4ab1-b9ca-\
+f0b48b1687fe"],
+
+Cell[TextData[{
+ "Once you've deployed your smart contract to the Ethereum network, the next \
+steps typically involve integrating the smart contract with a frontend \
+application, testing the interaction, and then maintaining the DApp. Here's a \
+detailed outline of what you can do next:\n\n",
+ StyleBox["Step 1: Integrate with the Frontend", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\nTo make your DApp user-friendly, you'll need to create a frontend that \
+interacts with the deployed smart contract. This usually involves:\n\n1. ",
+ StyleBox["Setting Up a Frontend Framework",
+  FontWeight->Bold],
+ ": Use a framework like React, Angular, or Vue.js to build your user \
+interface.\n2. ",
+ StyleBox["Connect to Web3",
+  FontWeight->Bold],
+ ": Use a library like ",
+ Cell[BoxData[
+  TemplateBox[{
+    RowBox[{"web3", ".", "js"}]},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"9ecf8db3-5dbb-49db-923b-ac9d905d0df8"],
+ " or ",
+ Cell[BoxData[
+  TemplateBox[{
+    RowBox[{"ethers", ".", "js"}]},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"03a7ea14-40f3-4843-b9ac-72fdc42f5705"],
+ " to interact with the Ethereum blockchain from your frontend application.\n\
+\nHere's a simplified example of how you might integrate the smart contract \
+with a React frontend using ",
+ Cell[BoxData[
+  TemplateBox[{
+    RowBox[{"web3", ".", "js"}]},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"1bce1be5-2f89-48bb-8fba-6d8b019ef03b"],
+ ": \n",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     BoxData[
+      DynamicModuleBox[{$CellContext`attached$$, $CellContext`cell$$}, 
+       TagBox[
+        Cell[
+        "import React, { useState, useEffect } from 'react';\nimport Web3 \
+from 'web3';\n\nfunction App() {\n  const [account, setAccount] = \
+useState('');\n  const [contract, setContract] = useState(null);\n  const \
+[storedValue, setStoredValue] = useState(0);\n  const [inputValue, \
+setInputValue] = useState(0);\n\n  const contractABI = [ /* ABI array from \
+your compiled contract */ ];\n  const contractAddress = \
+'YOUR_CONTRACT_ADDRESS';\n\n  useEffect(() => {\n    async function \
+loadBlockchainData() {\n      const web3 = new Web3(Web3.givenProvider || \
+\"http://localhost:7545\");\n      const accounts = await \
+web3.eth.getAccounts();\n      setAccount(accounts[0]);\n      const \
+deployedContract = new web3.eth.Contract(contractABI, contractAddress);\n     \
+ setContract(deployedContract);\n      const value = await \
+deployedContract.methods.get().call();\n      setStoredValue(value);\n    }\n\
+\n    loadBlockchainData();\n  }, []);\n\n  const handleChange = (event) => {\
+\n    setInputValue(event.target.value);\n  }\n\n  const handleSubmit = async \
+(event) => {\n    event.preventDefault();\n    await \
+contract.methods.set(inputValue).send({ from: account });\n    const \
+updatedValue = await contract.methods.get().call();\n    \
+setStoredValue(updatedValue);\n  }\n\n  return (\n    <div>\n      <h1>Simple \
+Storage DApp</h1>\n      <p>Account: {account}</p>\n      <p>Stored Value: \
+{storedValue}</p>\n      <form onSubmit={handleSubmit}>\n        <input type=\
+\"number\" value={inputValue} onChange={handleChange} />\n        <button \
+type=\"submit\">Set Value</button>\n      </form>\n    </div>\n  );\n}\n\n\
+export default App;", "ExternalLanguage", CellEvaluationLanguage -> "NodeJS", 
+         FontSize -> 13, Background -> None, CellFrame -> None], 
+        EventHandlerTag[{"MouseEntered" :> (Quiet[
+             Needs["Wolfram`Chatbook`" -> None]]; 
+           Symbol["Wolfram`Chatbook`ChatbookAction"]["AttachCodeButtons", 
+             Dynamic[$CellContext`attached$$], $CellContext`cell$$, 
+             Cell[
+             "import React, { useState, useEffect } from 'react';\nimport \
+Web3 from 'web3';\n\nfunction App() {\n  const [account, setAccount] = \
+useState('');\n  const [contract, setContract] = useState(null);\n  const \
+[storedValue, setStoredValue] = useState(0);\n  const [inputValue, \
+setInputValue] = useState(0);\n\n  const contractABI = [ /* ABI array from \
+your compiled contract */ ];\n  const contractAddress = \
+'YOUR_CONTRACT_ADDRESS';\n\n  useEffect(() => {\n    async function \
+loadBlockchainData() {\n      const web3 = new Web3(Web3.givenProvider || \
+\"http://localhost:7545\");\n      const accounts = await \
+web3.eth.getAccounts();\n      setAccount(accounts[0]);\n      const \
+deployedContract = new web3.eth.Contract(contractABI, contractAddress);\n     \
+ setContract(deployedContract);\n      const value = await \
+deployedContract.methods.get().call();\n      setStoredValue(value);\n    }\n\
+\n    loadBlockchainData();\n  }, []);\n\n  const handleChange = (event) => {\
+\n    setInputValue(event.target.value);\n  }\n\n  const handleSubmit = async \
+(event) => {\n    event.preventDefault();\n    await \
+contract.methods.set(inputValue).send({ from: account });\n    const \
+updatedValue = await contract.methods.get().call();\n    \
+setStoredValue(updatedValue);\n  }\n\n  return (\n    <div>\n      <h1>Simple \
+Storage DApp</h1>\n      <p>Account: {account}</p>\n      <p>Stored Value: \
+{storedValue}</p>\n      <form onSubmit={handleSubmit}>\n        <input type=\
+\"number\" value={inputValue} onChange={handleChange} />\n        <button \
+type=\"submit\">Set Value</button>\n      </form>\n    </div>\n  );\n}\n\n\
+export default App;", "ExternalLanguage", FontSize -> 14, 
+              CellEvaluationLanguage -> "NodeJS"], "NodeJS"]), Method -> 
+          "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> True}]], 
+       Initialization :> {$CellContext`cell$$ = (FinishDynamic[]; 
+          EvaluationCell[])}, DynamicModuleValues :> {}, 
+       TaggingRules -> <|
+        "CellToStringType" -> "InlineInteractiveCodeCell", "CodeLanguage" -> 
+         "NodeJS"|>, 
+       UnsavedVariables :> {$CellContext`attached$$, $CellContext`cell$$}]]]},
+   
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"cedb33ea-d9a0-485f-9f9c-f1621fde905a"],
+ "\n\n",
+ StyleBox["Step 2: Test the Interaction", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n1. ",
+ StyleBox["Run a Local Blockchain",
+  FontWeight->Bold],
+ ": Use Ganache to run a local blockchain for testing.\n2. ",
+ StyleBox["Deploy to Test Network",
+  FontWeight->Bold],
+ ": Deploy the smart contract to an Ethereum test network like Ropsten, \
+Rinkeby, or Kovan.\n3. ",
+ StyleBox["Test the Frontend",
+  FontWeight->Bold],
+ ": Ensure that your frontend correctly interacts with the smart contract. \
+Test all functionalities to verify they work as expected.\n\n",
+ StyleBox["Step 3: User Authentication and Wallet Integration", 
+  "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n1. ",
+ StyleBox["MetaMask Integration",
+  FontWeight->Bold],
+ ": Ensure your DApp can connect to MetaMask or other Ethereum wallets. This \
+allows users to authenticate and interact with your DApp.\n2. ",
+ StyleBox["Handle Transactions",
+  FontWeight->Bold],
+ ": Implement functionality to handle user transactions, including error \
+handling and notifications.\n\n",
+ StyleBox["Step 4: Deploy to Mainnet", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n1. ",
+ StyleBox["Final Testing",
+  FontWeight->Bold],
+ ": Perform thorough testing on a test network to ensure everything works \
+perfectly.\n2. ",
+ StyleBox["Deploy to Mainnet",
+  FontWeight->Bold],
+ ": Once confident, deploy your smart contract to the Ethereum mainnet. \
+Ensure you have enough ETH for deployment costs.\n3. ",
+ StyleBox["Update Frontend",
+  FontWeight->Bold],
+ ": Point your frontend to the mainnet address of your smart contract.\n\n",
+ StyleBox["Step 5: Security and Audit", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n1. ",
+ StyleBox["Smart Contract Audits",
+  FontWeight->Bold],
+ ": Consider getting your smart contract audited by a professional service to \
+identify and fix potential vulnerabilities.\n2. ",
+ StyleBox["Security Best Practices",
+  FontWeight->Bold],
+ ": Follow best practices for secure smart contract development to minimize \
+risks.\n\n",
+ StyleBox["Step 6: Maintenance and Updates", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n1. ",
+ StyleBox["Monitor Performance",
+  FontWeight->Bold],
+ ": Use tools to monitor the performance and usage of your smart contract and \
+DApp.\n2. ",
+ StyleBox["Upgrade Contracts",
+  FontWeight->Bold],
+ ": Plan for potential upgrades to your smart contracts. This might involve \
+migrating data to new contracts if significant changes are needed.\n3. ",
+ StyleBox["User Support",
+  FontWeight->Bold],
+ ": Provide support for users, including documentation and customer service.\n\
+\n",
+ StyleBox["Step 7: Community and Ecosystem", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n1. ",
+ StyleBox["Build a Community",
+  FontWeight->Bold],
+ ": Create channels for users to interact, ask questions, and provide \
+feedback (e.g., Discord, Telegram, Reddit).\n2. ",
+ StyleBox["Engage Developers",
+  FontWeight->Bold],
+ ": Open-source your project to attract other developers to contribute and \
+improve the DApp.\n3. ",
+ StyleBox["Marketing and Outreach",
+  FontWeight->Bold],
+ ": Promote your DApp through social media, blogs, and forums to attract more \
+users.\n\nBy following these steps, you can successfully build, deploy, and \
+maintain a decentralized application on the Ethereum blockchain. Happy coding!"
+}], "ChatOutput",
+ CellDingbat->Cell[
+   BoxData[
+    PaneBox[
+     TemplateBox[{}, "ChatIconPlainChat"], ContentPadding -> False, 
+     FrameMargins -> 0, ImageSize -> {35, 35}, ImageSizeAction -> 
+     "ShrinkToFit", Alignment -> {Center, Center}]], Background -> None],
+ TaggingRules-><|
+  "CellToStringData" -> 
+   "Once you've deployed your smart contract to the Ethereum network, the \
+next steps typically involve integrating the smart contract with a frontend \
+application, testing the interaction, and then maintaining the DApp. Here's a \
+detailed outline of what you can do next:\n\n### Step 1: Integrate with the \
+Frontend\n\nTo make your DApp user-friendly, you'll need to create a frontend \
+that interacts with the deployed smart contract. This usually involves:\n\n1. \
+**Setting Up a Frontend Framework**: Use a framework like React, Angular, or \
+Vue.js to build your user interface.\n2. **Connect to Web3**: Use a library \
+like `web3.js` or `ethers.js` to interact with the Ethereum blockchain from \
+your frontend application.\n\nHere's a simplified example of how you might \
+integrate the smart contract with a React frontend using `web3.js`:\n\n\
+```javascript\nimport React, { useState, useEffect } from 'react';\nimport \
+Web3 from 'web3';\n\nfunction App() {\n  const [account, setAccount] = \
+useState('');\n  const [contract, setContract] = useState(null);\n  const \
+[storedValue, setStoredValue] = useState(0);\n  const [inputValue, \
+setInputValue] = useState(0);\n\n  const contractABI = [ /* ABI array from \
+your compiled contract */ ];\n  const contractAddress = \
+'YOUR_CONTRACT_ADDRESS';\n\n  useEffect(() => {\n    async function \
+loadBlockchainData() {\n      const web3 = new Web3(Web3.givenProvider || \
+\"http://localhost:7545\");\n      const accounts = await \
+web3.eth.getAccounts();\n      setAccount(accounts[0]);\n      const \
+deployedContract = new web3.eth.Contract(contractABI, contractAddress);\n     \
+ setContract(deployedContract);\n      const value = await \
+deployedContract.methods.get().call();\n      setStoredValue(value);\n    }\n\
+\n    loadBlockchainData();\n  }, []);\n\n  const handleChange = (event) => {\
+\n    setInputValue(event.target.value);\n  }\n\n  const handleSubmit = async \
+(event) => {\n    event.preventDefault();\n    await \
+contract.methods.set(inputValue).send({ from: account });\n    const \
+updatedValue = await contract.methods.get().call();\n    \
+setStoredValue(updatedValue);\n  }\n\n  return (\n    <div>\n      <h1>Simple \
+Storage DApp</h1>\n      <p>Account: {account}</p>\n      <p>Stored Value: \
+{storedValue}</p>\n      <form onSubmit={handleSubmit}>\n        <input type=\
+\"number\" value={inputValue} onChange={handleChange} />\n        <button \
+type=\"submit\">Set Value</button>\n      </form>\n    </div>\n  );\n}\n\n\
+export default App;\n```\n\n### Step 2: Test the Interaction\n\n1. **Run a \
+Local Blockchain**: Use Ganache to run a local blockchain for testing.\n2. \
+**Deploy to Test Network**: Deploy the smart contract to an Ethereum test \
+network like Ropsten, Rinkeby, or Kovan.\n3. **Test the Frontend**: Ensure \
+that your frontend correctly interacts with the smart contract. Test all \
+functionalities to verify they work as expected.\n\n### Step 3: User \
+Authentication and Wallet Integration\n\n1. **MetaMask Integration**: Ensure \
+your DApp can connect to MetaMask or other Ethereum wallets. This allows \
+users to authenticate and interact with your DApp.\n2. **Handle \
+Transactions**: Implement functionality to handle user transactions, \
+including error handling and notifications.\n\n### Step 4: Deploy to Mainnet\n\
+\n1. **Final Testing**: Perform thorough testing on a test network to ensure \
+everything works perfectly.\n2. **Deploy to Mainnet**: Once confident, deploy \
+your smart contract to the Ethereum mainnet. Ensure you have enough ETH for \
+deployment costs.\n3. **Update Frontend**: Point your frontend to the mainnet \
+address of your smart contract.\n\n### Step 5: Security and Audit\n\n1. \
+**Smart Contract Audits**: Consider getting your smart contract audited by a \
+professional service to identify and fix potential vulnerabilities.\n2. \
+**Security Best Practices**: Follow best practices for secure smart contract \
+development to minimize risks.\n\n### Step 6: Maintenance and Updates\n\n1. \
+**Monitor Performance**: Use tools to monitor the performance and usage of \
+your smart contract and DApp.\n2. **Upgrade Contracts**: Plan for potential \
+upgrades to your smart contracts. This might involve migrating data to new \
+contracts if significant changes are needed.\n3. **User Support**: Provide \
+support for users, including documentation and customer service.\n\n### Step \
+7: Community and Ecosystem\n\n1. **Build a Community**: Create channels for \
+users to interact, ask questions, and provide feedback (e.g., Discord, \
+Telegram, Reddit).\n2. **Engage Developers**: Open-source your project to \
+attract other developers to contribute and improve the DApp.\n3. **Marketing \
+and Outreach**: Promote your DApp through social media, blogs, and forums to \
+attract more users.\n\nBy following these steps, you can successfully build, \
+deploy, and maintain a decentralized application on the Ethereum blockchain. \
+Happy coding!", "ChatData" -> 
+   "OEM6eJzNXFtzHMd19oWixLVkS5Hj2A9JtWC6CDC7C4q6WRBJ1xIAJdgAicKCpFySLPTu9O6OMD\
+uznp4BsJFZ5Yc8+C1VeXP+SR7zT1J5yC/IcyrfOae7Z2Z3QVEVpyp6EIGZvpz7+\
+c7pHvRudvqtnrWxLXQ6NPbKcV4aelQW2YMsn+oiPLqvrTnMs+mssNfoNd7Fw07/\
+x9sTXWxnaWEuisPczJZH/BWN2MnjM5M+zAozyLJTv+gb9OoTbJ7l832TjovJdoSnO/NUT+PhMhF/\
+s5vqQWJo1sd5Vs76pijidGztSw90YmlBGbC/f9A3+VkMjvzU1x/k5velSYfzQ5PqpJjn//Jn+\
+u9ff4V3n+g0Skz+oEyHRZyltvf9Tv8V2uUws9j8YZZihZf5QW78768cGZslZybyW/\
+x4cZnfmLkdXbVX9sFh/8r9LJr3r9H/tydletpv9QtdlHY7i0z/yrG2eML/56f9a7uQV/FQT7HwD/\
+fSYVJGxkmqId0f7aUTk8esvmNjg6jwPC5inbB6TJL4528e6Av6vV/kkJwI/as/\
+vQkh0AvR43F2alL71Xde7/R/hqePymJWFkuT/uu7nf41vJbRDaJeOzD52BxA+\
+npcqeClA7Ca9L4HUTrt9K8+mpm0t9fpXyFO+\
+1fHs6LzbgZrOyiTIp5mEdTqdfumt56nYBeLF5Ms6v8QCjGwOFjXfpyedvo/kRV7h3vbsMTEkCIeH+\
+33b06KYma3Njf1LO5mGKPj7jCbbp69vTmEiDaHYbSF8EjNsBWzbCtvwgfIrCCHylyukilDPscZidvz\
+vfY0S0a5np7QQyL8ZGlMp/9qfcbou/YVvyp+\
+vtJPsmIbYm7RoH45mMZN13pd3IPeipLsW0t7Lg4BCyzA6gmbx/WliStGrTD6l11MGH1H7BzLO+\
+XumJGGFkXpYMLpulLya/1Jdn4Qp/E0/gcsWGfsr2FpBjEgHcvmQds6J6N2AaLT/8ExlG9yeExu8hH/\
+959Q0mtsk1g1Z7N6iXeEjo6zLNnWSRJiQWPTH9DrRzNR6ZVO/6dOJPs6HZdQz+6ZTkoND+\
+y9BC57SZKdm2j3wgzLwhzqYtL0gdfdgCOjI3n7/\
+R5J8A33nMW7PO2nbhcQcRxPDTzSFrmO02L7DkLpISSy8PjvYB5PzeCBKYYIBCTo4Mlp4Vz137vgDoP\
+6Ruc86oqnoxdBRW6wveZiiUEQfsVz3XyKpfcKM7XbEMFVp5WrH2fZOKEYiy32ppjzf7zPD0lRfZOYK\
+lo3uIMMXqOw6hNbCIrLBF46dEGmqwe90SDkeD4zve/ApemplUwU/OTKcTY7JF/+\
+6XGuh6f9YZ4lCbT5dGLSw0QPq5Ev8fTR913eqBGyTP/oe/ZlJDua0btGVOo0S+\
+OhTtju60KBiHZiO0v0nF+9ileqeifh99VzM/jSVg/3hhyGXjnS5/ezC4Sn71l2uEQXBg+8y/\
+ffpP1p8MJ+xg7zmP2p/\
+yN5roqJUdgF9hgCnV1fCj0sgZNDYAbsdHLuV4UDSDQr6tG3c0nIo0EnBUkm4IiC6Lraz8ocuefl+\
+2WcFHspdI2wAv7xliIw8wRWrxyVCWIHAkU+ZxPbg/Xms5zGYRFOhRDSJyaZ9d9w7PFgRTmUQ+\
+Xvyzj3iq0C5JUdXWgyqldC3H9N3lFuvHKUYdur/bmF/RPqEKfp/9vPfq4+NimCXaL2yPtLYb/\
+VuqnIiMyZydUcrCnkrhleGAWNFIgRVmk1SLLhqcpGeBaZtrJlDvyURiou1HlckF6QR9UAlokodIoZ9\
+E5QB+sscV6qzrGV0rNZAiuDfW+1Tk5O/MsWLU4PQFJv/2nvt/\
+3aRims3fD2smOUlZhf27LIlD7L4kjp6SAel3Exl4FDASUKId/YLXVycjB3OAU/\
+eSv47OIL3pajqoKqJ8pcQFfwWIhClZSv1b4+Np8ya4Es8Db19CSJzpWNxyl2uX794ne31d+r+\
+e9uX7+OdfcODh8dHfceHr/VELY65/20SvAPacazo9ZPNlSW11dV69c3IAa2jraXD1xEz0xQg+\
+YFbKLtpKt2LzRhki21V0AIgHZqatTn1z/8sPvhe4oogKUhFzAdowyAqyAZuhU/P6HtP7+\
+ugMiRIZP5W63WzxU51oL1/BazJ/\
+oMTAwJ19AS5DQWmo5h0UOdqoGBAE1EryK8nRDkbqsRBSUVwZbbitATsmBb4VmXZiZC1hBZvDBNswRj\
+miIBkVLoU2MhFExW2qpf9x89BCuUMEhfWh5YxJOp7qpPTA4qczFIfabjhCzQUatFmXGOdWw2jLFt5G\
+barVaLGacgt0Xh58uRBNSWC4nuDcXEB/5NFby25KHCSKc+Em1McRh6T2G6I2AgUAuc2W31ec+\
+t1teta2sFMsLa1lo2+\
+AoZYq2NJ6KNIgY63MKIa2tlnshPYbTlyEKj8SyqyMCrYzCOTdbw6hm9XxtxWPt2C9AoiQQcWEiriGl\
+5DItS65+vHRKXxOTna2xBa5xwCFzbz9c2eOsW776Wu/\
+i2tvWZ56ROVOvaF61nS5JnsYUks0IBvF1ITU09NJMIGb2owX5rsXOgfnG5LYX358hBll7N/\
+XP4fhGO/x+ziUCRJPAB8sa2C4tEdc2b4eKpC1lRSTQ04wJ56aNH+9u9/\
+f0tdYfDA4X8e8zrnZlP0fxQvX1vDYMIKtPPKwbcrg24fQ807j7c6R19/Phg9+\
+Fxn37xe7VaveRczylHGIXxSEAcdeAWdmaG8WjOfITlLcfwicQd5rqr3ArCa3h5w9bj17da8EEMYbrH\
+zAMPunNPDQg8GqQCl7XDa/\
+IFtyzyT0lJh9brKtRnZzGSLsLrlORf2xePwr5OuzYwM0VoVllaI4s1yPoLg5yezzPF2X2AcI9wODCg\
+xigTwjwzBfViM8u4BuRjPSO1ExPBFZktOMuE/\
+RDTOcnS4NwMTUxpyi8xFfDkUQ7ZkyxkUWp0FeU1Sl4FARbSLfKWdW9JFyNMsRPmYMkUgzQxL+\
+9KjpyWtqjZtTcf0gvP3X58dATbqqW5nUylWaFQMfAcSC8wQ/\
+SIrzCTRhjNA09OgtCBZ6sux70RJhNp0CDETauCIVlTTCweOkekdweP+8eKwC/qdD+\
+QyZH9bSX7NsGKVMUjWROJ/lSgCUgmVs6z/\
+LSrsH2gaIQsDCzAe8O4DGBVxQX2GmY5FFfwhNhaOCPeA5lxKj2fzGl5WsNEXfVw98nuUV1c2nOd0uY\
+ehZBudMPOIQX2hwwoosjnJDJaNs6ts4MITk1LODgCYqzDDYDCGTMbibJOUzjwOQtnYuZsQKQgR0KUO\
+WOw2CuJaLMKtk6RTBFGWWEMSQZzCUXeQoJ1CbiGwHVE+\
+tKnaizAPpkrPWAuGMmMHLhFPGCpMRxsk3rwPqeMQIBIpeV0YPIvdRSZvKb2cybR71Po5NQtvoaRRKX\
+Ms2us0bk3cceGF75jQpZ0bIsBGVUrKB3MBGb3G2Y1K6EVILmqvLny2FIpFoqbN3+\
+u7qNCmQwnZBf3tY2Hthp9LRTetSn/\
+1KIZpzKjMMNJmiXZGPtTuRMhWKQFJEqdJQXrGpNoSK2wxiyPMAYmjQGp1QKEAX/\
+zzNLc1BRk5wKRGNbmiIrA4BNUeoyPTYr6QURAUGmcU63CAJQWhGVSa4nmEziuLBPDUxMM2BGodInXt\
+EJXHVOEmgokLmoWDrOAyEdlwlPPdB5npfVFGFNPFR2CLXx5mM9nRTZEfQMiAATUehIjkN+\
+Pi2EWizHvsvWU0w3MmmITjqDIKwUvg1Vh9yxV5Au4MRlEW51lHCYl9mIgLTRFjOoq1BX4T/\
+0G7vLAcCfOEu+VdpDY3+6qmzd3KqUw1TdvbqnHKZOHp1FMzyAQEtpAW2Pd/\
+hHZ4Ap5taWoFVKjmGDNAMoi2VmRvFMpp70UhWfItE7FbR9gIW3ihTxU7IxDF9Sc5XYSz0S3mjqNGA1\
+Dvk3sHLOyVbfbRXVMfXketm/\
+GVKBTqLPEIOW8pjXSqHGSDTT5BYmLpFVjZZYR77kZl25ZPE4SkwLmtl1NTjRzwzqmtr9ggUSfByOO4\
+tEIKgYfXwFo2SgWG++2OqBb+\
+uIX3mZ7UTbz2iBih9XrJl01H3PFVmXOVN9S1iHRxeko11JhEnOYTKRzKEVCoRil3ZaQ5GofJoOMU4I\
+15G1n1HBuC5dZOs6Ie+rPM1YlUiJkrSSbkaEqDXgSEVLJUCCDF1EvtmePKIBTpnGhnctT6r2Y4R8/\
+qu5TXpje30B7SUZGGOnpxJATUVC8kUsUyAW9kC0KObRmTXw2S0pZl+\
+U1JTejRJjlfvNZRoEt1ojfJcmJLDHy+X/\
+AMZGjW4oa38pISXLImWbWvTy6vgr3DG3Wbwirf3xtm5Ik+/\
+picJCOAFXg1iSjjsA3sUU3poKlEMiUDJGyPzgl4FQQtEgZFFAPyiNOSh1jYFJWlW8lWYcAcjFIEESl\
+Pq9edxV4CFWblmIn5fRqOrQ2hyZmRkSYiePX5roYUGsr2GxqfNqaZpZYn06zVKJvVFubLH54iZRoJ2\
+8xqyj1wbCfodKAk3m34w1n2YwRTei20U41c1rSyCxH/\
+ZvHnkTs7YO711YsGD9BSqYVPB3itc3lusoTJUmUkBj1krE6lY5ROwztwGhhLDWhgEqKAdIkIueckr5\
++rc90n+tLHzSfYKGceO4lNltBNL93Vq4TGBFCJKF+\
+rBqIc50yOwfuvyBXiqXaUYdzpIaUcjVKrzpBgI7scRR7XN6CCQ8liWMnv7QLMmwIlJJMJxuNJGuwOc\
+M4PCZDMHcBdETRchDT7+\
+CS8wGFA4QhakJ1ElJfJScx63jKoW2Qx9FYgMRYz0BmcW4MhcnxxM2DlUVaFufNUF+\
+6N1NUV1RzmRHibkyIA7t/SDI+\
+QOgjEe9BWVlUDiWD7seoHdU64VsCuSmBhZ3YEAqgCSTzBZFBxHokaNW7KDfcRtQ55RgZ6iRaqGbuTg\
+VlGqOwIPFxbHVsUBfRjLgZjHiaTclcuCPPVhbCDOWLKXQ7JBkkHfgqkKdG4CskcJPH+\
+q6kA2SsUtqi6oNAJtxtFLduRIiJDhSOPG5xIM4pvo2kHyNAyyY+4bEZVBl2lZPXupEE+\
+ul4iCrXGegCMZLWPLHtmgbb9XQGYy2tExpnnBS5NMusdEYbIaLpyPV8CMRAmoDxZ3kANkhCMdcKVI/\
+7etGFY5pkfRQEvdRbqsMOju2am80rOG9XOmBRtQNUCEyBmpGGy8Y6D85cP2H4hjx26GX8DXnsH99YD\
+S1I62O6i6IAjDiuaI7XRvBOUGFb2hfBJSQweGF5g0FI1DPRUWwct1QdDRm/\
+EoQGapAUc8PyMQGiPLZZSjU+8q+2JlbIdA4ZYWg5g/\
+MZn0d86FTru8efbJDb72uEqIlAkdu33n6vHcKrTwa84zlMwOeNRlao5ZsF4FoHR+\
+s7vdnMbshpymIe2SMUGIJPwagSQHXGvOtmNKkjTIqN5Pe+MSS9SX98o1MBWql2lUKtUpuVA9AmKN/\
+nGl/zrN8/3t7weVYAk2QBkgLdapB42Kic4Ip+eo2T1WjYxQaJUCz0Wx+\
+Sw9IhyEKCJvnODIy6yDr0b6MEbXOYrENGk5+\
+Z0KZbCLsVLE2zM18FVn5KHs6rSDCCW2Zp1EG1jk0DFIWk3hFJpVxI9FmR27z5+v2+\
+SG3HeS5nESLEj24KDEoTqA/J9bcFQaywZleFlym7BzUjUdsk4l5+4W2fQ6DZETUqF+\
+Lbcg72GFEyDC/mjf6GrZ0QsdG2Kf9Km4ZMkbujlHLpEDQrxxM+jMJgyuSnaxv1ihEC+yUJrHemEa/\
+gZWq996T3Kcupesa804pQuwWAWrTzBXe71MeYM8mRy8DVuiQrxstHIbCeBT7aBBioPK2yC4HauJi6k\
+x+TnsV5ltKvcCiLzbCFDmiG8cRRDKLA6adHh8yo+10aLfE4ppkzPeclIU+\
+YRJYIxmJwpRcNxbe7azU/yhnqmO5RM3BIm2sq5EcId+\
+0FAS2ZGzOFvIX6go2Hm2tW3A0GG7C4Tt2x9oitjIonalXFRXCFt2+xapNxltO49d7+x49Es/\
+7R8416BBYp7MNBkSi4m7qQ2X1yZE55LIIhIReILRsBc3QsnYiq9cPDrL/\
+BiZqgDR38ErOxnQr0cfCRb2It1jWoUBOD2MqhFhDRnHE4YDNktbZr0EPgRrMtQ1C5TCBMA7klc+\
+nbI6dV+Yi9UmlOISpnJSwgY06GfCoquLse50jd0kUSMMLthmZO8CYu2TXh5ScI18QJu/DqtMNIL+\
+iEMj25xALGa68SqwcqAmxCBncVD/WVXLzgEwaCpxEwRG5dl2RBBYi1wuFzsMxPgGX63NBt+Pw3oJp/\
+/klVKg2Mx2MvUtwtqvqSfN5msRm5u+RVrPNcM58v2h4JJbWG2M+\
+psc5adB3sAC9PMccurTszGUllUMZJozhc0UYEiQ9czljfMQ/ijQoeSuZ6EAs/\
+U7qPGjGQSpvASws2h0sUWXUUV0/CMz1ETmObX4GJqhpVrk7UgloVaKy7jBzudFh/uWarpZSirty+\
+a1QcugDKDARuFHdJe3xNA3qkFh5fX9F84EhHQbx7QgdJNGCQ5TleLDWDfS/\
+aQykuUvN52yGsRZvBktKDxbOEsgg3YPn0Qhpe8P6CAJdjoqma3Qvf+1vf2f3Ubki/N7bnWjqq/\
+dJO3G950zhouIupIR0sZhGWNOnDt5h89czSaAdWc6Bc1wEKTWRRXWi8O7z4MEs7D8p0zK0mudWs1h8\
++OBbKA4gmgxrAxafG1UiE8OZN5/PdIXhpOed/JfzzlT9Fa9a7aS5C+Vzqily6TG+\
+4z0fUn6dGetFUPfgyJOYoSvtJfKiOAaDHNp3nxEOf9RO+\
+pQjWYIUPnUNWId3f9aI7un2jec4RPBujPEj8mO/j8psncV6UoPQpQV7bkI6EDluv+\
+RgYUM3csI4xXefi1c7cagyg6d4RRY8ZQ1VpGxd5Cf0SzInTzpiP1Jhx15lwpT6xTZJ9jpMF+\
+8RMTuzNvd3W4k588ankbJkkjcKcUCuDw+Yu6gCpO9/\
+pPfKqHVMLOhVRWBY41xM7vT1ZjsoRHl6LSUbnSUyOZS7otEGqce4p12WX5WOkLUnXUM97pJ69iEzF4\
+eEnmDtyEVX5TyGY43qk9cZSHmZw+4VY4s5KuVKSGCANDW+lsewXC+\
+Ah2oMNVNGz7QC29Cxcy43VRu0IaSbBZcB87MkPRaA/710606i6vq3W+\
+9xLlUMrqVsOwqFVwy4X7rH5k+BwYCeQP55OS6HLnxNSbcnlHx0RnRnBzYKvG4dlcGg6H3Qw4YzkP+\
+cQQ2wNvV4AhnJqttWadqqX+thH+\
+PKJ2RbBsQ21FQUxbEVtu0z6aOQHdQnDtPKi2UeFYD4gwRzmxp39QCw53RtZlVXKcZkvah/\
+B1KsVQXTo2hWjko906JJAUTtzDDexKRRNeSNIFrmIK9Kl49hzzWedYWXLQTCiOymIMALbA0ZrS3OP5\
+DrScZ7SFcXFo1Zfle3RSEIDl0YkictgbCkcxX5uLSgGU9RyPx/zE8bes/\
+ANiBiznoMVuzqJ0kEHzMdjtXBkVsu/jJmY3tgO/RGPMwkK9yzmQFcA5CFjxklC0MtdbSDjs+\
+AyceA0CELb2ipMA2Os5zd6qFR5gQLcwaiqdUllJvIaXvNFophuc/\
+gm13CSIR45KXD3gqBXkmWnzn2cd6bAjj7ceAglu9UJvBxj/wIY+75nUaf1aUgHXi7fALn/+\
+28vW6LmcOCDTykhKbqYS/QWZuZroEtO83xTzC4etFKDfJZk83AvaUH8i/\
+G2cZR1Q45uzKwzmHfoXzUuCcRjVQpQfI+\
+DihwXNrbc8X2fRr5NAM3TKr0ePnZste7LhSRUPXxamTKNi13m6liSNmOwiiSYRQsCeO6x8gRRKDDm+\
+hx8L8JlWbvU+Kz6vNz9RAZN3UWXWguIzooBGvhIut4m46PhFWX2+iFV5ERqnytyacGGPW93b224+\
+wcqHHW3AwPNiyVS31PAMFFXoKZrtPkYIcg4CJ7vHy3Vb7TBRK4XzpVcX5DBc3nEZ6XukgTkX2O+\
+4a5dQXNNqN5bUQouSrNwlwOAVtwRgeZifPF0ACZPnhO1+S47/xDkQnRy4CMzDq3/\
+FcChWzfL23QPtlCPZ3SZK/cNSU7Fu1X/im9m3aCbahRivR9Wvb+EDsAo1nLrhKy/3upeUWg+zCLT/\
+Uomp7MpJxU5aJr7O/MLQ7ijRA1N4tlWavFXZznkMZrich3i4ZMo7mCVaSqRuGKO+7+\
+57fr7JuVohIzQL2HI3M52D7gr5WNrfT59FWO4Q077BilzWnONT98c5aIFyo0TrlZC/\
+HF9EWNXnXV3fWGQ0qkWkeR+dCSBdi6EV+i3ftLgMJW7H0n5tpSTGaGinko9Am/\
+efXLyYzJB1Lt8CGoKfaDtqcD8Aaphui9pLmCZ9EmIO4dlxyJaz0lrRVM/HHqr7DkcouQubFX/\
+koNjGJsxu0zDaN/Zch+jLPh6q9Vf9uza/YjaYbReeTUilH98Mh8OqOoqlkzwH3/8M+\
+cC6cDVAIWuztI9FVuKvtux7nFrc1P1D3c+\
+7ezHdAvKdKS4GMUm31IHe8etWa7HU638ePW7W91fdm991GqFHNXnXfvI7ETy11SBqRJiu/3e+4q+\
+YjYRfQWFGfTCByhYfLHuR11sqFnJddbQdJGx1jc+ouWxp+\
+kiXazzxedukT3ka4zrGxsfKSJbriiiKodRvXubv0aqaeX9cJ7BkeeBi1X+UoZEGR2e4wfnQhyi+\
+Yatj28192IcfWSIb8LO3Lny14fFVkZ6yKJnmyJjcU4Ns0iNTPPK8zudm8E7FFvo6ie9svSLHN/\
+yFF4qEON6k6tD6eXWIJDVbSVGQDHt1/2WHBnTpwnvCIq5QaNuiI755Awv7jJGozHr9L8un6y6G+e5+\
+sMf1Bp9dr21uQlqdEIt3K0P3nv3vTWnysoLevf3sNhnmzcV/SQNRy7Gb25+sTQ2iujDLoy/8dtHj4+\
++3H708Piot338ZW9n52i3369oDNYodDKbkGXXO+\
+N6bfv24vqgsaXtPB02zPMJWZ3Y3gabtewUosNdpc91XFR7wXJ77iVZsHLv/WbdKX/cartk+\
+rIsfkyj9a9Z6lth5c9ufaGeYYFnS1SNPVV1guTLh7uX7cb+\
+1KUQIkQtORbvtOA8H5DzcEjmY3P6cwPqoWDPCiEG5OosckrRfhGq+gxT+\
+YMsSRE8HOuKV2UzgFiUuUdxemoGiIrwh9+\
+gZgjXSqHMUTymtOwSIjsQH5IzAScnhTzvDHkkDP3kRI1i/nSs8ZFjY3fr/\
+raEc1Rh3PumT71VklqF050EUO5Ao43Vu+xpfQDypOWoU9N4zCVcp+\
+NJyIX3RTX8sq4G2uCARBwU8YiKWJADh+fbc+A5ChmWPxvkL/iUO2GRC/\
+rUX0uXhNAOGXmVui7VbpdbYUouSdN1sLPYnLuOIC0j4IYKJNebtNzk4goqaiTRD7eYOTqU5KGPZ2O6\
+ndNq9Ub0pU+1XFtNM1SbWV4jUQ7bc/4czZ8MVidw9wmVG+ogcPAsZeVVenTHhj7SAi8g/tInDvm8W/\
+EeAFV1qORQlbMGt4MNPR2Ghw4aQsg53/\
+BGfS5AUC6n8g1LuSk7r31LJXeZXI3pdSR5RxqVrK3FxstC8XpZvlCfYCBBA4L0b11eXn9gMy5VSB4X\
+CIE1lfhaYMEhUEicmV99Q8H9p194C75x5i3GRM9zsOXoIp2WC29lxXzm4JKzMndvX25wriDUXTGsdF\
+5Jrh3QsL//n0ulF+46pewV9W+SOOFX1XlkCv7khRpg/N0UgMF5Hf/SxyigXmrzUJrvOZpNVTlV+\
+OU4k0ZLZf4EPjojuqgZJXO2klAc1dq7NQRBFHh+ajd5gwaaMnJleWnLumCr+\
+60SPl8ETi2jqLbqpXT9Pedo/\
+6Q0DvqIhTOLTWi1jKYIjlSbSO03ly1OHNzhL6RPArY6kXTwAsWp4KEm/\
+qpZiANcNwLcIuAc1QE41cL8wU08nhTBFs1zLFHAZdhNYFtgBEJHjvhKn2m5MeXBmxPm1yQt+rtChr/\
+U2h2NSEjPHKzLaRAw0+WALyANmFUDZHzmwAkdkniU8wVAh99u/\
+caNgC4w2jPFwz0Ga4xPyySpz5BKgdENT+pXvzfm3apP4s/\
+Jqzl74delKWHOAgxVDRxaaVsqZLqF4tVzc1N98dHyMi+AUFWlinUI9e49VyQtgLsk01HV4aKayWmA/\
+vvLIPH6Wt8Cx9J/ldrXazh1YU0fQLb/\
+l2g8bBkmLK68sHETAy8OvhQLu11qthYgMb16JjXrKsXQgGdt9dkXddua8F8F25bLSnfVOp+\
+e1BTeMFF525WLKN1q22eL68lfgyLm2F6WVpV1gHDoX/\
+enmDx7z6lAKt9ZXYZwCVJJWO6iipBevNhYEm99mYrd3BRlnqp1nnEnis/uOeXcmbx9T/\
+oLyjcYKOPd2cRzP2R2zxnmlvra0f7szuas9l4IULwpBtVCTWOgHFCmIu+7X9el/8wPwjD5GxZ0g/\
+3umnxYuSb2d/\
+frSqbPsJAYgl9IfnumNmtLDcqiIHjGa1neae0etSZ4jTub8j4QuEkUym93Np2UpE40FxzRI9E+Re+\
+PQi0ROqtcxVHi2augjMvhRyUd3u1TwFjoslNW9b0+Qvg8kCPLYo/\
+PgaVGFUVT6sWj3NWRN8sZkArDWo3xbUpE16AMLHocUmvl+r5jLZVXJdEKNLQEgmht+\
+ph04fpb7RQ4NOz5rPSCPgfwZU5oFRK0Vj1/XCwQneDkU+lLeuhX6cb3N+\
+uvmh1qBwMJTw4rXBTmQUYZybR22sJ7+fMWPhC21YmwrogzjR6oyGaxsSV/C1Ed105C+\
+JsU8lppTjfOEPnAiGcwsFu4Fh3OF+\
+T7ch7pa6Q0K8JVB1uX6rv1MpmqSBiNEx5dGktYdViFj8SlTKTKTI72PcaXD6HrJld9brJUS1OxyYaz\
+ZO1ue9qKi5tQlbdfoH8QFDSVVbpLxxAmZaJ3jz9xffVQZXNt7dzA9UTqTnCYUZt0ZSfRbaa0wzK+\
+ebngADWBv0fHNO7rD/6yFDrzEm82weUVG8S2/xhl7AqGVYLQNNx/CIxCeyR/\
+16k6FmboLj1q91FWfFF9T6nOyoS+r/ffafhDOE/sfdLvIcc+d03mgfwljwG9mPkXcq1S7rBc/\
+sUNX5pzf9SQvjE5bRjl+66hYdLQkhC1WO/Xro1xWDUufMCVkxpa3o3h62cLDY6S//LCamWFK/\
+BOAK6b0jyHPEy0RO5KfL5zQXuv6o/4L9ddNSMVtrSz+EiLvsUuMgZ9VU8lHjW+\
+GvZXBekwhGpUipBitRQP6IYPUhnT527sW3nEpLorf1WciLJhyXfaQyCVe/T08YNYTF0pH5AZ+usK/\
+IW8v8DrlHJfOivVKLZcqaCJ8NS4I7QQLX1wpHPAU8V/XqM6q/IfHYzAJ52RAr11x902/\
+T0FunTURmRKKKZPkdJMBNPfcArbTccMdvwtC1YYXdnruC/\
+oWDvuqy0O2oW7McCRPtzO8OcI7pP5xtWk0K8Q8cu9IR9sH5X0dzmHE6eIaVbUU024F5XxrVe+\
+3MKn5GPHOERUyrVvTxh/JsBSe6EWly35j5SNSmo5cDfAB1D3FwlCs/Av0frq9F/d3z8If/azf43/\
+Nhb9mcH/Ae9ObP0="|>,
+ GeneratedCell->True,
+ CellAutoOverwrite->
+  True,ExpressionUUID->"5b11376e-f852-47ae-b90e-ce6388c0a7f9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Transaction execution", "Section",
+ CellChangeTimes->{{3.92526856860874*^9, 3.925268570893779*^9}, {
+  3.9252687087253*^9, 
+  3.925268716585341*^9}},ExpressionUUID->"c1bd4254-b54c-4043-899f-\
+cb843e4d4d09"],
+
+Cell[TextData[{
+ "A smart contract is termed \"self-executing\" because it automatically \
+enforces and executes the terms of the contract when predefined conditions \
+are met, without the need for intermediaries. This automation is achieved \
+through code written in the smart contract itself.\n\n",
+ StyleBox["Execution of a Smart Contract", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\nWhen you deploy a smart contract to the Ethereum blockchain, it becomes a \
+part of the blockchain's immutable ledger. Here's a step-by-step explanation \
+of how and when a smart contract executes:\n\n",
+ StyleBox["1. Deployment", "Subsubsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\nWhen you deploy a smart contract to the Ethereum network, you send a \
+special transaction to the blockchain that contains the compiled bytecode of \
+the contract. This transaction is mined and included in a block, and your \
+contract is assigned a unique address on the Ethereum network.\n\n",
+ StyleBox["2. Interaction with the Contract", "Subsubsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\nOnce deployed, the smart contract sits on the blockchain and waits for \
+interactions. Users and other contracts can interact with it by sending \
+transactions to its address. These interactions are typically in the form of \
+function calls specified in the contract.\n\n",
+ StyleBox["3. Triggering Execution", "Subsubsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\nSmart contracts execute when they receive a transaction that invokes one \
+of their functions. Here's how this process works:\n\n1. ",
+ StyleBox["Initiation",
+  FontWeight->Bold],
+ ": A user or another contract sends a transaction to the smart contract's \
+address, specifying which function to call and providing any necessary \
+parameters.\n2. ",
+ StyleBox["Mining",
+  FontWeight->Bold],
+ ": This transaction is broadcast to the Ethereum network and picked up by \
+miners. Miners include it in the next block they mine.\n3. ",
+ StyleBox["Execution",
+  FontWeight->Bold],
+ ": When the transaction is included in a block, the Ethereum Virtual Machine \
+(EVM) executes the specified function of the smart contract. The EVM \
+processes the code, updates the state of the contract if necessary, and \
+stores the results on the blockchain.\n\nThe execution of a smart contract \
+function includes the following steps:\n   - ",
+ StyleBox["Gas Fee",
+  FontWeight->Bold],
+ ": The sender must pay a gas fee to compensate miners for the computational \
+resources required to execute the contract.\n   - ",
+ StyleBox["State Changes",
+  FontWeight->Bold],
+ ": If the function modifies the contract's state (e.g., updating a variable, \
+transferring tokens), these changes are recorded in the blockchain.\n   - ",
+ StyleBox["Events",
+  FontWeight->Bold],
+ ": The contract can emit events, which are logs that external applications \
+can listen to for updates.\n\n",
+ StyleBox["Example Using the Provided Contract", "Subsubsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\nLet's consider your simple storage contract: \n",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell["pragma solidity ^0.8.0;\n\ncontract SimpleStorage {\n    uint256 \
+storedData;\n\n    function set(uint256 x) public {\n        storedData = x;\n\
+    }\n\n    function get() public view returns (uint256) {\n        return \
+storedData;\n    }\n}", "ChatPreformatted", Background -> GrayLevel[1], 
+     TaggingRules -> <|
+      "CellToStringType" -> "InlineCodeCell", "CodeLanguage" -> "solidity"|>]},
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"48b3782e-ce2e-4160-8466-42595d55fef9"],
+ "\n1. ",
+ StyleBox["Deployment",
+  FontWeight->Bold],
+ ": You deploy this contract to the Ethereum network. It gets a unique \
+address, say ",
+ Cell[BoxData[
+  TemplateBox[{
+    RowBox[{
+      RowBox[{
+        RowBox[{"0", "x123"}], "..."}], "abc"}]},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"933b3119-872d-4a48-829a-0d0b4cad24bf"],
+ ".\n2. ",
+ StyleBox["Execution",
+  FontWeight->Bold],
+ ":\n   - ",
+ StyleBox["Setting a Value",
+  FontWeight->Bold],
+ ": To set a value, a user sends a transaction to ",
+ Cell[BoxData[
+  TemplateBox[{
+    RowBox[{
+      RowBox[{
+        RowBox[{"0", "x123"}], "..."}], "abc"}]},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"d0eb7d47-b7b9-47f4-8c61-5b04ff09ba15"],
+ " calling the ",
+ StyleBox["set", "TI"],
+ " function with a parameter, e.g., ",
+ Cell[BoxData[
+  TemplateBox[{
+    RowBox[{"set", 
+      RowBox[{"(", "42", ")"}]}]},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"3f0b35ee-5389-43f6-b14b-964f2563435f"],
+ ". This transaction is mined and included in a block. The EVM executes the \
+",
+ StyleBox["set", "TI"],
+ " function, updating ",
+ Cell[BoxData[
+  TemplateBox[{"storedData"},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"37c30d8d-5044-4766-bb00-c0cde67aeb80"],
+ " to ",
+ Cell[BoxData[
+  TemplateBox[{"42"},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"b0ba686c-0d17-4bb2-b69c-84242bd87659"],
+ ".\n   - ",
+ StyleBox["Getting a Value",
+  FontWeight->Bold],
+ ": To retrieve the stored value, a user calls the ",
+ StyleBox["get", "TI"],
+ " function. This can be done either by sending a transaction (which costs \
+gas) or as a local call (which is free but doesn't change the blockchain \
+state). The EVM executes the ",
+ StyleBox["get", "TI"],
+ " function, returning the current value of ",
+ Cell[BoxData[
+  TemplateBox[{"storedData"},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"bd75c81d-d1b0-4fdd-8992-108347dd6f39"],
+ ".\n\n",
+ StyleBox["Summary", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\nIn summary, the smart contract executes when someone sends a transaction \
+that calls one of its functions. This process involves:\n- Deploying the \
+contract to the blockchain.\n- Sending transactions to the contract's address \
+to invoke its functions.\n- Miners processing these transactions, executing \
+the contract code, and updating the blockchain state.\n\nThis self-executing \
+nature ensures that the contract terms are automatically enforced and \
+executed without the need for human intervention."
+}], "ChatOutput",
+ CellDingbat->Cell[
+   BoxData[
+    PaneBox[
+     TemplateBox[{}, "ChatIconPlainChat"], ContentPadding -> False, 
+     FrameMargins -> 0, ImageSize -> {35, 35}, ImageSizeAction -> 
+     "ShrinkToFit", Alignment -> {Center, Center}]], Background -> None],
+ TaggingRules-><|
+  "CellToStringData" -> 
+   "A smart contract is termed \"self-executing\" because it automatically \
+enforces and executes the terms of the contract when predefined conditions \
+are met, without the need for intermediaries. This automation is achieved \
+through code written in the smart contract itself.\n\n### Execution of a \
+Smart Contract\n\nWhen you deploy a smart contract to the Ethereum \
+blockchain, it becomes a part of the blockchain's immutable ledger. Here's a \
+step-by-step explanation of how and when a smart contract executes:\n\n#### \
+1. Deployment\nWhen you deploy a smart contract to the Ethereum network, you \
+send a special transaction to the blockchain that contains the compiled \
+bytecode of the contract. This transaction is mined and included in a block, \
+and your contract is assigned a unique address on the Ethereum network.\n\n\
+#### 2. Interaction with the Contract\nOnce deployed, the smart contract sits \
+on the blockchain and waits for interactions. Users and other contracts can \
+interact with it by sending transactions to its address. These interactions \
+are typically in the form of function calls specified in the contract.\n\n\
+#### 3. Triggering Execution\nSmart contracts execute when they receive a \
+transaction that invokes one of their functions. Here's how this process \
+works:\n\n1. **Initiation**: A user or another contract sends a transaction \
+to the smart contract's address, specifying which function to call and \
+providing any necessary parameters.\n2. **Mining**: This transaction is \
+broadcast to the Ethereum network and picked up by miners. Miners include it \
+in the next block they mine.\n3. **Execution**: When the transaction is \
+included in a block, the Ethereum Virtual Machine (EVM) executes the \
+specified function of the smart contract. The EVM processes the code, updates \
+the state of the contract if necessary, and stores the results on the \
+blockchain.\n\nThe execution of a smart contract function includes the \
+following steps:\n   - **Gas Fee**: The sender must pay a gas fee to \
+compensate miners for the computational resources required to execute the \
+contract.\n   - **State Changes**: If the function modifies the contract's \
+state (e.g., updating a variable, transferring tokens), these changes are \
+recorded in the blockchain.\n   - **Events**: The contract can emit events, \
+which are logs that external applications can listen to for updates.\n\n#### \
+Example Using the Provided Contract\nLet's consider your simple storage \
+contract:\n```solidity\npragma solidity ^0.8.0;\n\ncontract SimpleStorage {\n \
+   uint256 storedData;\n\n    function set(uint256 x) public {\n        \
+storedData = x;\n    }\n\n    function get() public view returns (uint256) {\n\
+        return storedData;\n    }\n}\n```\n\n1. **Deployment**: You deploy \
+this contract to the Ethereum network. It gets a unique address, say \
+`0x123...abc`.\n2. **Execution**:\n   - **Setting a Value**: To set a value, \
+a user sends a transaction to `0x123...abc` calling the `set` function with a \
+parameter, e.g., `set(42)`. This transaction is mined and included in a \
+block. The EVM executes the `set` function, updating `storedData` to `42`.\n  \
+ - **Getting a Value**: To retrieve the stored value, a user calls the `get` \
+function. This can be done either by sending a transaction (which costs gas) \
+or as a local call (which is free but doesn't change the blockchain state). \
+The EVM executes the `get` function, returning the current value of \
+`storedData`.\n\n### Summary\nIn summary, the smart contract executes when \
+someone sends a transaction that calls one of its functions. This process \
+involves:\n- Deploying the contract to the blockchain.\n- Sending \
+transactions to the contract's address to invoke its functions.\n- Miners \
+processing these transactions, executing the contract code, and updating the \
+blockchain state.\n\nThis self-executing nature ensures that the contract \
+terms are automatically enforced and executed without the need for human \
+intervention.", "ChatData" -> 
+   "OEM6eJzNXFuTG8d19oWiRFiypchx7KrY1VqzilgGAC+\
+WbGt1cYG7S2rtXXJrsaSskmRtA9MARjuYgadndheRWZXHVF7zlPyG/IE85jW/\
+IQ8pPyRVec4PyHfO6e6ZAbAklZSrogeRnOnpPn2u3zl9Gv2b3UGrb21sC52OjL1ynJeGHpVFdj/\
+LZ7oIj+5paw7zbDYv7DV6jXfxqDv4/vZUF9tZWpiL4jA389URf0YjdvL4zKQPs8IMs+zUT/\
+oGvfoIi2f5Yt+\
+kk2K6HeHpziLVs3i0SsRf7KZ6mBj66kGelfOBKYo4nVj70n2dWJpQBuzvHwxMfhZjR/7T1+/\
+n5velSUeLQ5PqpFjk//gP9N8//wrvPtJplJj8fpmOijhLbf/b3cErtMphZrH4wyzFDC/\
+zg9z4f79yZGyWnJnIL/H95Wl+YxZ2fNVe2ccOB1fuZdFicI3+vz0t09NBa1DoorTbWWQGV461xRP+\
+Pz8dXNsFv4qHeoaJv7uXjpIyMo5TDe5+by+dmjxm8R0bG1iF53ER64TFY5LEP3/zQF/\
+QvwdFDs4J07/82zfBBHohcjzOTk1qv/zG693Bj/D0UVnMy2Llo//+\
+ZndwDa9ldIOo1w5MPjEH4L6eVCJ46QBbTfrfAiuddAZXH81N2t/rDq7QTgdXJ/Oi+\
+3YGbTsokyKeZRHE6mX7pteej7FdTF5Ms2jwXQjEQOOgXftxetod/EBm7B/\
+ubUMTE0OCeHy0P7g5LYq53bp1S8/\
+jXoYxOu6Nstmtszu3RmDRrVEYbcE8EjN0xazqypuwAVIr8KFSl6ukyuDPcUbs9vve+\
+DhLxrmendBDIvxkZUx38Gr9i/E37St+\
+Vvz9yiDJim2wuUWDBuVwFjdN63UxD3orQrJvray5PARbYAZWT1g9rq98uGbUGqV/2fmE8TdEzzG9E+\
+6OGWtIUYSOTThZV0J+bTDNzg/iNJ7Ff40J6xv7c2iagQ9IJ7J4kLbOSamdg+gOvnMM4ZscFpObfMz/\
+/QeE9BrrJGbNWa1e4hUho+MsS7Z1kgRf0Fj0O/T60VxEeqU7+\
+KFjyb5OJyXEs3umk1LDAvsvYZf9JMnOTbR7YUZlYQ51MW3awOtuwJHRkbz9dp84+IZ7zuxd/\
+eyHbhUQcRzPDCzSFrmO02L7fbjSQ3Bk6fFPoB4fm+F9U4zgCIjRwZLTwpnqv/\
+ewOwwaGJ3zqCuejn4EEbnB9przJQZO+BW/6+ZTTL1XmJndBguuOqlcfZBlk4R8LJbYm+GbP/\
+E63yVBDUxiKm/d2B148Bq5VR/YglNcJfDSoUs8XT/\
+ojQYhx4u56X8DJk1PrUSiYCdXjrP5IdnyD49zPTodjPIsSSDNj6cmPUz0qBr5En8+/\
+raLGzVCVukff8u+jGBHX/SvEZU6zdJ4pBPW+zpTwKKd2M4TveBXr+KVqt6J+3313Ay/\
+sNXDvRG7oVeO9Pm97ALu6VuWDS7RhcEDb/\
+KDN2l9Gry0nrGjPGZ7GnxPnqtiahRWgT4GR2fbK66HOXByCMyAlU7O/\
+awwAPFmRd37di9xeTTopCDOBBxREF1XB1mZI/a8fK+Mk2IvhazhVrB/\
+vCUPzHvCVq8clQl8BxxFvmAV24P25vOcxmESDoVg0kcmmQ/\
+ecNvjwYpiKLvK35dx7gVbOcgrO7rQpFSvBL//PXlHsfHKUYZlrw4WFvpPqEOMZvAvP/\
+qpemBSOLtE7ZH1l7L9VuumIiUyZyZXC2xNIXbN8cIoSKSAj7BKq2GSjU5VNsazyHSULXPgpzRScaHO\
+44LkgjiqhtBMeKFTfEHvBHWwzBJnpeocSyk9nyfQMuj3Vuvk5MS/bNHk9AAk9fc/\
+7n8yqC2UQtsNLy8rRlmJ72tLFpnSZ1kcKT0bxpMyLhYycCSgRMHlG7ulTk4OFg6n4G9eCz69+\
+JyXZa+qIOqpMheQFSwWrFAlxWu1r4/Nb3lrgSzsbebpSRKdKxtPUqxy/frF7+\
+6qv1KL3929fh3z7h0cPjo67j88fqvBbHXO62mV4A+SjN+\
+Oap9sqiyvz6ra1zfBBtaOjucPTETPTRCD5glsou20p3YvNGGSLbVXgAmAdmpm1GfX33239+\
+47iiiApiEWMB3jDICrIB66GT87oeU/u66AyBEhk8VbrdZPFRnWkvZ8gq+n+\
+gybGBGuoSnIaCwkHUOjRzpVQwMGmoheRXg7JcjdUWNySiqCLncUoSdEwY7Csx59mQhZI0TxwjTVEhv\
+T5AmIlEKfGgum4GOlrfr14NFDbIUCBslLywMLfzLTPfWRyUFlLgqpz3SckAY6arUIM84xj81GMZaN3\
+Jd2q9XijZOT2yL388VYHGrLuUT3hnziff+\
+mcl5b8lBhpBMfsTYmPwy5p1DdMTAQqAXO7LUGvOZW66vWtY0CEWFjayMbfokIsdHBE5FGEQMdbmHEt\
+Y0yT+RvYbRlz0Kj8SyqyMCrY2wci2zg1VN6vzFmt/\
+b1JqBR4gnYsZBU4dPyGBql2p9tHNIuaZOfbbAGbXDAIXBtP9vY5KVbvPpG7vzbxtanfid1olrXPm89\
+XeE8sy0EmTUC4OVCaGrKoRlESOlFDPZrs50d9YvzbcW9P4MPMvX63T9j3y+y4//\
+H24SjSBLYAFljx7lForpmzTDx1LmsqCQamn6BrPTRo/3t/v7+lnqf3QO5/A95r+/PfYjmh+\
+rOhxsYRFCZ/r5mwN3agLsfgsbdhzv9owePD3YfHg/\
+oH36tVqufnOsFxQijMB4BiL0OzMLOzSgeL3gfYXrLPnwqfod33VNuBtlreHnD1v3X15rwfgxmuse8B\
+x70/odqSODRIBS4qB1eky24aRF/Sgo6NF9PIT87ixF04V5nxP/\
+aungU1nXStWEzM7hmlaU1sliCLL8wyMn5PFMc3Ydw93CHQwNqjDLBzfOmIF4sZhnXgHzMZyR3YiI4I\
+7MFR5mwHnw6B1kanJuRiSlM+\
+SlmAp48yiF9koksUo2eorhGwasgwEKyRdyy7i3JYoxP7JR3sKKKgZv4Lu9JjJyVtqjptVcfkgt/u/\
+346Ai6VQtzO5lKs0IhY+BvwL2wGaJHbIU3aWSjediT4yBk4LdV5+\
+PeGB8TaZAg2E2zYkMyp6hYPHKGSO8OHg+OFYFf5Ol+IJMj69uK9x2CFamKxzInAv2pQBOQTFs5z/\
+LTnsLygaIxojCwAK8N5TKAVdUusNYoyyG4gj+IrYUx4j2QGYfS8+\
+mCpqc5TNRTD3ef7B7V2aX9rlNa3KMQko1u6Dm4wPaQAUUU+\
+YJYRtPGuXV6EMGoaQoHR0CMdbgBUDjjzUYirNMUBnzOzJmaBSsQCciREGVOGSzWSiJarIKtMwRTuFE\
+WGEOS4UJckdeQoF0CrsFwHZG89KmaCLBPFkoPeReMZMYO3MIfMNcYDnZIPHifU0QgQKTScjY0+\
+Rc6ikxeE/s5k+\
+jXKXRy6ibfwEiiUr6zGyzRhVdxtw3PfLcJmdJtWxTIqFpC6WAmMLtfMKtpCc0AzlXpzZXHllKxkNy8\
++VN1DxnKdDQlvbinbTyy1ehrIfGuffJvL9MXp/\
+JFYUbTNEuyCdandCeCs0gLcJQqSwraNSHWkFihjVkeYQxUGgNSqwUIA/\
+7mmaVvU1OQngtEYlibwysCg0+R6TE+\
+NinyB2EBQaVJTrkKA1CaEJpJpSX6nsBxpZkYnpqgwI5ApUu8phl66pg81EwgcVHTcKgFWD4uE/\
+70TOdxVlqfhDH1lNHB2cKWR/liXmQj5DcgAkBAtZMYjvxeXIyyWJR5l7WnnG3iqxkWYQ+\
+KuFLwNJgVes9cRbyAGZNCdNRZxm5SfC8G0kQz+KieQl6B/9RvYC73DVfiLO29kg4C+\
+52eunlzpxIKU33z5pZ6nDJ5eBrF9AwMIaYNtTXWrR+RDqper6e+BGqwUSwC67W6mFOKvBdeAP0om/\
+upKdqMqtcgabhWYVzmUMmGkjVyodA3yHeca0mXSOT4OAXcZL8A70gGp92S0O/\
+1CkncjVOK0aQ6Z1Q97Uj4ztJJRkylYjMDLyIlggtOsjlxXWnE2ojCboZsD3sRz4blWbwFgu4sLrTTX\
+4ojF3P84UfVFcSrt1ce0F4SEKSAj4SWNIIs/EYuKp1LKMZGHDk0Z419NktKmZf5NSOdIa+\
+e5X7xeUZWGms4o5L4ROYb+WA2ZANnU02RsFoZKR4bAcDMe5e7ileha6Fm+Bwf8Z/Xtsnjs+\
+Iua7qkt5ROWpOMu4JFaGQYU2EsMGRmEUUolGGnhAIKipMpRzgqqHj4RH5wAoDFovJ1EevCWS4KCYIo\
+b+XZazylshqlTpYcAQWo6nNIbQFJzI2wMBNgWPvW+axajmyzmfE+\
+eJZZ2vpslqXiSqLa3KTxo0u4RCt5jVlHqbfsQQbYDCPzZscLzrM5h+\
+dQOqKVauq0IpF5jmQujz2JWNt7Ki+tWABrgvhCM3g6xGqb0/\
+WUJ0oiAsEKKoxidsqDok4Y2oXSQllqTAGV5AOk4kHGOSN5/\
+Vqf6QEnSzD1u7TtJ5gopz33E5s5otlRsTF6TeAixZiqTWyKAVvuxACxFVcpxCBjKNMYYIwsj014GCe\
+0Baq8mDEX0GC22Yyo4iombyZoM7mlGXzCCO910oVKIFpr2Fch/\
+oEUw1dyXBCzUHuOX1XuiO1xhUa0p6GIUx0oHHtf7wJfZLrZeAxSAMbhB2QR71c5IkTxeGzYb63TpVo\
+Fh4ASldQJ7c9BF4gR7+\
+mJBU4dw0HHFGc7da8JL1ZaxzR2bClcdpZZqSY1NLGpL3W3C4RFkoBXy3JyKIJjUxszvqIcxmNsZ/\
+X0kfXGBnopH++48mnA75oLdGt23qlkwKzqhIgUNgVqxnqGXek8lEXrVdnnuMtDz+PnuMv/\
+enV9BCOpT+j8XiH+\
+MqzX7BaMhNUgwo6kfMF6mM7ALK8wsDw9FxnFxu2WEOWIYz7BDgQn8WQ3LJdW4UywzIpH8w5mvTaxQG\
+YL8AhDyzmMz3h35d2Kau8ef7RJBryvAbWnEvHu3r7zTie4Hu9zeMVzqIB3Tw3nU3NrTejZiMHtnf58\
+bjelAr3srvYIbBR5FpUjI+\
+LHy5GZ895105vUgQxFFrJ7n0xLPceXvHUq8TzVDl3V0O28HII2pD0R2zy7NI8T2/\
+eOtze9O5e4LIiPuEAnwZQopU20CVP0n9d2sh50Od8gHoqZfvtdMlgqHC/\
+FAeLv3ECpi6xLfzZge4fdZB2ZmPzMhNLGktut0E+anXnkXNkpWTjPIs4IZpmlURcZDhYNiAec+\
+plwKqWeC0GmR4fMrKMY4jYuBYknwGYJYPyCsRwECE4hGSLUTGKjFKvJv1AIqqFhYCOqJexRmjwim4E\
+ekzew8DBNVQuzmAuBqbwJeCeAFaaU004rTAWkDoFdp+7AZ8xbIiRGSVxchA3fuU077ieTLKdx7f7+\
+g0ebEvjcozgcMjUNUfRzjC2ScUMMcAdcZ1jy394F8k55LFSe4hPYlo0RWbqWzgpU+/\
+AwG2yyO6YARkcitNnYziTAxTMJFISyl0ES4G5iYEFsUKNpbM5Y6AAFLmJ0agFGgkozYSGkWyZgpgHf\
+koVUtOC5Kq+\
+TUYRTmh2FylkIWMzn8dq7PD4vYNhs6tpM4pb8SkIO5y5Ny3fma8WHJjz9FEZJO2Hvst65cDwPMiF/\
+TmazFMk769jqw5GEr+\
+CnHXyKh4KZnTnnBEIiRIrcupRrSQSwKNnhMyLWDxCxBlzqaHjP58Suf329AotD46PuiyDFZVFf4rU7\
+zDYjp/pexDrPNe/zRXOtgM812H5OJSeWoqvtBBBxim/syrxzkxFXhmWcNODxmgQbJN53Dqq9Y+\
+7HmxUIILulR7KfGXVqRRwu02Z41YLAYBJFVhWp6652rkdIfVjn10S+\
+xIWdM8FudadWORrr2vTCaaf1x85bLaUUpfj7Lus5dA6UNxB2o7h+\
+0OcDTMiR6gF8sKu5FE9FUl49oRIrDRhmeY4XK2USX6XxAROJN9DWouPi6LLOYEqpTuBZQv0QXMrhup\
+5kz7D+gsKq20RTNLsXvpDQ3tn9rd2USkhsz/WcJxmUdur+lTeVg4Y7nxrCwXIUYU6TPHy+\
+OoTTMFIFz20nbDUHlnHpZChHiehCScqhgodZ2r1fphPOW6XfT7Uf3j8WygNUIoUawsRnxiFhiuOLpv\
+H5VBNWWi74T3H/3AyjaM56au48lI+lLpWhNlPDRQOi/jzFrqbxnDGiB5sxe1FaT/\
+yDK5BRrI68fVb5SJV6t1o/\
+54RWymDbrOcHoQzW2O3SybivLYcSoCCmeDYrxcZ95ZGQF4OjAnZ2xvNS+0VWTqaN8hsYQRVH517hU+\
+nkiERDGx/5iheCSI5ZagG1p/\
+qp1xmKy08Mb8OxFfnZlJeiQncmWSYhucquO5Qr50UzAwdjfkGMOURiJwU4sCWnk6h11lhOynzZAqGE\
+vnAB5Rs5MD8uua5Gxw5FrYoZertIhDNeCJyFDTNeWynwnmuunoaZLStPRKdcSCYE7oTY1pHUl/\
+g61nGeUtPDcvEW2/0lbXePRpIXbUhegoAgTNFnbIwS3AZRsf+\
+2hg8CWtfS8YfvE8Ys89BVKrUDvcBW7HrnQ9UmqI+\
+PcaFuWfNbHGuY3tiOfJ3NqQSZCbM50BWATPA0cZJQyHKHJaR8FrtMXFAPjNC2NgvTwLHp2WkQQTy7n\
+H7XIZIotgs/VWJPBSz4A7zmo8mYzod8CogkH1HEcYGxPYWsJMtOnfk460wRc70z8aFHVqsTeDk2+\
+UvCJk3Ku4Edz0Eof/+\
+De545Oq0vWLczkM8VYjCIOnyIzMLMPWS8pJLqM0W7XOSmqtE8yRbhgHOJ684ew+\
+KNMuINKZuZeXe46NKfalIS5sGs5Jf4QIgwofMWW+\
+4cYEAj71A887TyGnKm02rdk5NNgESuFKdM43LppSoJ02Ic29Uky6IlBjyzpD+\
+F8wkbY8zsDlgcvrAr1YCq+MElAaPz1J2Y+\
+SHEkhyZA5Yit1XPHbksvyYraR9SAkOkDjiBkbpEWPNu7zaQpXTnhWOGTthA84RK0iHyEybqSWQWZdz\
+2rkGARGA8H2SuwF1aYCp9CgvmjKxHp7H8iOvU7nQK/\
+K9tvmGlPcmDm8imvwY5L3OzcAczAJyubqY5d1kumUHlyXKQLVJTHP8l8IXoZH9HahzqYYGttbJqXS3\
+vUkNNoR7P6VQ4Bwqujlp207MY69Hf+Yj3Bh15k2f1dli1mSXxMGcXy5kmaX+9/rMGlz/\
+MItP7Uj5O5zOOJVJ9Xfjmu6UhnIAjgFKqLKUMEYvvwWFPxwCUsxuwh8uznPCXaSoOuNocF0Vy63TmO\
+C/HYwSCQQlF5hqPe8BJvHep9e+pvdZw2YjWDVzmaDaX/hLrGMQYD8KNEwZ3wf+\
+4NNLYdecMTpUeYEOjKZPk/upIAu2cN6yRb7385qCUa7SgMFtKuVKocOsxCFwoPkG/eevz91pkthUx/\
+SiitlH1gbrxyaPHR19sP3p4fNTfPv6iv7NztDsY3HivtfQFhlJcOTfDn/VMMe15a2yHKe/\
+tdZbn38Q02i7SUTAqSKl4Qs08bW7p2VRfIXmQlfRohKSmIKL0uaaODL8WHHDfvWxjSuXe+\
+8V6M26dtz3M7abFX9Oo/RUHlK0w86e3P1dPMcHTFaomnqo6QdJX9cFlq+Gb9maPTluEKPoIcbEH5+\
+yooJWoUbhmnL+\
+gtJTlxAVmusykHkpAqsJGCGeu4jAjFViOX17tJOaRa5EpSftCAZSR6lE2R2QD5D2K01MzRLoHbfoN8\
+EM4tIYwx/GEbNVZCbtYLiczAScnhTzvjngkjPjkBAkuN6Y2Wqgbq1t3c82ZpGycp7ZhpZrmrgvejgO\
+APpBoY/aeIt4OEKWTlqNOzeIJw7lu15OQy96XxfDLuhhogQNicRDEIwK0IOePf/\
+MPfJyJPUfB7LgpmfuDlatSSfsPUhoHNepkdoKZrhPXpdLtgSKITlow6HzuLDbn7ryEphGPR6hJWne4\
+c9rBqqgRDt7d4s1R9xgPfTyf0DlWq9UfUx9hNV0HmRqQZ5bXSJSydM7Nrr66WlUx71GoNpRNcHJYys\
+zr5OhKry7WkbdPDYV4ZM69au/\
+By1aFOedqnTa4FWzI7zhmuHgBJufcPwKsLtFBugX4yFtaFxa1Tk059XPA08tIqk5SK2NpLSdhS4j2s\
+nisPsJA8sUU59+6HGr/eBVqS7MNr/\
+AcrP3HH3s9vXHm9cJEzzKjVR8iudWF16ViMXfnx06XKnIcXlma2DX0V5Kt+\
+NMJgdD3EOUC8sLZX8q6X+9rJKWrAXMkt9w2Rykv914CRp3XQx81tIH6ZVi+\
+54g2FWq67yjkNl7OrSotp/\
+S9O6YD8ihZsDIEYFRlVbVNshvwG6p1UAQRNJnkIHlpyzpnq74C8ZIE2HQgE39xaMT7S10DKOLWjaYT\
+2H46ISjDTv1JyfiKChGsyLxF7qFkasd6ZJwvhg6lRhTjY4TZahHBfQtZ4uSEYzB7e0x/\
+csI9NFYesOd/\
+AXAqWR2Tsk5NYJdVIkanBfE4NlE9kScszJ178WRa2Yd5hjoya6rVpMBQ28wWxw6Co78etOQI3LPzK+\
+IXXU823PC5Ox4Tm57KJm7kNAjgyH1DrHNvaG5CTQFSQLEaaOJTh0Lo/MXDmc+\
+BLvxy7Rs3AozAaL8lHu7BVmN8WiZJ/Qu6Nm0ihjH80aD6d+O72/WP+FZK9c1e+OfKJ+GbGuDDmE/\
+VrZuK/iqnBJWsBR/TkZ0Xzs1b6vP3Vqd5ASiqKlG0wdQPPmS+Agc2UVyS6ajKb+kCmpMA/\
+SerkpgclCXhtel/PT72dy3kufrDH9QG3aPeunULc+mETp62fvHO2+9sMOOqub4GYKX/\
+KrG3a4B0aU7vQrb/j7A7LBk+WJ55aeEm2F0efCnodavUdC1gX3r1tMV/rBMMDXjaUZ9+XtetKf+\
+4wLac7H6g2lwyrQm8oaLytiendr1q2afL88mlctoc68vKrDIPoAz96W50++\
+3VwT8nVeK0DxCZDqgle68K182U18UWilKjytmG7+BOM25IrMo3lAoXvoDDhWVbVZZDTZxjkT+\
+DCT4vLOj8u/xKA0B2VVoh8vbIp0q226hFcgWKv+BosdR8EAoW0vnOIz2+SrOC20j9KXoVh9+\
+uY2yCoAAdLuTRqV3CyQ+m4dq6YEyCdXJG4KGD9GjXk4qqq2sFiBNSZSDeSDhqy9NSjJkCpO+\
+8QPIRJDSTWXorhQ2TMtG7xx+5TD1AdAbmLvN3CZUP8bzvDGJcio21tACLKe38YzZeR2OD4+\
+9Q5cd1WXGjMKTmWd6sockrVolt3/\
+Q1cThkHSc0DZcjBu7SGcud06rAzGiAGMrnN9xmcVG1x6qzMqHef98P5et6nth7JOBDhofICoiq+\
+3LLaEgv5v6FHGzTRyuBv1Ecyai7in9wgXq5Tptq+XOXD5k0ZDQiGOs4deCyoMMq7/HwSKo/\
+NL8bwyeAS/lRyddC1ouLB9TM1CVjzdrmIfIXybwC/\
+3ziQ2uvS698W71DSALdJRvmMhm16BcZh5IqJYvHjS5wf1pLJTjCvpRHit6SS6DDQkAeps9dtrLyiEl\
+1p66Vq4iyUUnSkFSJc1Ru6qQuI1GZ3lJdZDscfXD/vm+\
+icFK5J5lZNYp1V6A5UZ4aV5cLHtM7SCouniq+/CP+zPWt8h7G2CgVXhEUepNeh2570AFmB84pIb8+\
+6wAYRlD+TSex3XRC4t3xJzYsMfrRj67rVWXxuP5IdtyFO4Zgbx9Oelz3i2svMY1jzpAJCf/\
+lDNI73Ecl/WrIaOokMcuKergJZ6wZdx7wQRmX3idu42BRKa03njBu1WKuvVCKbEu+\
+Qo1Emw7dSSreh7r7EqHY8KdNnf/um5wJktYbUl+4piVbkw6ZZuP7r0SRsa3Ye/\
+41aYQeshiyWm82JSFygGAo7ZTbK64d8VfPSdT/6Sf95RWo4ZLPMdVGk8ANai7QVNKlsz//\
+kymcOJoUwvNneW5pW2vdd30tVTJEpALVSFM1A3FpThEbB6TrrL+3s3zGKoDE0ULH6da1lnEPpyic/\
+OZBuDOwjqsIONiqmL3a9XUZORpphqdWi7ua+cqar8M8JzbXj/\
+bjwnVoWHeHbrVJi1uffdOCXJ267ECQL/Kl4fy7oQgrZHmx+IoEfNdOQANff1eNIqLlzFnaP3TjYpf/\
+bqVl1v82hj+N4oRsuCgMi2tJYZyg6/NyTCHdqf1URiTNCbxWx19fzRuqra1rjta+\
+uSWgmEsOYx274GL3qkJRVVYIisHozWcnnXVaZuPCrrk8wiLT9C5ouAO4PQrtuViVOOkqRI58p1QA2r\
+F4Gteu1Ti6pJhDlU7Zqr/gUl9KftihVmNz/btAvrUOSr4Ba32bj/\
+C7ISfHLASH4zyeTKQxLRhUa7BUevVN06yxrmLqrxk3lEjKWmfZqak3ytXuaNpgI3I+\
+GYeeDkHgvqQlP8vmc6K+\
+JBV0ITBtMpj5aJfJyNaI9Ubga8dfMGfcz01UgXFFVt2plggvUXNRlZtrV8NdRD/g8qO0ga+q/\
+zBH7jqi9vpLbFMWi0enEFQ5J+Ugi6HblAf8ZzgeiQsvSC64ynE4i4M+cLE+SJHo+\
+dgJbJmmtYbYoO1JnBclfMQB+WlIsr375GCzGTMq9Qrsc/5gtXqJmZ8chGN5707oSpjcOXAzcp/\
+echQCygzMd31wVCyQT+Sm+hp7dRfpTTNKXNJPE7odnDl5/MLIJbRYPtBW3TfG9/uT6kEV+\
+TrwXJMvnmAA8KBvS0aWSfsRaYYLTXJb1l808DeUbHVoTflp7cp/\
+ZbSODK6oKSlxSE4uDAubmQH5jOPA5aD/\
+wl6HU5nvcuGHOnApjHVETcZI0uXskDoYNzsOxdXRvTTpVY6lznZHJf8wo61umDqO8x0MqqX4Xraqi5\
+Egpjsgu+Cm2KTZ10uf0i0Xw2bKSF10x7sz1xsLb+xPA1yiEVXuf98QJ8I9JUmFpMWctMr/\
+UgKN5R9tsu56XAs55GSmlf+3+t3t3i97t+WUW7Y24GkGbhYpDJVw3nff+blobER1q/ekoFU/\
+zm77UReb/raJrzmq2pfqA3XRKIrVD5/b4VM+58tNUebUW+\
+Km3qzNKO8aJMmk7qz5TlX58N2cn1SIg3328+AG30+\
+Y8H26pfgN5wtTObl9cefuz3q9nh6OTnxeVHNcQdVdRUErrtexNtH9toK1lmvO7iceLokDjYXYtXvVO\
+MEsJxULXd0/+PaOEjOhYe23726e/C+wTeX4Gn6zuXLNEk8qkfDhyMnbd0+\
+CPT1Yy4rwk0TiPvlCYZMxAgV43Ul9Xbcf154bUbQ2McfWGjpp8rPtrk/\
+yUTF8Hf90Fzc3cplbImc73EEd82+llQUnO+kNXx9Y6Y8nr7R5Ga8mTV6J7noZ+\
+gveUnqGg69z0KUJg3JG7dWtPUo8+\
+a9rQV9YlTEOXaIjjqzVKmlOJa46iMOYsAI4x3VUU53VdR2OD8Qv2VDdh3bV4BJ8uOTSPSrmagXhriV\
+iMJMDEbXWWfHnzRJtdbG7QZvEaC5KeS1dJz4OtrFdviOeamlb5mKn8+\
+3NrXPayRc91iWqUT1RjdanmtNy5iH2mfwmR687eHV//yD8DungGv9YF/3u4f8AArSw3Q=="|>,
+ GeneratedCell->True,
+ CellAutoOverwrite->
+  True,ExpressionUUID->"7f7c58e4-dc4c-49f8-bd99-73c13e30a844"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Contract example - medical records", "Section",
+ CellChangeTimes->{{3.925269215428557*^9, 
+  3.9252692433077097`*^9}},ExpressionUUID->"125a423a-a46e-40d7-bfe1-\
+8a4b6ba483b8"],
+
+Cell[TextData[{
+ "Creating a smart contract to handle patient medical records involves \
+ensuring data privacy, security, and compliance with regulations. Here is a \
+more realistic example of a smart contract that could manage patient records \
+on the Ethereum blockchain. This contract will allow authorized doctors to \
+add and view patient records while ensuring that only the patient and their \
+authorized doctors can access the data.\n\nNote that this example is \
+simplified for educational purposes. In a real-world scenario, you would need \
+to consider more complex requirements, such as data encryption, compliance \
+with regulations (e.g., HIPAA), and robust access control mechanisms. \n",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell["pragma solidity ^0.8.0;\n\ncontract MedicalRecords {\n    struct \
+Record {\n        string dataHash;  // Hash of the medical record stored \
+off-chain\n        uint256 timestamp;\n    }\n\n    struct Patient {\n        \
+address patientAddress;\n        address[] authorizedDoctors;\n        \
+Record[] records;\n    }\n\n    mapping(address => Patient) private patients;\
+\n    mapping(address => bool) private doctors;\n\n    // Events\n    event \
+DoctorAuthorized(address indexed patient, address indexed doctor);\n    event \
+DoctorRevoked(address indexed patient, address indexed doctor);\n    event \
+RecordAdded(address indexed patient, string dataHash);\n\n    // Modifier to \
+check if the caller is a doctor\n    modifier onlyDoctor() {\n        \
+require(doctors[msg.sender], \"Caller is not a doctor\");\n        _;\n    }\n\
+\n    // Modifier to check if the caller is the patient\n    modifier \
+onlyPatient(address _patient) {\n        require(msg.sender == _patient, \
+\"Caller is not the patient\");\n        _;\n    }\n\n    // Modifier to \
+check if the caller is an authorized doctor\n    modifier \
+onlyAuthorizedDoctor(address _patient) {\n        bool isAuthorized = false;\n\
+        for (uint256 i = 0; i < patients[_patient].authorizedDoctors.length; \
+i++) {\n            if (patients[_patient].authorizedDoctors[i] == \
+msg.sender) {\n                isAuthorized = true;\n                break;\n \
+           }\n        }\n        require(isAuthorized, \"Caller is not an \
+authorized doctor\");\n        _;\n    }\n\n    // Function to register a \
+doctor\n    function registerDoctor(address _doctor) public {\n        \
+doctors[_doctor] = true;\n    }\n\n    // Function to authorize a doctor\n    \
+function authorizeDoctor(address _doctor) public onlyPatient(msg.sender) {\n  \
+      patients[msg.sender].authorizedDoctors.push(_doctor);\n        emit \
+DoctorAuthorized(msg.sender, _doctor);\n    }\n\n    // Function to revoke a \
+doctor's authorization\n    function revokeDoctor(address _doctor) public \
+onlyPatient(msg.sender) {\n        address[] storage authDoctors = \
+patients[msg.sender].authorizedDoctors;\n        for (uint256 i = 0; i < \
+authDoctors.length; i++) {\n            if (authDoctors[i] == _doctor) {\n    \
+            authDoctors[i] = authDoctors[authDoctors.length - 1];\n           \
+     authDoctors.pop();\n                emit DoctorRevoked(msg.sender, \
+_doctor);\n                break;\n            }\n        }\n    }\n\n    // \
+Function to add a medical record\n    function addRecord(address _patient, \
+string memory _dataHash) public onlyAuthorizedDoctor(_patient) {\n        \
+patients[_patient].records.push(Record({\n            dataHash: _dataHash,\n  \
+          timestamp: block.timestamp\n        }));\n        emit \
+RecordAdded(_patient, _dataHash);\n    }\n\n    // Function to get the list \
+of records for a patient\n    function getRecords(address _patient) public \
+view returns (Record[] memory) {\n        require(msg.sender == _patient || \
+isAuthorizedDoctor(_patient, msg.sender), \"Caller is not authorized\");\n    \
+    return patients[_patient].records;\n    }\n\n    // Internal function to \
+check if a doctor is authorized\n    function isAuthorizedDoctor(address \
+_patient, address _doctor) internal view returns (bool) {\n        for \
+(uint256 i = 0; i < patients[_patient].authorizedDoctors.length; i++) {\n     \
+       if (patients[_patient].authorizedDoctors[i] == _doctor) {\n            \
+    return true;\n            }\n        }\n        return false;\n    }\n}", 
+     "ChatPreformatted", Background -> GrayLevel[1], 
+     TaggingRules -> <|
+      "CellToStringType" -> "InlineCodeCell", "CodeLanguage" -> "solidity"|>]},
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"80d3e18c-3668-42c2-9ba3-d3ef8c0cc582"],
+ "\n\n",
+ StyleBox["Explanation", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n1. ",
+ StyleBox["Structs",
+  FontWeight->Bold],
+ ":\n   - ",
+ Cell[BoxData[
+  TemplateBox[{"Record", "paclet:ref/Record"},
+   "TextRefLink"]],ExpressionUUID->"7a969790-0b3e-4347-b148-adb42b9942ce"],
+ ": Stores the hash of the medical record and the timestamp.\n   - ",
+ Cell[BoxData[
+  TemplateBox[{"Patient"},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"c3feaa9b-e726-4d0e-8fe4-73712bc2711f"],
+ ": Contains the patient's address, a list of authorized doctors, and a list \
+of records.\n\n2. ",
+ StyleBox["Mappings",
+  FontWeight->Bold],
+ ":\n   - ",
+ StyleBox["patients", "TI"],
+ ": Maps patient addresses to their respective ",
+ Cell[BoxData[
+  TemplateBox[{"Patient"},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"eae322dd-835c-41f1-8c9f-6f88d349add4"],
+ " struct.\n   - ",
+ StyleBox["doctors", "TI"],
+ ": Tracks registered doctors.\n\n3. ",
+ StyleBox["Modifiers",
+  FontWeight->Bold],
+ ":\n   - ",
+ Cell[BoxData[
+  TemplateBox[{"onlyDoctor"},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"dcd92e8c-df03-4055-979a-62ce4602a695"],
+ ": Ensures the caller is a registered doctor.\n   - ",
+ Cell[BoxData[
+  TemplateBox[{"onlyPatient"},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"973ae7b3-cf27-44eb-86e0-c29f30214084"],
+ ": Ensures the caller is the patient.\n   - ",
+ Cell[BoxData[
+  TemplateBox[{"onlyAuthorizedDoctor"},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"622f2037-5193-4739-8a36-4056c109fd32"],
+ ": Ensures the caller is an authorized doctor for the patient.\n\n4. ",
+ StyleBox["Functions",
+  FontWeight->Bold],
+ ":\n   - ",
+ Cell[BoxData[
+  TemplateBox[{"registerDoctor"},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"7b5f4e7c-e375-469d-90f9-81220b86a082"],
+ ": Registers a new doctor.\n   - ",
+ Cell[BoxData[
+  TemplateBox[{"authorizeDoctor"},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"5bb70082-1265-43c1-b255-0ebcdb6ac66a"],
+ ": Authorizes a doctor to access the patient's records.\n   - ",
+ Cell[BoxData[
+  TemplateBox[{"revokeDoctor"},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"11de077a-e00f-4f70-bb81-09062678a6dc"],
+ ": Revokes a doctor's authorization.\n   - ",
+ Cell[BoxData[
+  TemplateBox[{"addRecord"},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"d7b6e155-daf4-4809-9a6f-d10262847f75"],
+ ": Adds a new medical record for a patient (only authorized doctors can add \
+records).\n   - ",
+ Cell[BoxData[
+  TemplateBox[{"getRecords"},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"78d1e373-5c06-4df3-94e9-6a02ddcfaa80"],
+ ": Retrieves the list of records for a patient (only the patient or \
+authorized doctors can access).\n\n5. ",
+ StyleBox["Events",
+  FontWeight->Bold],
+ ":\n   - ",
+ Cell[BoxData[
+  TemplateBox[{"DoctorAuthorized"},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"a6f9ec3e-e1d7-4784-8408-2b5a7c57fdb1"],
+ ": Emitted when a doctor is authorized.\n   - ",
+ Cell[BoxData[
+  TemplateBox[{"DoctorRevoked"},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"ea466ec2-c114-4f0e-ad5e-27d33639ccc5"],
+ ": Emitted when a doctor's authorization is revoked.\n   - ",
+ Cell[BoxData[
+  TemplateBox[{"RecordAdded"},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"c5873074-1b04-4949-ba46-b27474159ca8"],
+ ": Emitted when a new record is added.\n\nThis contract ensures that only \
+authorized doctors can access and modify a patient's medical records, \
+providing a foundational level of privacy and security. For a \
+production-ready system, consider implementing additional security measures \
+and compliance checks."
+}], "ChatOutput",
+ CellDingbat->Cell[
+   BoxData[
+    PaneBox[
+     TemplateBox[{}, "ChatIconPlainChat"], ContentPadding -> False, 
+     FrameMargins -> 0, ImageSize -> {35, 35}, ImageSizeAction -> 
+     "ShrinkToFit", Alignment -> {Center, Center}]], Background -> None],
+ TaggingRules-><|
+  "CellToStringData" -> 
+   "Creating a smart contract to handle patient medical records involves \
+ensuring data privacy, security, and compliance with regulations. Here is a \
+more realistic example of a smart contract that could manage patient records \
+on the Ethereum blockchain. This contract will allow authorized doctors to \
+add and view patient records while ensuring that only the patient and their \
+authorized doctors can access the data.\n\nNote that this example is \
+simplified for educational purposes. In a real-world scenario, you would need \
+to consider more complex requirements, such as data encryption, compliance \
+with regulations (e.g., HIPAA), and robust access control mechanisms.\n\n\
+```solidity\npragma solidity ^0.8.0;\n\ncontract MedicalRecords {\n    struct \
+Record {\n        string dataHash;  // Hash of the medical record stored \
+off-chain\n        uint256 timestamp;\n    }\n\n    struct Patient {\n        \
+address patientAddress;\n        address[] authorizedDoctors;\n        \
+Record[] records;\n    }\n\n    mapping(address => Patient) private patients;\
+\n    mapping(address => bool) private doctors;\n\n    // Events\n    event \
+DoctorAuthorized(address indexed patient, address indexed doctor);\n    event \
+DoctorRevoked(address indexed patient, address indexed doctor);\n    event \
+RecordAdded(address indexed patient, string dataHash);\n\n    // Modifier to \
+check if the caller is a doctor\n    modifier onlyDoctor() {\n        \
+require(doctors[msg.sender], \"Caller is not a doctor\");\n        _;\n    }\n\
+\n    // Modifier to check if the caller is the patient\n    modifier \
+onlyPatient(address _patient) {\n        require(msg.sender == _patient, \
+\"Caller is not the patient\");\n        _;\n    }\n\n    // Modifier to \
+check if the caller is an authorized doctor\n    modifier \
+onlyAuthorizedDoctor(address _patient) {\n        bool isAuthorized = false;\n\
+        for (uint256 i = 0; i < patients[_patient].authorizedDoctors.length; \
+i++) {\n            if (patients[_patient].authorizedDoctors[i] == \
+msg.sender) {\n                isAuthorized = true;\n                break;\n \
+           }\n        }\n        require(isAuthorized, \"Caller is not an \
+authorized doctor\");\n        _;\n    }\n\n    // Function to register a \
+doctor\n    function registerDoctor(address _doctor) public {\n        \
+doctors[_doctor] = true;\n    }\n\n    // Function to authorize a doctor\n    \
+function authorizeDoctor(address _doctor) public onlyPatient(msg.sender) {\n  \
+      patients[msg.sender].authorizedDoctors.push(_doctor);\n        emit \
+DoctorAuthorized(msg.sender, _doctor);\n    }\n\n    // Function to revoke a \
+doctor's authorization\n    function revokeDoctor(address _doctor) public \
+onlyPatient(msg.sender) {\n        address[] storage authDoctors = \
+patients[msg.sender].authorizedDoctors;\n        for (uint256 i = 0; i < \
+authDoctors.length; i++) {\n            if (authDoctors[i] == _doctor) {\n    \
+            authDoctors[i] = authDoctors[authDoctors.length - 1];\n           \
+     authDoctors.pop();\n                emit DoctorRevoked(msg.sender, \
+_doctor);\n                break;\n            }\n        }\n    }\n\n    // \
+Function to add a medical record\n    function addRecord(address _patient, \
+string memory _dataHash) public onlyAuthorizedDoctor(_patient) {\n        \
+patients[_patient].records.push(Record({\n            dataHash: _dataHash,\n  \
+          timestamp: block.timestamp\n        }));\n        emit \
+RecordAdded(_patient, _dataHash);\n    }\n\n    // Function to get the list \
+of records for a patient\n    function getRecords(address _patient) public \
+view returns (Record[] memory) {\n        require(msg.sender == _patient || \
+isAuthorizedDoctor(_patient, msg.sender), \"Caller is not authorized\");\n    \
+    return patients[_patient].records;\n    }\n\n    // Internal function to \
+check if a doctor is authorized\n    function isAuthorizedDoctor(address \
+_patient, address _doctor) internal view returns (bool) {\n        for \
+(uint256 i = 0; i < patients[_patient].authorizedDoctors.length; i++) {\n     \
+       if (patients[_patient].authorizedDoctors[i] == _doctor) {\n            \
+    return true;\n            }\n        }\n        return false;\n    }\n}\n\
+```\n\n### Explanation\n\n1. **Structs**:\n   - `Record`: Stores the hash of \
+the medical record and the timestamp.\n   - `Patient`: Contains the patient's \
+address, a list of authorized doctors, and a list of records.\n\n2. \
+**Mappings**:\n   - `patients`: Maps patient addresses to their respective \
+`Patient` struct.\n   - `doctors`: Tracks registered doctors.\n\n3. \
+**Modifiers**:\n   - `onlyDoctor`: Ensures the caller is a registered doctor.\
+\n   - `onlyPatient`: Ensures the caller is the patient.\n   - \
+`onlyAuthorizedDoctor`: Ensures the caller is an authorized doctor for the \
+patient.\n\n4. **Functions**:\n   - `registerDoctor`: Registers a new doctor.\
+\n   - `authorizeDoctor`: Authorizes a doctor to access the patient's \
+records.\n   - `revokeDoctor`: Revokes a doctor's authorization.\n   - \
+`addRecord`: Adds a new medical record for a patient (only authorized doctors \
+can add records).\n   - `getRecords`: Retrieves the list of records for a \
+patient (only the patient or authorized doctors can access).\n\n5. \
+**Events**:\n   - `DoctorAuthorized`: Emitted when a doctor is authorized.\n  \
+ - `DoctorRevoked`: Emitted when a doctor's authorization is revoked.\n   - \
+`RecordAdded`: Emitted when a new record is added.\n\nThis contract ensures \
+that only authorized doctors can access and modify a patient's medical \
+records, providing a foundational level of privacy and security. For a \
+production-ready system, consider implementing additional security measures \
+and compliance checks.", "ChatData" -> 
+   "OEM6eJzNXFtvHMl19kV70Xht72YdxwbioMxdQEN5OFrJu75wL8GIola0SYngULs2tLLYM10z02\
+ZP97irm+TEXiCPecuz8xPyB4K8BMhfSP5AkIcAeQ/ynO+\
+cU1Vd3TMUtTEchA8S2V1ddepcv3PqdA9ubg07A2MSU0bZWJtrx0Wl6VJV5vfzYh6V/\
+tLdyOjDIp8vSnOdbuNeMt4afmtnFpU7eVbqi/Kw0IvVEX9CI+\
+4VyZnOHualHuX5qZv0Dbr1AIvnxXJfZ9NythPj6r1lFs2T8SoRf7abRaNU01MfF3m1GOqyTLKpMS/\
+dj1JDE8qA/f2DoS7OEuzIPfr6/UL/ptLZeHmosygtl8Xf/Z5+/\
+vEvce9BlMWpLu5X2bhM8swMvro1fJVWOcwNFn+\
+YZ5jhFb5QaPf3q0fa5OmZjt0S32pP83O9NJOXzbV97HB47W4eL4fX6d+\
+dWZWdDjvDMiors5PHenjtODK4wv/y1eH1XfCrfBjNMfE39rJxWsXacqrB3W/uZTNdJCy+\
+Y208q3A9KZMoZfHoNHXX3zyILujvYVmAc8L0X//Nm2AC3RA5HuenOjO//tLrW8Pv4uqjqlxU5cpD//\
+XlreF13JbRDaK+fqCLqT4A96NpLYKXDrDVdPAVsNJKZ/jyo4XOBntbw2u00+\
+HL00W59W4ObTuo0jKZ5zHE6mT7ptOeT7FdTF7O8nj4DQhEQ+OgXftJdro1/\
+LbMODjc24EmppoE8fhof3hzVpYLs33rVrRI+jnGREl/nM9vnd2+\
+NQaLbo39aAPmkZihK3pVV96EDZBagQ+1urxMqgz+HOfEbrfvjU/\
+zdFJE8xO6SISfrIzZGr4WPjH5snnVzYrfrw3TvNwBmzs0aFiN5knTtF4X86C7IiTz/\
+ZU120OwBWZgfYXV4+2VB9eMWqP0r1ifMPmS6Dmmt8K9pycRpChCxyasrGshf304y88PkiyZJ3+\
+FCcON/Sk0TcMHZFNZ3Es7KkiprYPYGn7tGMLXBSym0MWEf/\
+4DQvo66yRmLVitXuIVIaPjPE93ojT1vqCx6Nfo9qOFiPTa1vA7liX7UTatIJ7dsyitIljg4CXscpCm\
++bmOdy/0uCr1YVTOmjbwuh1wpKNY7n51QBx8w15n9q4+9h27Cog4TuYaFmnKIkqycucDuNJDcKR1+\
+S+gHp/q0X1djuEIiNHekrPSmuq/9bE7DBrqqOBR1xwdgxgisoPNdetLNJzwq27XzauYeq/\
+Uc7MDFrxspfLyx3k+TcnHYom9OZ75I6/\
+zDRLUUKe69taN3YEHXye36gKbd4qrBF46tMXT9YPeaBByvFzowZdg0nTVSCTydnLtOF8cki1/\
+57iIxqfDcZGnKaT56Uxnh2k0rke+\
+xI9PvmrjRkDIKv2Tr5hXEOzoicF1ojLK8iwZRynrfcgUsOheYhZptORbr+GWqu+J+33tXI+\
+emfri3pjd0KtH0fnd/\
+ALu6SuGDS6NSo0LzuSHb9L6NLi1njbjImF7Gn5TrqtyphVWgT56R2e6K66HOXByCMyAlU7O3awwAPF\
+mZeh9ty5xeTTopCTOeBxREl0vD/OqQOx55W6VpOVeBlnDrWD/\
+uEsemPeErV47qlL4DjiKYskqtgftLRYFjcMkHArBpAc6XQzfsNvjwYpiKLvK31RJ4QRbO8hr96IyIq\
+V61fv9N+QexcZrRzmWfXm4NNB/Qh1iNMN//u5b6mOdwdmlao+\
+sv5Ltdzo3FSmRPtOFWmJrCrFrgRtaQSIlfIRRkRql+\
+fhU5RNci3VPmaoAfspilZTqPClJLoijagTNhBc6xRN0T1AHyyy1VqrOsZSKFosUWgb93u6cnJy4mx2\
+anC6ApMH+p4NfDoOFMmi75uVlxTiv8HywZJmr6CxPYhXNR8m0SsqlDBwLKFFw+\
+dpsq5OTg6XFKfjNacGTi6e8LHtVBVHPlL6ArGCxYIWqKF6r/ehY/\
+4K35snC3uaOnjSNCmWSaYZV3n774ld31A/U8ld33n4b8+4dHD46Oh48PP5+g9nqnNeLVIr/\
+SDJuO6p7sqnyIpxVdd/eBBtYO3qOPzCRaKG9GCKewKSRmfXV7kVEmGRb7ZVgAqCdmmv12ds//Wn/p+\
+8pogCahljAdExyAK6SeGhn/OyElv/sbQVEjgiZLr/\
+f6bylyLBa2vNLPD2LzrCJMeEamoKMxkDSCTR6HGVqpMFAHdOtGHdnBLl7akJOScXQ5Z4i9IQo2FO41\
+qcnUyFrjChe6qZaYmMReQIipYxOtQFT8LCKjPrZ8NFDbIUCBskrkgsG/\
+mQe9dUDXYDKQhQyOouSlDTQUhuJMJMC85h8nGDZ2D5ptjsd3jg5uW1yP88m4lA71iXaO+\
+QT77s7tfPalosKI634iLUJ+WHIPYPqToCBQC1wZr8z5DW3O7/\
+tXN8oERE2tjfy0a8RITZ6uCLSKBOgw22MuL5RFan85kcb9iw0GtfimgzcOsbGscgGbn1O9zcm7Na+\
+2AQ0SjwBOxaSKnxakUCjVPezjUPaJW3ysw3WoA0OOASuzWcbm7x0h1ffKKx/29h+4nYSEtW5/rTz+\
+QrnmW0+yKwRAC/nQ1NTDs0gQkovYjBfmO3sqF+cbyvu/Tl8kKnX7/45+36RHf8/\
+3iYcRZrCBsgae9YtEtWBNcPEM+uy4opoaPoFstJHj/Z3Bvv72+oDdg/k8j/\
+ivX6wcCGaL6rbH21gEEFl+n3NgDvBgDsfgcbdh/cGRx8/Pth9eDykP9xanc4gPY+\
+WFCO0wngEIPY6MAuz0ONksuR9+OkN+/CZ+B3edV/ZGWSv/uYNE/qvLzTh/QTMtJd5Dzzog4/\
+UiMCjRiiwUdvfJluw0yL+VBR0aL6+Qn52liDowr3Oif/\
+Burjk17XSNX4zc7hmlWcBWSxBlp8fZOV8niuO7iO4e7jDkQY1Wmnv5nlTEC8WM4xrQD7m05I7MRGck\
+ZmSo4xfDz6dgywNLvRYJxSm3BRzAU8O5ZA+\
+yUQGqUZfUVyj4FUSYCHZIm4Ze5dkMcEjZsY7WFFFz008V/QlRs4rUwZ67dSH5MLP7jw+\
+OoJuBWHuXq6yvFTIGPgZcM9vhugRW+\
+FNatlo4fdkOQgZuG2FfNyb4GEiDRIEu2lWbEjmFBVLxtYQ6d7B4+\
+GxIvCLPN0NZHJkfVPzvkewIlPJROZEoD8VaAKSaSvneXHaV1jeUzRBFAYW4LWhXBqwqt4F1hrnBQRX\
+8gOJMTBG3Acy41B6PlvS9DSHjvvq4e4nu0chuyK364wWdyiEZBM19BxcYHvIgSLKYkkso2mTwlg9iG\
+HUNIWFIyDGWNwAKJzzZmMR1mkGAz5n5sz0khWIBGRJiHOrDAZrpTEtVsPWOYIp3CgLjCHJaCmuyGmI\
+1y4B12B4FJO8olM1FWCfLlU04l0wkplYcAt/wFxjONgj8eB+QRGBAJHKqvlIF8+\
+iONZFIPZzJtGtU0bpqZ18AyOJSnnObLBEl07F7TYc8+\
+0mZEq7bVEgrYKE0sJMYHa3YB5oCc0Azj0vvXnjyW3FhSjA3nECOT+tR1/3iXfwwH++\
+dJdymvFMQNl4luVpPsX6lO7EcBZZCY5SZUlBu6bEGhIrtDEvYoyBSmNAZiIBwoC/\
+RW7o2UyXpOcCkRjWFvCKwOAzZHqMj3WG/\
+EFYQFBpWlCuwgCUJoRmUmmJnidwXGsmhmfaK7AlUEUVbtMMfXVMHmoukLgMNBxqAZZPqpQfPYuKJK+\
+MS8KYesro4Gxhy+NiuSjzMfIbEAEgoLppAkd+\
+NynHeSLKvMvaU8038dQci7AHRVwpeRrMCr1nriJewIxJIXrqLIebVP1+\
+X3HuQPvHoAzYi40EroK0L4pzxhIQ9nrp0FJJRgGL+HhGpcSexLI8m+aklVR5ZRRCpMbwR2m+\
+IBJUhMATUwzKkfpAMmLmWJ73WiICzZMyssIkp3qxwH9uVMgtJ2vHSdBeESqi6IfsjthD6n6jEPkWEp\
+ewEUsOzTmqt2fytJJ5c8r05sRAcnF54RZf5KSySQTLrIhPpMux8+\
+yjyCRjw3qbIXszMlLcF7yhXvRrS7j22FAJwxvBa2+9pXwB7QqD+\
+ftXdsj90bIrYpdcj3Iro9PJlgRmGunH1IADDJkbuFTy69gphcSSgkbG7p6qCw5LkFOYAm2wqFyRwFj\
+fTgoE8wJBlMTx7AFPqcZEeYQhqyBvXT8OqS0hiYUWFuaCkoJnrQEHCaPJ59o5pDkyaVp5nmdiV3EwN\
+9nX+BIu0UpOY9ZRCvx6u69u3hzmwJCw55s3t4l2WXCRLzhW+\
+ToKrRSo04pEFgUymyJxJGJtZ7ZOWglxki0yDpySgeTYH9W5AIyRM25hQIOXM3iMKksQ/\
+pHOcxXdOEcW6618MgElAFdQZUn/nQ8z7N2SyUSz6a1jR5CRU+CjEimhtwXoAjHiAByxwB0TYJaE/\
+GYvNHwYYmWiUZKyf6TKC7xOnhupDjSY2eRg6DkQMUtgcRhmXpBNCC7JTMLxkjCpw0xWcekh4/\
+QF9FJ+1bPlMI/HIi64rNl5r5YBs6rnOFFvCtRMojl2FRW+zBVW2a6w+EPH4yss/l+\
+vr3fCJPUpnceqImEgBF6SZuuSo5YXYU8gPHLEZJpBAZhOzyynMD0EgIXIKNF2t4QQxpGRtAXmH4sx3\
+jBcKoM9YJkVo3Q2sl6bWCDzJXiEodUCoVU7i3OWobq7xw82ye72I0CnmTjtO+/cfq/\
+nrUfMxq54DhVwFuaWaltmE0o0wkj33mCxMJtSUWwaMAMGuMQij6uxFvHj5lgveO+\
+Rd41cwgp2zM6RIqpLjiQ/\
+dyXMKJOQlDEJCBMBWllUI9AGGBuzzd8h1ri43717vLPpPJKEFqJauEAnewR8syZ6gCm6x4OdjNaoFH\
+uhMUUtQn9JKeEQNNx+h4gYpNO8oOW6g/2PHzEZ/\
+lLiq9NNiQsjJqCFtAjuD3rHCUrLUThbY4bzWPCWHCEYnE/gwrYMFRlV9/\
+AwH26y3ZOnpFoq4ZfEzHkagAvxSIRI2gEF0CDVEBVLbjxL9Bm7bGRj1jX1Ak8m3svrDMuJUAHSzijT\
+CB7pUlJhmEit3jm5UhWxRqqCcBUt5hKAyNkWFxoZYugQvYLxkhQb8W10/\
+6KpYlZPjBhrytPPIH3aCavxei3mwOFlQo6D8EwrZPTWsdX5PfGT3iH0ZPZkJPjCxpSCAloMl1SYRJx\
+QSwRA7bLD57jGb8M1DjlHapjpFU7yH16rA+tIO/eeIoWh3xteoQ0IWqK+\
+xD30mG1ajgOdiKOiiHifL4pLPZaJwPZzylVZijYp9NHqFM+\
+YlXkXOieujKokbUAJ50DvNTZxP8momwT06/\
+vJZh1tyG7pkuxnTi0eMfvlrOnHIwn1MIkyr6tbIWBeRGPARNb5NS42tf7tTEACYZHEavmESSNHY2x/\
+jz8mMe68arujlNrCrvYtQjwscvg0ZOS0Ab8bxXnRgE8+\
+IEfqFuEToYhreFRd4dVTqs3QgFFeFLixkl+\
+59M55ZiQpCOvLnnXYbZ3BlJJW4VpKB6mcA3JBQDINWH9J/ttuoika5MY26ere2/\
+2FYVf6GNZ2Hi14kmFlZvavoqkcNNz61GhMTosKIU13L5wmeThsT279nBSGjJ7iQy3EHhVqirIJTeHY\
+fkz6dAi4mLBnUgdRQfXKdayvplXRZvcIvsIiejB1bCHCpOKEk4pTZZDr+\
+g4ASrzmvBD2AIEZQmsrZYDziHNsP7NhJsVUCwVEodC2rB1ZTwA1sWMSJUVGR2PtFB/b/\
+Qltd49GksnQLj3QEIsXtCE5BTZGsLlBVOKeDYKBxwCR9IXg+\
+ZQD1ML3HjEtiwhZqocGKykEhFCNnUPzlYdASdmxML2JGbsEVHSGARqz2dPlo5ZXqyRNyT/\
+Zkpoi741dptaDe0ZEJpiFaWBH9HxwRfHctEF9GA+\
+l4mJ9TZ0uUGaH8ITbXMBOqIrogCVSB7gMy4UsP4vYP6V5fmpDka0PZnCwcTKFjdR+\
+RlYLCbw8EP05BaIm5VueHVeEo395/\
+a5jTpSFC4Z2BvK5dAIG0TkwkVnqhcMHl5QYHP5kdxCim5yy6TRf+jJ4i+\
+vWHv3ijfyaIT2tvjVabtH/alpRgMOsVC/jsiEBAOstEHHeeovYQyNvk/\
+NytPIad7kW0unclfo3EAGXUDKmsZ3Q1bUSWowduZrmedxiQGu3dRpEi87gfPzGGCDZMpwNJmYlx6hT\
+Kk40dFRktq7qhhBLCsBELEVuK8wcuV61BoJ2DwmtEqlDRquS7fg17/TfAYyQHg7j6m89v4FmHVOwL/\
+kJHfclCxBl3HGuQaKGZzyXu1ewDS0wk9OsJXNG1qOaPV/iAo6tYYL/weYbVtrv/\
+HAVYQzWwKQ2NyVjQlDOXDYeMVBtJ+JQebIcpAbUOsG/\
+eL4QnezvSI19lu3ZWqtFP1TLO3TsWqrHCzo7KAB56hrkbnaWYD36nQ8CbtDBCHlWZ4d1M0KajAp2sZ\
+xWkPaHWeUaEPYQeVv/1/JwtphzLJGaztK1aIRDKDZ3N/\
+t0JNTdfB9wgfQKbqUP3e7yoSCufs7dOMHefkwQjoxdsn7qGFYPxZ5rq/PewKLzORlO2/\
+x7dpy4DJKMTFnSlC4r5UB/lC/gGIAYjpLsVI8AjeCAfw73m7mtQzMnyZS2elxUk0nKgfQx5/\
+hMwMlJKde3xjwSPDg5ARjk7o9Gn1JjdWPbw60VyMZ5auNXqt3fWt9nOYDIAZttzN5XxNshnFzasdSp\
+eTLlaLi15UgoZO9tMfwkFAMtcEAs9oJ4RHgA5Pz7X/+\
+ey6TYc8ytGmSp3PnDTTjKZnRyxga8Zj11SKYc3BCYWCeuS6XbB0UQnZxzUIPIWaLPbRGLpmFr4KAj5\
+2PcnmSjUtywpp9u8+\
+boiJaHPl5MqbjY6QwmdFhfT9dD9oDAnRcBiRSqEdW5o4R40sz475Kn0wTGuDhZyczr5ChUOldB7jXT\
+5CEB1Pv13hdyVB4msVIRdtpgV6CiKDD/\
+dCYexlYNweSCD2kAdbLMYTRbSpcjkWXQDiGlWBu3nYwkQ5O8kqXVxrAtQHCZO1MPMJDQLLnJ71+\
+OVL63ilTkRItXuAKq/\
+NO3nZ7eOHN6oePnmdGqDxFoeuF0qVwuqHs1XTpdqsmx7r41se2aqyVb86fHduCec2GAb1i4kbHuh80\
+DpHQBrkFuwGfTlDFwgwOi0Lk7yGebypn6NqrZs0TrOujctxRyrwxD01rLKfvZmiBWZHG6ZGXwcaUGp\
+cEm2Q24DQUnM14ETSZZRFOZKuRsfV4hXpLiXeTJxC/RXJOMnL+k9e0l69Z1RGXxQTYlcM1O/\
+ZOKwxPlcazIvEVuVGBqkXlq64uhQ5kWxfhUj35YLyJhcylLnFDv7w/F22P6kxM+mzNygT3/\
+C8R2AcVMyjo1gV3WOJYqa8kk0XGYBxGU4OPxZDqr7UM/Rx2ZNfVqkp8Fm9nm2EHR/GfDjpxLOHb+\
+lvhF7wBp7qrYnUyITZ/LJm4UNOjG++4ZYp29Q3PjRseBL8JY3U31WwsMSvUkGo/zitwswuJAfn+\
+qPvTLdW/c8DACo92WeLhDjo3xWZWm4RP0bpKOPyHkwQ8N678bz70TPsStn/Uze/\
+7PlUf8M46ywd09jHmibt1U9KtU1GpZE3Zk2/XCuXlLPX1/dZo4pjZhTHXjl48eHz3befTw+Giwc/\
+xscO/e0e5weIOX9qLogqkffsR8VYgjy2zs8S4yySiu0wPq8rYSoB9ZlcSEpSjDJOF16Z8+\
+n8XYPq1C/e53aoNeVtq+dQtzRSlVabd//N67720w4+\
+q5rECJ9Og8SmTyPkykPyUJM0K8Cth4eyFPCK/cX8GcOuNIt3v8wJ6M+PDPQd/\
+iewvWnPvgck8OU2nZXQA5sJiKLO/zyToaGzDiPQLl9liN3PcAGUDpPFgjvZFbnOTsuFO+\
+qfVx6zgR0XCp/vCxzESaxuvcnz0N4S9q3WMckVzUR/\
+rqrEqpeccdgLmUyxF7l8DYIYceIA6i6r60CY7oxsLdkAIzPbTiVMImCCof2jem6PDu1DSY9COLtXTm\
+0ZIIxlhOHViEdVhjKud6JXOh+e0YPvxsYa+K+7rWi4sHcAAVDlig10w7D4GNBNV5/\
+jlQRWuvg26uL8Z6X4EFgrS5hEQ9NmXOJlXDvWTCPfd0UEknvq5qSkkrxVXCqKK3FJyG1YLcKdNnuyW\
+NXGJSuTgZpp1xPq5IGgLDGP9W8H5zXTiV6bdyrh1fleIGHHeYYaVyV1BfPYp1V8I+\
+UZ7p1NSUhIGvRx2Airv3pA2Iy4J2DxNslHJi1dX9ab9H7VrU+9RD1pdSCJsjI9MxlH/\
+TSmw3m5J477liGkuM3trbMvzKjIjHHohztlfaChG3zPginD2Fssc8tt9tTmTpGmUJ/6U87MDyo4pe+\
+xvPrCTmeRnCpHJWsCvi9v5UcQ2TqyJTu3GwqJIjMEfYnPJZ5toLwW9T8TsQAPHASQxhXJYrC8x9IvP\
+HheXfgeoc10WdOom4ApH/9/\
+cGbaOk426u96qNZmvPBhzQOKJzOaqRuhcQGSHqDJx0NU97Dm2C3h972FOjHoLSyMRiPeE6Om7IiY0Y\
+3FyXvfVdcO1aNBu6o4WOHYw9b+UTdJG+\
+vEHkm47WoTB4f2zV2eCuY57UkJrBotPhphLuAHUZ1xWRMjwDSagt1Z4lcMPe6tEld57MKzmuk07Eyy\
+qn3Beb+YMCwp1ScqNXrtpkObnY3OMtBVdyzwfn/8W+GgUDwyhZmj2iRqeke26lZ8G9bOYKdwy+\
+RstSs8RaOmNlHc7LPp7UJ3j3LJZzHF6r5/rBi4Z2R8Z2p0TuWNqjikvq1o5h8Hl7dVZY5xC1bnB+\
+67Kq3jpVM0lp1rSgsdgiuufV3NZn+xRsCzEtcZt10Bq7M0SfSpB+\
+LVkY7LPCOi9FAapryGZdm1y4lLwrFWTU9oWMYh72FnBTuXFtPcLxhqQcu+\
+Cvj4tkOpUzW29Vnc6wVWpxnSust7ZC4nr3G4okaexZfqrDQ+Sg8dl4S5FybuKPwKT05VJY+\
+dYBPcG9JZJyUpdt1mQxc9K0ycjXCPaG52zPvbXBBTfuvPOsK/P6RQWJuhLJlnV5KXjfwkbZAy43SC/\
+OqgmMCiQRY+pxusQ+ZbFkfApRVQtSD7IaalE+\
+4P99OTQpnSi5wCKnBywOesDGXy9GoudTK7A2TWuNsUHbJ0lRVvATB+SuIcnu7icHm83QUSuYZ5/\
+1CavVCsz8yYE/\
+xXAuhVpLpfHLzshn2O1gBOTnmW9bhCgRNcHLIWss1r6dopux4pLjR384ZA2K4TxlW9Qt7hqzsBSDJu\
+Pqg9KlGbzyUluYPevnZFftCFYlgdg3Lfy6cwCHSeIZ4lVVOGFhHrNIGiSpkYTiTk8kOtFFIWV9+\
+mLHZs+CoBAcS3t87QVCDlkq+\
+cMkxvWSeeZwz9o8Kf0pfd1TTAjN1q4vuLcjbban0KPUFajZohjoipi977E9HvCdrlJngXoceOt9Tbz\
+wnZ2SS0ivFKmAe1eIBksBxthO3Q6ysOk8Uu5v9at3+j/pv4PE3+9uyPMM7TSS01dwtnfe+\
+5HoV0zpPpcKVC0vo8uuG3Wx6Rr0XEVABU8ih7+Q7P7z1hxIXbv+\
+Ua7CF7qsCjo4s1NvBjPKvQZJMqmcBN2uz0EIJZAQf1lDBHawV+EDbrSb0ito7YALTxkt1cnJOxe37/\
+wQ5hCNxicnLrUI/IxXd5uUR4orPqxR1BNcsuZySci+\
+5nSJ224txb7Y6Qekq0s6JHJ8tKU57457SsyFB3bfvbMJWr84KKm9VcPZtVcPrBK3vHCkinly8u4dYp\
+Rly8dr2eJf0RXPxw3ZTSZJHJfVp43V7b7sq9wxhVqdcGAMwEWTu1379jef60wjwy+\
+zcyMH16Qk7HV9I/\
+qEvx5Q0RtS2mQ3XMK90vhFfmrzUp5NWzwTZXYSde95yDud8M9NTvqUu5rDay87nT3K5/\
+j3tcjNr80whZqRiS9rNU3acYi7FqUwsKsxynEITOry+\
+pbF434DLcsKfeuWGl4C8lqu3oFbLgIQdGoRg5ksDgiahcTPhzP3VP2OR4M2CbNc63Eau06IHC8T035\
+dJIukUYtriNbnN7fOCST3Ma5LOeMw5YzXJ42zau5w8pm8q/\
+acVpyfUW2VvpsQSS2g0BFFGumGsSQRkTGu25MUeiWFvv3EBYYxR3J+ZeyK3Ptvf+\
+Bfr1mXas3422B28rI9d93Q47vOuK61oE+gjFf6i7nDN+\
+GqHJNcaDqDCRCztFW3dhwcaaxSKCkcvd1n2xMdpY7C55U1jhuBg18Xlb4++\
+3IblUjiXNpBqToTi5w5mrXXkY9HeDYwYfyqDtcj7eDgaw+rK3DnnP2YBZ2KgZFQV/\
+p6mFPIxHhmkA7Xpz6kX9Q150DcoioWuaHSxB65fOLlFoJgSp+\
+W0Bm16YbvWvoTOwdBWACuHTt8uaTuYWQxQ92oE5Od3nNk6xDeg73DwWBTVKHIR5WcBdB+\
+WQZ5GhxgY+dfDOkciGYeWXEItJCmIyUXGwDG6+qDyMzeV+rWLUW/+\
+Ybghp67wJVPJlusOn4ih5Lo7XJY1nzRAEN2+UMr/\
+Xp95w2tXtiznPfb9588DfTknqhJPUh2hTFWBRtLz4FUscWuW+nDjxwZm2KdpddK++\
+CaJ0Z5ntbDY0cADwfDBFHzXwyelZA48CT7uegtywt6WUVW7Kn2DZnbHhSFkx1pChZ/\
+2EzCKDD5efO0VGKz3uaBZC8Fm8hMIxtNbO4GZ0FnxHzkzssKI914Mn/ZRbeJddmgupafT+\
+Zm2qf4rYunPbWx4yelN7fdxPUZmlLPGoJ+MQIDJ7RKo1UMz5tnC6cpq0TXxKoPP/QjV+gO1vtDSZd+\
+4qazXN3DoGUnz90M6TWmrp9BGjOhrzXWlJJH9TlQgvvvvI//PvA288TN+7S/YqL9lD9fhwd+\
+8INwWfrB9rovMseT5CkxuGZ3eyKerLkFeJtgB36z9HGL5uXPO6u/OQGHc66q4xpZPFe+\
+94OSEyICJctF01p8ouNut+VnDXo1C3X2Y0c8bXBgPQme+Eto8PevICK0mvUi8jIOrHuNpiwqM+s+a/\
+gs+uGCxIo3rafqqeYzlzGcgbbb6g3j98dxuc1+GvwH77uOXK52QWva7UJCL8aXq+\
+0wmPUqcwuGWqvy21o1qfbgxoXVRZH53n66anPhwEW+\
+6G6uDglE7GLc5fINf17Ani9RfoKvLWTTUv84lli54j19fJxrgMMlyHNxMlSNFSe8zvmu8X4WwIg1WA\
+qaonHLbdcr9xoDPADbtgUOf6HmzWbbwkJgUO/\
+0WYABLucmf7aO3rizrwW7PMB95qWOtWFJzMLTNdFpbaXMQzxh+4sHZOrGCT15Sx69MLCsenn/\
+WOjbbYnucvG1ubWX2aJp49zBBXnnlVRiggWbDFuzg1XFXPFViVu3yUsBs7+90rP8H0f45/giy/\
+HVsL4+fvPgAMZ8HrTRq936jNZ1H3FyYnxh80SU7WRbDeuDh9nlOZF798Ubmq0EntgAccJ9TPXZquVE\
+eEJVv1S/mg5Lmhi17cu9IH4g2UpAvuP5CTUTLUydc8tq2lWlmh928NTaZM1twlKByfi7t8bDk5pCkC\
+K9IBaHBrTUyP/EvQ1hVlKGlRn7wdM1E9c/HnA0fKxtL5cvvwbJBR9jsxN33qUN+k/\
+W1htsgjWscmQvyJeIzls7auEqjPeE1skTx6i6/\
+lHrixe9W7tGKryynMReBnM8DS640epx7AhtaXXDfasuV3Auq9UgnlrSNt0itYtnyqT2ba4OFHalsFa\
+UX1Ekwpqd9/rhwZaloY0bSQfm1HfiWzLWed5+42kLSS57tM1jxZ+o40f6DW/CsXV1lowdMzM8YX/\
+AL180y3GNYuxz5SA6I9+FiLnZMVCeVsWyFx54QwZVFruiWUp9YPxBCqlett7auC/\
+y4u9J0BNbwGHx0n7AoFcXz/jEjb9GRkvE/h1w/3WVuY6M/2JNUDbj0Gj6W8PX9vcP/\
+Efbh9f5y6b0kej/AWGwd3M="|>,
+ GeneratedCell->True,
+ CellAutoOverwrite->
+  True,ExpressionUUID->"31874010-b00a-4421-bfc7-32ba809c5bbb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Web API Comparison", "Section",
+ CellChangeTimes->{{3.925269720316964*^9, 
+  3.925269725107727*^9}},ExpressionUUID->"daf9fb61-4bbd-4491-831c-\
+36066e0f3d37"],
+
+Cell[TextData[{
+ "Yes, it's quite accurate to compare the smart contract to a web API that \
+interacts with decentralized storage instead of a traditional SQL database. \
+Here's how the analogy works:\n\n1. ",
+ StyleBox["Smart Contract as an API",
+  FontWeight->Bold],
+ ":\n   - In a traditional web application, an API provides endpoints that \
+clients can call to perform various actions, such as creating, reading, \
+updating, or deleting records.\n   - Similarly, a smart contract provides \
+functions that users (or other contracts) can call to interact with data \
+stored on the blockchain.\n\n2. ",
+ StyleBox["Decentralized Storage",
+  FontWeight->Bold],
+ ":\n   - In a traditional web application, data is stored in centralized \
+databases like SQL, where a central authority controls the data and access to \
+it.\n   - In the context of a smart contract, data is stored on the Ethereum \
+blockchain, which is decentralized and immutable. This means that no single \
+entity controls the data, and it is replicated across many nodes in the \
+network. \n\nHere's a comparison of key aspects: \n",
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ Cell[BoxData[
+  PaneBox[
+   StyleBox[
+    TagBox[
+     TagBox[GridBox[{
+        {
+         TagBox["\<\"Aspect\"\>",
+          HoldForm], 
+         TagBox["\<\"Traditional Web API\"\>",
+          HoldForm], 
+         TagBox["\<\"Smart Contract on Ethereum\"\>",
+          HoldForm]},
+        {
+         StyleBox[
+          RowBox[{"Data", " ", "Storage"}],
+          
+          FontWeight->
+           Bold], "\<\"Centralized databases (SQL)\"\>", "\<\"Decentralized \
+blockchain storage\"\>"},
+        {
+         StyleBox["Control",
+          
+          FontWeight->
+           Bold], "\<\"Centralized authority\"\>", "\<\"Decentralized, \
+trustless network\"\>"},
+        {
+         StyleBox[
+          RowBox[{"Data", " ", "Integrity"}],
+          
+          FontWeight->
+           Bold], "\<\"Managed by central authority\"\>", "\<\"Ensured by \
+blockchain consensus\"\>"},
+        {
+         StyleBox["Security",
+          
+          FontWeight->
+           Bold], "\<\"Secured by central authority\"\>", "\<\"Secured by \
+cryptographic methods\"\>"},
+        {
+         StyleBox["Availability",
+          
+          FontWeight->
+           Bold], "\<\"Depends on central server\"\>", "\<\"High availability \
+due to decentralization\"\>"},
+        {
+         StyleBox["Cost",
+          
+          FontWeight->
+           Bold], "\<\"Ongoing server and maintenance costs\"\>", \
+"\<\"Transaction fees (gas) for execution\"\>"},
+        {
+         StyleBox["Transparency",
+          
+          FontWeight->
+           Bold], "\<\"Limited, depends on the authority\"\>", "\<\"Fully \
+transparent and auditable\"\>"},
+        {
+         StyleBox["Mutability",
+          
+          FontWeight->
+           Bold], "\<\"Data can be updated or deleted\"\>", "\<\"Data is \
+immutable once written\"\>"}
+       },
+       GridBoxAlignment->{
+        "Columns" -> {Center, Center, {Center}}, "Rows" -> {{Baseline}}},
+       GridBoxDividers->{
+        "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[2.0999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      {None, OutputFormsDump`HeadedColumns}],
+     Function[BoxForm`e$, 
+      TableForm[
+      BoxForm`e$, 
+       TableHeadings -> {
+        None, {"Aspect", "Traditional Web API", 
+          "Smart Contract on Ethereum"}}]]], "Text",
+    StripOnInput->False,
+    ShowStringCharacters->False],
+   ImageMargins->{{0, 0}, {5, 5}}]], "TextTableForm",ExpressionUUID->
+  "78db2e41-c69d-40a2-af94-ef0a3e67a12b"],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n",
+ StyleBox["Example: Medical Records API vs Smart Contract", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n\n",
+ StyleBox["Traditional Web API with SQL:", "Subsubsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n- ",
+ StyleBox["API Endpoints",
+  FontWeight->Bold],
+ ":\n  - ",
+ Cell[BoxData[
+  TemplateBox[{
+    RowBox[{
+      RowBox[{
+        RowBox[{"POST", "/", "patients"}], "/", 
+        RowBox[{"{", "id", "}"}]}], "/", "records"}]},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"d97e4215-d079-42ff-b70c-0772240db729"],
+ ": Add a new record for a patient.\n  - ",
+ Cell[BoxData[
+  TemplateBox[{
+    RowBox[{
+      RowBox[{
+        RowBox[{"GET", "/", "patients"}], "/", 
+        RowBox[{"{", "id", "}"}]}], "/", "records"}]},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"cf7bdf98-9b8b-4840-a6a9-89aa042eeffa"],
+ ": Retrieve all records for a patient.\n  - ",
+ Cell[BoxData[
+  TemplateBox[{
+    RowBox[{
+      RowBox[{
+        RowBox[{"PUT", "/", "patients"}], "/", 
+        RowBox[{"{", "id", "}"}]}], "/", "authorize"}]},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"f8862231-90f6-4514-8cf9-a13a213e3943"],
+ ": Authorize a doctor to access patient's records.\n  - ",
+ Cell[BoxData[
+  TemplateBox[{
+    RowBox[{
+      RowBox[{
+        RowBox[{"DELETE", "/", "patients"}], "/", 
+        RowBox[{"{", "id", "}"}]}], "/", "revoke"}]},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"492157c8-3754-48d5-a309-0b85b7e2a1d1"],
+ ": Revoke a doctor's access.\n- ",
+ StyleBox["Database",
+  FontWeight->Bold],
+ ":\n  - ",
+ StyleBox["patients", "TI"],
+ " table with patient details.\n  - ",
+ StyleBox["records", "TI"],
+ " table with medical records linked to patients.\n  - ",
+ StyleBox["authorizations", "TI"],
+ " table with patient-doctor relationships.\n\n",
+ StyleBox["Smart Contract on Ethereum:", "Subsubsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n- ",
+ StyleBox["Contract Functions",
+  FontWeight->Bold],
+ ":\n  - ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell["addRecord(address patient, string dataHash)", Background -> None]},
+   "ChatCodeInlineTemplate"]], "ChatCodeActive",
+  Background->None,ExpressionUUID->"4ef8f2c6-abe5-462b-a842-9b2b97926fed"],
+ ": Add a new record for a patient.\n  - ",
+ Cell[BoxData[
+  TemplateBox[{
+    RowBox[{"getRecords", 
+      RowBox[{"(", 
+        RowBox[{"address", "patient"}], ")"}]}]},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"fe13076d-a8af-480d-a53e-8a2fb921330c"],
+ ": Retrieve all records for a patient.\n  - ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell["authorizeDoctor(address patient, address doctor)", Background -> 
+     None]},
+   "ChatCodeInlineTemplate"]], "ChatCodeActive",
+  Background->None,ExpressionUUID->"42e0dc2d-7846-436b-bf87-f916d872ddc9"],
+ ": Authorize a doctor to access patient's records.\n  - ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell["revokeDoctor(address patient, address doctor)", Background -> None]},
+   "ChatCodeInlineTemplate"]], "ChatCodeActive",
+  Background->None,ExpressionUUID->"e195b888-a09e-4525-b098-c8996f0d0e87"],
+ ": Revoke a doctor's access.\n- ",
+ StyleBox["Blockchain Storage",
+  FontWeight->Bold],
+ ":\n  - Data stored on the Ethereum blockchain, with mappings and structs to \
+manage patient details, records, and authorizations.\n\n",
+ StyleBox["Key Differences", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n- ",
+ StyleBox["Central Authority vs Decentralization",
+  FontWeight->Bold],
+ ":\n  - The traditional API is controlled by a central authority (e.g., a \
+server managed by a healthcare provider).\n  - The smart contract operates on \
+a decentralized network, with no single point of control.\n\n- ",
+ StyleBox["Data Integrity and Security",
+  FontWeight->Bold],
+ ":\n  - Data integrity in a traditional API is managed by the central \
+authority, which can be a vulnerability.\n  - Data integrity in a smart \
+contract is ensured by the blockchain's consensus mechanism, making it \
+tamper-proof.\n\n- ",
+ StyleBox["Cost and Maintenance",
+  FontWeight->Bold],
+ ":\n  - A traditional API requires ongoing server maintenance and \
+operational costs.\n  - A smart contract incurs transaction fees (gas) for \
+execution but does not require server maintenance.\n\n- ",
+ StyleBox["Transparency and Trust",
+  FontWeight->Bold],
+ ":\n  - Trust in a traditional API depends on the central authority's \
+reputation and security measures.\n  - Trust in a smart contract is derived \
+from the blockchain's transparency and cryptographic security.\n\nIn summary, \
+while the smart contract functions similarly to a web API in terms of \
+providing endpoints for interacting with data, it leverages the decentralized \
+and secure nature of blockchain technology, providing unique advantages in \
+terms of trust, transparency, and data integrity."
+}], "ChatOutput",
+ CellDingbat->Cell[
+   BoxData[
+    PaneBox[
+     TemplateBox[{}, "ChatIconPlainChat"], ContentPadding -> False, 
+     FrameMargins -> 0, ImageSize -> {35, 35}, ImageSizeAction -> 
+     "ShrinkToFit", Alignment -> {Center, Center}]], Background -> None],
+ TaggingRules-><|
+  "CellToStringData" -> 
+   "Yes, it's quite accurate to compare the smart contract to a web API that \
+interacts with decentralized storage instead of a traditional SQL database. \
+Here's how the analogy works:\n\n1. **Smart Contract as an API**:\n   - In a \
+traditional web application, an API provides endpoints that clients can call \
+to perform various actions, such as creating, reading, updating, or deleting \
+records.\n   - Similarly, a smart contract provides functions that users (or \
+other contracts) can call to interact with data stored on the blockchain.\n\n\
+2. **Decentralized Storage**:\n   - In a traditional web application, data is \
+stored in centralized databases like SQL, where a central authority controls \
+the data and access to it.\n   - In the context of a smart contract, data is \
+stored on the Ethereum blockchain, which is decentralized and immutable. This \
+means that no single entity controls the data, and it is replicated across \
+many nodes in the network. \n\nHere's a comparison of key aspects:\n\n| \
+Aspect               | Traditional Web API            | Smart Contract on \
+Ethereum         |\n\
+|----------------------|--------------------------------|---------------------\
+---------------|\n| **Data Storage**     | Centralized databases (SQL)    | \
+Decentralized blockchain storage  |\n| **Control**          | Centralized \
+authority          | Decentralized, trustless network  |\n| **Data \
+Integrity**   | Managed by central authority   | Ensured by blockchain \
+consensus   |\n| **Security**         | Secured by central authority   | \
+Secured by cryptographic methods  |\n| **Availability**     | Depends on \
+central server      | High availability due to decentralization |\n| **Cost** \
+            | Ongoing server and maintenance costs | Transaction fees (gas) \
+for execution |\n| **Transparency**     | Limited, depends on the authority | \
+Fully transparent and auditable  |\n| **Mutability**       | Data can be \
+updated or deleted | Data is immutable once written    |\n\n### Example: \
+Medical Records API vs Smart Contract\n\n#### Traditional Web API with SQL:\n\
+- **API Endpoints**:\n  - `POST /patients/{id}/records`: Add a new record for \
+a patient.\n  - `GET /patients/{id}/records`: Retrieve all records for a \
+patient.\n  - `PUT /patients/{id}/authorize`: Authorize a doctor to access \
+patient's records.\n  - `DELETE /patients/{id}/revoke`: Revoke a doctor's \
+access.\n- **Database**:\n  - `patients` table with patient details.\n  - \
+`records` table with medical records linked to patients.\n  - \
+`authorizations` table with patient-doctor relationships.\n\n#### Smart \
+Contract on Ethereum:\n- **Contract Functions**:\n  - `addRecord(address \
+patient, string dataHash)`: Add a new record for a patient.\n  - \
+`getRecords(address patient)`: Retrieve all records for a patient.\n  - \
+`authorizeDoctor(address patient, address doctor)`: Authorize a doctor to \
+access patient's records.\n  - `revokeDoctor(address patient, address \
+doctor)`: Revoke a doctor's access.\n- **Blockchain Storage**:\n  - Data \
+stored on the Ethereum blockchain, with mappings and structs to manage \
+patient details, records, and authorizations.\n\n### Key Differences\n\n- \
+**Central Authority vs Decentralization**:\n  - The traditional API is \
+controlled by a central authority (e.g., a server managed by a healthcare \
+provider).\n  - The smart contract operates on a decentralized network, with \
+no single point of control.\n\n- **Data Integrity and Security**:\n  - Data \
+integrity in a traditional API is managed by the central authority, which can \
+be a vulnerability.\n  - Data integrity in a smart contract is ensured by the \
+blockchain's consensus mechanism, making it tamper-proof.\n\n- **Cost and \
+Maintenance**:\n  - A traditional API requires ongoing server maintenance and \
+operational costs.\n  - A smart contract incurs transaction fees (gas) for \
+execution but does not require server maintenance.\n\n- **Transparency and \
+Trust**:\n  - Trust in a traditional API depends on the central authority's \
+reputation and security measures.\n  - Trust in a smart contract is derived \
+from the blockchain's transparency and cryptographic security.\n\nIn summary, \
+while the smart contract functions similarly to a web API in terms of \
+providing endpoints for interacting with data, it leverages the decentralized \
+and secure nature of blockchain technology, providing unique advantages in \
+terms of trust, transparency, and data integrity.", "ChatData" -> 
+   "OEM6eJzNfN2SHMd1pn7AH7QpmTRlWRthbySH3MAM1dMgQckrDSluNGYG5FgzwCx6IFoBQpzsru\
+zuEqqr2pVVM2iTjNiIvdh9Be/1hv0MDt/52g/h8IX9AvsA+51zMrOyqnsGoB1yGKEQgar8O//\
+fOXmqh+/ujnpDa1Nb6Xxi7I2zsjb0qK6Ke0W50FV4dFdbc1oWi2Vlb9JrvEsnu6Mf7M91tV/\
+klXlWnZZmuT7iD2jEQZlemPx+UZlxUTz1i75Brz7F5kW5Ojb5rJrvJ3h6sMr1Ip2sH+KPDnM9zgzN+\
+qQs6uXIVFWaz6x96Z7OLC0oA46PT0amvEhBkZ/6+r3S/EVt8snq1OQ6q1bl//kr+vO3/\
+w3vPtV5kpnyXp1PqrTI7fC7u6NXaZfTwmLz+0WOFV7hB6Xx/\
+371obFFdmESv8UPusv80qzs9GV74xgUjm7cLZLV6Cb9//68zp+OeqNKV7XdLxIzunGmLZ7w//\
+PT0c1D8Ku6rxdY+PtH+SSrE+M41eLu7x/lc1OmLL4zYwOr8DytUp2xeEyW+\
+edvnuhn9O9RVYJzwvTf/u83wQR6IXI8K56a3P72W6/vjv4Tnj6oq2VdrU36f9/\
+eHd3EaxndOtT3Tkw5Myfgvp41InjpBKRmw++AlU46o5cfLE0+PNod3SBKRy/\
+PltXuTwpo20mdVemiSCBWL9s3vfZ8BnKxeDUvktH3IRADjYN2Haf5093RD2XF4enRPjQxMySIRw+\
+PR+/Oq2pp927f1st0UGCMTgeTYnH74v3bE7Do9iSMtmAeiRm6YtZ15U3YAKkV+\
+NCoy8ukyuDPWUHs9nRvfVZk01IvzukhHfx8bczu6LV4xvTb9lW/Kv5+\
+Y5QV1T7Y3KNBo3q8SNum9bqYB70VIdm31vbsDgEJzMDmCavHO2sTN4zaoPSvOJ8w/\
+ZboOZZ3wj0wUw0pitBBhJN1I+TvjebF5Umap4v0L7FgTNgfQtMMfEA+\
+k82DtHVJSu0cxO7o984gfFPCYkpTTvnPP0NI32OdxKolq9VLvCNkdFYU2b7OsuALWpv+Hr1+\
+sBSR3tgd/cix5FjnsxriObzQWa1hgcOXQOUwy4pLkxw+M5O6Mqe6mrdt4HU34KHRibz97pA4+\
+IZ7zuxdn/YjtwsOcZYuDCzSVqVO82r/I7jSU3Ck8/g/Qz0+M+\
+N7pprAERCjgyXnlTPVfxyAOgwaGV3yqBv+HMMEInKD7U3nSwyc8Kue6vZTLH1UmYXdBwtedlJ5+\
+ZOimGXkY7HF0QJzfsf7fJ8ENTKZabx1izrw4HvkVn1gC05x/\
+YBXDu3wdPOgN1oHOVstzfBbMGl6aiUSBTu5cVYsT8mWf3RW6snT0aQssgzS/Gxu8tNMT5qRL/\
+H06Xdd3IgOsn7+6XfsKwh2NGN4k06p8yJPJzpjvY+ZAhYdpHaZ6RW/\
+eg2vVPNO3O9rl2b8hW0eHk3YDb36UF/eLZ7BPX3HssFlujJ44E1+9CbtT4M7+\
+xk7KVO2p9Hvy3NVzY3CLtDH4Ojs9prrYQ6cnwIzYKfzS78qDEC8WRV7390rXB4NOq+\
+IMwFHVHSul0dFXSL2vHK3TrPqKIes4VZAP96SB2aaQOqNh3UG3wFHUa5YxY6gveWypHFYhEMhmPSpy\
+ZajNxx5PFhRDGVX+Rd1WnrBNg7yxoGuNCnVq8HvvyHvKDbeeFhg25dHKwv9J9QhRjP6O/W2+\
+sTkcHaZOiLrr4X8Xu9dRUpkLkypViBNIXYt8cIoSKSCj7BKq3FWTJ6qYopniekrW5fAT3mi0kpdphX\
+JBXFUjaGZ8EJPMYPeCepgmWXOStUltlJ6ucygZdDvvd75+bl/2aPF6QGONDz+\
+bPjrUbRRDm03vL3smBQ15kdbVoXSF0WaKL0Yp7M6rVYycCKgRMHlG7unzs9PVg6n4G9eCx4/\
+e8LbsldVEPVcmWeQFSwWrFA1xWt1rM/MnzNp4VigbeHPk2W6VDad5djlnXee/eaO+rFa/ebOO+\
+9g3aOT0wcPz4b3z95qMVtd8n5aZfgPScaTo7bPd1RRxquq7Xd2wAbWjr7nD0xEL00Qg+\
+YFbKbtfKAOn2nCJHvqqAITAO3UwqjP3/n5zwc//6miE0DTEAv4HNMCgKsiHroVPz+n7T9/\
+RwGRI0Jmq7dABUEklUAnJ1W2osHOdJR3wjjvpF5A3TgAqfHKcY5UYFqQI6d/\
+2RUGPNtTjzM9NtmT7aWeADrt1WW6M1CwNLBeTt67+a56fEZ6EgaVZnqbn+\
+zwy7DxgwtCDeYyDIQGJOa2f+9fy6yjHJhAjfgYYUIFMy8BDm7zW3m544wDNjE1JSI+HX+\
+NaLtajOFwGuGIVFk3NFlPmytQ5KcD9SAHC5MCo9JoZl5UrOMDbDxiRQCXx+\
+RodjHGslGrqVNaDa1ZDdSQtR5UPCVfoOo8g9oquzSTdEq+HPswXsHcZNDrvb1OwKhawZQ+\
+IY6RlbFP+KUxSzE3m5IwxHKXBSwC3MeAR/AQzUlIT2ZYlDAXyMFeOiF/\
+sSS4m9TQbUw5KJhAbVmfZ1kxxsQLDa5jSSs7pNUty6NyQzhZlytMPGX+KwB6U+\
+ZXC4BMc8HB3mLSic5XWOUyvJ7rCzgMQw4oSUzCCnwM8gDUxfM9zYtLxFysCExWTKcqQfyAtysUQhJk\
+0ZYjRJsbg4W8kkyAOSlqqCVwt+\
+3TLqoQPAiPAfeOGazyctLMzEyesONa6KdOX4y2KSjFM7gXBBTAhYRkRiGt47d/\
+DbtlkvSEOEVzKFwRH1NsNtEwQAMDFEpF1ZDs9tWU4ADRpvuK8paaiMSzAc3MxCEwLaYdEOBSNMVgOk\
+qFE5PekiGBrD8bPbgfWbiWBxZsW+iB+\
+hS2o3QpoUBf6DQjgbvTanGjaUl6UUxSbJu4mXav12PCCV7sUeD/\
+YipQpufAiHtDaOSef9PAhj15CHloZ2Hk1FJCQGyFVk2RfeC0yPAGvRHvudf7sndzqwIW29rbKsa/\
+ha/b6uOJ+MEqRV62hxE3t+oyk7+F0ZZjOo3Gs6Q5Bl6dgXBssoVXX9P7rSkDim+\
+2AI2SGMwhnaQKNFGm8OVq+/OtU6KSiPx8i333FkM98tn2860d3rrHu2+\
+VDlls7T32lMSH6t180vt6jfPMtgDvNgiAtwugsC2HNnyjcCNisN+\
+Y7QyRXpxva8DqGj7I0pupv4buF6H4PzCZikIEbICsMQpdsTXDxHMHFuDK6VHLL5CVPnhwvD88Pt5TH\
+7F7ILD1MdP60dKDY36o3v94C4MoSaW/bxhwJxpw52Oc8fD+wfDhJ49ODu+\
+fjegffq9eb5hd6hWhM4MokiEIsteBWUjwWzEdYXkJs3PxO0w1YqesILSGl7ds7L++\
+0YL3UjDTPWYaeNBHH6sxpW0GIMzh5fCabMEti4BfE9yj9QYIesUFIjK51wXxP9oXj8K+\
+Tro2EMPBpMijY7EEWX5hkJPzZaEYV4/\
+h7uEOxwanMQhC3s0zURDv3HjwcUkEGqla8CECtoj3g09neEuDARdNSmHKL7GQtMXnFx4gggYk+\
+QNFcY2CV0UxlWTLEEnekiymmGLnTMGaKgZuYl45kBi5qG0V6bVXH5ILz91/\
+9PAhdCsKcw6nIPjyHHAvEEPnEVthIo0QWgaaHAchA09WzMejKSbT0SBBsJtWpUjPa3rA5gyR3p08Gp\
+0pSjsXy8oP5OPI/\
+rbhfZ8APcDTVNacE1DnpABHJlIuixKYE9uHE00RhYEFeG8ol0FC01CBvSZFSTifJ6TWwhgZmEsovZy\
+vaHlaA5hS3T/81eHDmF3aU53T5h6FkGx0S8/\
+BBbaHAiiiKleMHbFsCtwjepDAqBkTCxzBYazDDQzLiNhEhEXYDefSfOIVKxAJyB0hKZwyWOyVJbRZk\
+zASpIMbZYExJEHewq7Ia0jQLklrBdxCXvqpmklKDYytx0wFIxmPi1vpTJ/Eg/\
+clRQQCRCqvF2NTfkFotIzEfslH9PtUOnvqFt/CSDqlzLNbLNGVV3FHhme+\
+I0KWdGSLAhkVlXJcgodsOULtQUtoBXDuusLCG48/UFwCRsI5SSHnJ83om6HkFU34h5f2PVC2CygD+\
+wF4R4LMAl0JKlqTTXfFz9DIMKbxn/\
+CEC9uko2ThFdlAztpLZQrvGlvJia82WKeqpWEQjAMRJuXVudoxmZOmU7GKYBHc6xkrXzMdiQsyOLOE\
+D6B1C3H60dzcVGJ3Af/\
+aYmE8fxdIyWnnRUGZIBtIszaZyuQKLtFOlDQVtd14UoTj9wdKDQYDhfTE0n5JOuX8tdo4IYLgpOlUj\
+SR3vQTXEAgMZxYWggCDV3A0UziplKrffZ6YwPNkpEKgQY9TyUklH5oXhZV0INR/iLA2PX4BUt++\
+pH9IOIuStEYcUW5TNhAKQt5JOtHSJOs5ivMSoOq7ylNwwJprGxso7weyOJOzfc+\
+JhiicZqoXoEqXoaIUF7QGjbLfQEZcRnr+2ttvq1PP4+fYxF+/crc5XmUm87zIitkK+\
+Z1VM7r6VGXKng+\
+8JNkbnIWya798X2I2QCEya2gSnzMwa2r4hgOjJnopMkqNo5ZcwkRbwSkwkETU9ZblqhRUFNusqe2yW\
+LID36xNLJDFCjzC0HpJSbTo5LvvHrL/qxdq+/Ds0513391DEg9fOTfk79Sd997/aV+\
+FMaltdryk2oQzE78VK5OTFAk7AdAgncroPsgXGSX93j4YLpd2R4p3bXMaUH0MTqMsknpiRPx4OTFLp\
+l0H58E5a0Qxuw+KMx4NCSD31UI2wF1LibLaPj0tRjusyia3NVXisAZgzIJPpNOFGBldjXW9CEB/\
+ZrA7H2YyR7bHPgGIwllbPzJOMcjABilU2HQB6KRzA4+\
+RrQTOQeqNxAryDqCUmKxKaDZLOy4zsbpwsuyqQVg/t9oXfwTYWTFXev+\
+szTXnCa3oX8bLzyFWooQls1kwXG4I0iZbSIm9eQrUEyv1Olu9KYvpBx3vy+\
+rpWIIKVUwIeFLMSWBlpU3FrjoiMJNCKLzG2n8Iax9xnG9p3nPs/\
+m9uem3vAyZ5j5UhDEsdKVL0bhToiPoKje8z24xcJnkR67LUTGdrhp6UhbUhtMAV1JRxUmYRApgG2y8\
+Jb7EUHbAJDhiYV+JNa92lKYgrVMVMKHZ5ir1POGgRcS/\
+NqRcB5zf30p3GgZKvoEdCz4IaBBJ2NXnbNWmJXjCJqmgytEiYdqknwAas8xu8RgZYkWtaQypqJUTht\
+HzKR0tJ3113SCiyW3/\
+bsddTSu2CqmMHC5DFVcUEqJIICNTAtcItDLl6BzlSrwHfJ2jOQylD4N0zyi9owBhoHC8m5WqJ1eqSa\
+9HGBvCsGfcAEIEE8juIAHrFkEXhNWwSY0l+CeWP8PIYBnwYDAfhA/9hdgDTlzmVE9l+yMoB2Cnaw2/\
+8jMR1RCNJRERQ8NWiYeKwBbhA0oQ8WtxN/dzI+QQ3quUWG/\
+MzdojL0CnBZ1lqANngXdeQY2ngvr0BUTSXIpNjCoVvFhedN7UTii3sucViKcZxgTacK3jJoONIpcge\
+XBqiyFuAysx5jMAILvi3DJcV//r4RDHIdnFRq8wvcUJ0u0FcBB/hDvGak/6UMi8fm4G+\
+oKKOC3lxodkesqJ46lyfy6moQp6ks7SK9Fp2iw94teP7Y3J87ZPvBnY8x/3939fueuboPN4w9hM4/\
+gUFRjCIbq3omJVZ+njUlMm98MfaAvO4EM7uKI6mBUH2rFiF0kGH6w7Gh81bIJ5REe2+\
+O17t0n8VXzPRqnOTLTnVooCD85TIyuHh3n6b2EMj399Tj8JZeY+\
+7dFDb692VmgEikFye8Bm7mBiWQPkdqKfN2HGoWVEkHQZ0qG2QJG06hwsJhHFAJheRBudl12Bag0oZq\
+xld5i4X9UOIJSVgCbaicByDbwrWmyDPNnwizon/jRgdCWAMe94ZvIewJTfOct/\
+B63oCIuQhPs35CbrcukOHF2Xc966BDh4xnksEa7GUNphLBXDFnJH9qM7BjzhLFOMl/kfEty/jeh+\
+sR7ThhrDc5aaAzsWSnbdTOai7tCc6ug5Yb5kc+KWzsp5O+\
+RLFKfRGbXYIB74AUoA62KpRaLppH0Fts17l1lqkM/Zvu7v+CGWxhJrnfCkf6fLPKBbzpm6DE9K2+\
+zKp13vgbtT+6X/8FWfX+RRGQtkc8Z5vnvkqSjlMKJUmoHtne/\
+ExpXxB4SGmkpjot17Q1uvmekKahWhj5JqELn9dZkfLkGGJG5EqEV+POz/Dl6SB1J/\
+vMXFUqOShj5bgUWJ6veGUStbNcn3gD7jiooyOSM4XfprvVYgnjHIdWB+\
+ou6S7hsIr39DVsvImOcop4e/IbSZy8+\
+huRwcN7UspGMcwWAoJXhvcDnCdhBpmc9Ftl0qDyaWZ1hkFrzz3UddVYIocTLm7ii4FpBTnPLGXkWA8\
+QaYsLX110FvztI3fgrPFQMIn5Efeujr2/Ml67KGIT1qMHZ4TfP7+da+\
+nty68XpjkOjPqalnfgY1nXpeq1dLduDtdao7jglNnYde10Ui24U+f7cDPYyAjXi9UKXLW/\
+biETkoXRSqgPa7QEgbkMj/c7KUvZ7NNFXz6bpw6coc2Tb3jnjsh3xgx2Gi0nODq7hQAK0+\
+yFSvDLSo7G1FrBzMiItkNeIKigl4QQZtJLkbVto45G2KVa+KGYWIPf0z8RS8Mycj7S9rfPRLw/\
+dBoqhUN8xnBpT6Vt39Vm8FvrW+5cKrA5Xo+7RSJg/\
+PF0KHciGJ8ZsYfNJtk6bikuiBvcU69Zx9gyXPupjk/N6RAVh5gqudBw4INxiAwh4+\
+ySU1glw0yodw8naYmiZEtxTUuEqezeWMf5hp1ZNY0uwnijojZ49hxv0jMn416Uqzz7PyS+\
+EU96IbvFg6RZWGpr4WIWyUNuvWhn0Osc29obbzo+XBKUXN7R32JdIogRKUe68kEKVJF1Y5qKH9/\
+on4Rttu+dWvnw2a0J4mHeyzQGp/XWRbPoN54k/yKLuV40qjiYEzg+\
+i4FpFM2P3hdEvY9uTAc04ulfyFpOrn3NcZGeI77PVzXMlX1AMJi8/\
+tTF29MHiLGIy6hWafvJy7KnDZxxauf3F7Q+\
+m4MV0U78afmG55iutHR0QB2IqLmLti1wRSS2FwiW1E5SOoDC+29KXw5E/\
+YaKK5R0AYnRrriW1ZKRZqQl065742bmMA2Cmkzl8ZK341DWxQT1Khekkrx+\
+dy9qZVHfFTOqGNs2mnlIQyA7A55cumToJZU/use5egu16LRh74k5KRyVyJfM4pOsi+\
+uj06eU9dPOEls/H26C1R8j0cIUby7C+VqCkKppU9tm8Fs0KeLG8ClpK/\
+OTEZmvOjD8JIkrXacxA7zGYn3wKeILDHqnN+13LYq4nGVcq4nVy7vIc/\
+TpJaulueKZe7ma0HHMk2kEf6f6PKpqTxgeFBT6/1k7iSxKKo4VFTzkoEHN/\
+pkijNzxvozRzhYVEsh0R9sQbkRc+2FIAjyeEJGADKIFezG+y6wyAaLAOZ+\
+t9DkR1CdsyZVaYDUc1DJ//rhsGuUVAeX0s5W+1ZsCw5ooqm6SZm//\
+wiAo6TJwUmfybsCtY2uzVzJrPH83N0HB2imXB3CC6l7icEtDLU1+pva6yosbOj+LKCb/sVVay6ti/\
+Slizfc122KRMgdQaq3wUPPPKnItzO8Xo9vm/gu2KPO5+C3Rp6UXRMXpULGl9PrBWC+\
+klrUUvTkBsHyqnoA35DnofxFsVcSSeo67B7Ly8Xhr7cVXMlBSCj+\
+FXS1kibLSEFugShtjZTRzVu7zPAN3z4dZfA4XiG3J4l1dMbJOl6XfTypT9T/\
+zTc7roO87ztDypZ2S0Mo16ddcV8nCTVfX1mN8QyDzztqkHGDoxrdYIzvkWV/\
+k6rZtLIbbm9ZbJreBTV3VYcBBdtSTEvcZhO0Jr4SG+AU6deKhcE+\
+K65eUBSg3E6I9TfM8VbSNRllFa41q1zENzTcXhJafoXjLUl5dsFfn5XpbCaV72BVvd6ok276Ky3WW5\
+cl+i6eliIJlL8oqBu0KcVHLRA2WIrUV9JQ2JX038N4+\
+d6QZlDkGArspoaRvM1i5qTtHqPYINhbgbN937/\
+FRQduMQisq4qmZUmibsq4j9EgfWkBUKrwJ0wANNyuIaM7P/\
+1T9WxHLesxwgYDVfljw0ygzWcf8vOvO2vMsEaYyqWJ0lR1SfUht/ROtKK8ixb2i37NdZn3m+\
+IQuQ1i368bn8Ecf57D4DvQGXWndS0QrNMrYP/3nr1/5wPwRY8n5+cea3j9wZb+\
+2sNnY1oxkqbDnFH3QMUX14ytXQfUFXLsbMXC8ent+\
+TkWwrPAR5evhM64vhKYxAO3f3JnB2f95l5K7k0Of3XSDpzd3ftyty25USMcSe3Oz39yhxjl2PLJRra\
+E7l1WXl6hwyQxbNl91trd0eW6vBOyPZOypUTeps3dbdcYzsWumbb8hQnfV4Bq7Vr33KCUeqPpk56am\
+qeMzW95BL52n0bZ1M6VPJt1eCbK7CUqV1mVUE3Oo83JgMHrxYK+\
+BOgdEcDjv2905WFv9lvUtkB82ahpcutE3HVuiz1947TOYk/\
+V1Bx2XYAOBHQsK0KKGDu6wuvHMxs3JVkB+dLOYbDSCRS2bN2JuV64aOW+avqlWmeTbihO/\
+rzGbhIi33mlttt6lfM9u9wQ+q6pNumMKPl6eBMGTWIMmmxGkfN64QPnhbSxXXPj9F+\
+gEfuNyKXQscvJBKkxIhVSpOfdvP/\
+zn4QutE2was7f4itqCyP97KzdXEmFe1POYZf0yeFkrSODeyJSzsDZY5WGak5RdGQQJJkODkVtN4gLU\
+Qln/YQC16inD4yjjM+f1J/wuhTmrBUTuElULp4hv3lRcjqEBJkvDCkTS0SEHKi6+\
+8gnI4ENfDDuaOPagxscfeOxvgPf/bpPWKgKCEZCE+lrfa9rqQ3MIPVsqlykOnTvq/\
+1HSHW5LCylIUfkzYmXu4hvGX1QYnJqbIg7LEOF0neYsQB8A0vcYdYP3++wmE3OF/Hsz66RrU/\
+aPz06HQ53RBXKYlxzlwLTyzIosqhgL9cytsiAQ6pVb1nq2UIr/2/1m/\
+cGPxu8B0gSpHcimvnQiUNQg1ybKXnYwiZBVz/Vdv6hUrdvK/\
+pbaKFo6bmPScV0usuqExbyAIh6ymFZi2UL57jtT530m/29o3N6MZR/fth9//\
+hJpCcHoibNIKEKY5wKtrZeIDsHidt+p1987I+xI9ZZBa10EzfMGBdF1gxP/AF4OBjGP61h+V/\
+UdV0pOeIwHDmsleYJ/F7id+yr7gtZe+fDtcUeGooD/7aVhFFD+tbt6nU6KrHTkHlSJGRl/DGafP+\
+WugQQzoJq4u7TRmwrjPTjyfyFiu02jGWD2nb8fLywswGFZlM+6aut/bAofyLoFt7aaeT+\
+RUvQL3bAyAmtn9EpRuDNF0uvKeuHbg6rfvGLMHLt3NF+/9ajS0dM21mu0zDs2Mm1xJBeY+\
+lmDjKUKf06SnNS8qghvUnx/r0P8Z+Pgs089us+GayZ6CDjn4vAhB//ON6W/oC8bc6rHAM4a+\
+emqjgR85zw4ldSS3LbtHOomI4raG+s5AtnHgIxaN921iUW/+W/CxteZI3H6RPWM3/\
+s9iqimJwUwtNG0hMlW/+bGxzJ2iePvr4Wqlb+\
+Vo1duA2Z3WNxJq3vsOXRzp4aUZgQY5tfHUx820uIGS47Oj93hkgXS/\
+txCcrxJ07km6bkdSQhEbYZ4eIDwMQdqVOzo29oOj/\
+3oqCd8do2gEX2Mx6tt1vjoxO7WBdIcUehBfmHOugbnRnOY8rmnDiQFM6dIccnanwnLXEYMHfb666tO\
+YjnR+zcvEDE29bErkFdc4QNzin6ks0t3fsJkRl+\
+aSMi0xPQ7PPQPSHyuCWtTVfYrZkRTtvEIUarDZRs9CeoQtifwmu8u5Sw/EK3Gr/\
+jbln9OZJE1J5PkCT+uB1d9586iTZtMyC+\
+CvoCXbvj7YRtkDU7RCenkzqBUNVR7417xeC7eA7qxq69n3I9h3FNJKUurmF9WFDZPlS0N/npQXu+\
+gzJXTu7yWvHXfjwnrBRBmQ3r5OzKmfGplY/7fS7blAbi9PVaeYj+8F0RGeiqYe4t200E+\
+75myGnklHp4fS6S0VWa/AQCJ4Wd5p97IjX+6oBm7CJZSVauk77f5CTcbs+fdtEWSWhGDl+\
+uLIwWyjqZJgfT6xo3/+e3jyxfHE2wEjcESPe+/1C/ezU8prs/\
+LhfRJ9zD0yPhZW3FblqXaZQ4UFZKrX1LSskS+b6Bfp2BP8Ki9ojRfz8ePCdL/\
+5e3fk3tStwBCSBWmRc9LX8p0zpnp+Fk83mjb+B0q/\
+cbZ2WMPNb0gWirok2Xo5p7LFsF7fYlFTMup9ME++IUNd6DjttqAJIJTV8X8OeySOmLJ8n/\
+Mw5erLVcuwPR7rY/dPGH0pBPYP1XZVSJ468MmjIm98AkJpPL3LbLHKWLNNMl9fesFSPC+\
+ULFKmgGbGobi3ZuSXZaR25fl3CC7fPO7qWMD+XtBsuRCO8bMJY3oVKC7JPmKl7Py9kGNaUPE+\
+WTTd8E6pxHtfI5fFO8cK3a/jc5Uh9jj5pLGf4livWyztrBri7i+\
+E8lMbZzjc0X9e6y0vddGO1lkhf0gyczLtlUG48vKCqtxA0L02hd+\
+TqEv0TPi8SETyuaftKmEUkMM7VyCfqUGmgZPJFxfKWG/\
+PcOnv2K8FKQ2GfOclsDOhYVt4iHQb2vdjf+ueLxNxjAg3B6aB8JKSidO9z+RgXahvLsyIC2zrZqr+\
+J7lKy+LwJxC29YvVG9aEBr9T6lBbbi3wHynbwqOrv093GTCk8+4RKifBKypt80QEAgD4gO3vR2+\
+9VHLihFh4fYuCPqmtXjAfyBy6zUS2i3/y0fv/pQfjmGv7kIfD/gD3C53ulXpwYeuBs34NN0Nvc/\
+OiOfayS1a5vufCfn+W+rmPm8yIN8VvBnJ7J0aCRxXVpypfJVq+Fjakj+\
+fM3CZcrQwiDbnEWf1gRijuFl+Wv+pKGKA0zg11fqHne2NF/mSHVV17Ad7k9w65+\
+QB4hZxcwi6fsfBuKusiT4fPzVDUjjdoeCK5uuV4MF3ZOM0f24mKs/Kl+\
+AJKu9sGstGpxmbrJwdvqwErpagYjx5NBHOXHogH+nD0Zn6rZP1m5/\
+mSZf33bhSVB4GwO2APFAlvjk8JoVPL6mKvhmWO1WOX20tkpAkXFGsikh2ZiMYM2Dw+\
+PDs8P1wxEADplJCyzzegPm14HzNIFVIaNVIj5mr88EpB/Yb+zpj0d27znoV5IEu/mF3eQWYt+\
+4267jQGlcOXyeLptWxytduehBeNNJHmlnn4Ftd6rJ67XMF1WOJtvqrrnzTbSjk6Oun88/\
+cFWdf63GxMnri2xyvQpFH563gNSuOIMXQSKsOa66ImmOVI/kp81a11NOBftNAiXeK9YmURL1S8CGA/\
+fDBRNqf2XFcD5+GDwinM1Bx5N7AuhKOsaB5F3ScOsivU0bMZ27uNHe3y+aAKnV3Oismk/\
+cp0eEfMudQdiv+zkZ/7wwN8esJUmhW4sZ2CAz9n7+\
+h75w0EEv2HoTuplvTbyNJJaGIWkXCDsGROQwIu3S32//hJxWF3VGP3Pift3hyq3W+\
+xZNAxzWWuo2fBrW9z+cA/hJFULkq0v6VsxxYJ8/8AXdUYe0J324Rmj49Y+iHbwXnfZqEZHM40A+\
+cAt2ycnB7HYnyZUx3rdN8KWA/8BmfX9HV4wF+EhnBN+CFtM/\
+NsuyAxPWBMmuY1lHXc5rZYNBd491IULBU2rf5E79NTFW3cO3MVyoeLSbN+\
+TaeEPi3uSQ1qec7WSeP2t0LaxN8aVJjVvdetTv5bNKbvXM+BPSmSulradOrn3f9Txc9TVlXPYJ/\
+VIXOq945fiEDMT7LSa5X2lo2c9gd/Ta8fFJ+Inw0U3+NT/6SeL/D8JM/ME="|>,
+ GeneratedCell->True,
+ CellAutoOverwrite->
+  True,ExpressionUUID->"04cbf88d-7b8b-4e5f-9703-8bb7dc237873"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Smart contract integration", "Section",
+ CellChangeTimes->{{3.925270117824676*^9, 
+  3.9252701391697073`*^9}},ExpressionUUID->"47987359-735e-4621-a421-\
+989f3f31dbe2"],
+
+Cell[TextData[{
+ "To find available smart contracts on the Ethereum network and interact with \
+them, you can use several tools and resources. Here's a step-by-step guide:\n\
+\n",
+ StyleBox["Step 1: Explore Existing Smart Contracts", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n\n",
+ StyleBox["1. ", "Subsubsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["Etherscan", "Subsubsubsection",
+  FontSize->0.8 Inherited,
+  FontWeight->Bold],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n",
+ ButtonBox["Etherscan",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://etherscan.io"], None},
+  ButtonNote->"https://etherscan.io"],
+ " is a popular blockchain explorer for Ethereum. It allows you to search for \
+transactions, addresses, tokens, and smart contracts. You can use Etherscan \
+to find existing smart contracts and examine their source code, transactions, \
+and events.\n\n- ",
+ StyleBox["How to Use Etherscan",
+  FontWeight->Bold],
+ ":\n  - Visit Etherscan and use the search bar to find specific contracts by \
+address or name.\n  - Navigate to the contract's page to view details, \
+including the source code, ABI (Application Binary Interface), and recent \
+transactions.\n  - Example: To find the Uniswap contract, you can search for \
+\"Uniswap\" and view the contract details.\n\n",
+ StyleBox["2. ", "Subsubsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["DappRadar", "Subsubsubsection",
+  FontSize->0.8 Inherited,
+  FontWeight->Bold],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n",
+ ButtonBox["DappRadar",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://dappradar.com"], None},
+  ButtonNote->"https://dappradar.com"],
+ " is a platform that lists decentralized applications (DApps) across various \
+blockchain networks, including Ethereum. It provides information on popular \
+DApps, their smart contracts, and user statistics.\n\n- ",
+ StyleBox["How to Use DappRadar",
+  FontWeight->Bold],
+ ":\n  - Visit DappRadar and browse through the list of DApps.\n  - Click on \
+a DApp to view its details, including the smart contract address and user \
+activity.\n  - Example: To explore DeFi applications, you can filter by \
+category and find DApps like Compound or Aave.\n\n",
+ StyleBox["3. ", "Subsubsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["GitHub Repositories", "Subsubsubsection",
+  FontSize->0.8 Inherited,
+  FontWeight->Bold],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\nMany smart contracts are open-source and available on GitHub. You can \
+search for Ethereum smart contracts on GitHub to find repositories with \
+source code and documentation.\n\n- ",
+ StyleBox["How to Use GitHub",
+  FontWeight->Bold],
+ ":\n  - Use GitHub's search functionality to find repositories related to \
+Ethereum smart contracts.\n  - Explore popular projects and their smart \
+contracts.\n  - Example: You can search for \"Uniswap GitHub\" to find the \
+Uniswap repository with its smart contract code.\n\n",
+ StyleBox["Step 2: Interact with Smart Contracts", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\nTo interact with existing smart contracts, you can use libraries like ",
+ Cell[BoxData[
+  TemplateBox[{
+    RowBox[{"web3", ".", "js"}]},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"831731d9-1a5e-4ccc-bff3-954a72ddfe9e"],
+ " or ",
+ Cell[BoxData[
+  TemplateBox[{
+    RowBox[{"ethers", ".", "js"}]},
+   "ChatCodeInlineTemplate"]], "ChatCode",
+  Background->None,ExpressionUUID->"0e6d37c7-108a-44f4-ab5b-d4b44e5ad791"],
+ " in your application. Here\[CloseCurlyQuote]s how you can get values from \
+another smart contract:\n\n",
+ StyleBox["Using `web3.js`", "Subsubsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n1. ",
+ StyleBox["Install Web3",
+  FontWeight->Bold],
+ ":\n   ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     BoxData[
+      DynamicModuleBox[{$CellContext`attached$$, $CellContext`cell$$}, 
+       TagBox[
+        Cell[
+        "npm install web3", "ExternalLanguage", CellEvaluationLanguage -> 
+         "Shell", FontSize -> 13, Background -> None, CellFrame -> None], 
+        EventHandlerTag[{"MouseEntered" :> (Quiet[
+             Needs["Wolfram`Chatbook`" -> None]]; 
+           Symbol["Wolfram`Chatbook`ChatbookAction"]["AttachCodeButtons", 
+             Dynamic[$CellContext`attached$$], $CellContext`cell$$, 
+             Cell[
+             "npm install web3", "ExternalLanguage", FontSize -> 14, 
+              CellEvaluationLanguage -> "Shell"], "Shell"]), Method -> 
+          "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> True}]], 
+       Initialization :> {$CellContext`cell$$ = (FinishDynamic[]; 
+          EvaluationCell[])}, DynamicModuleValues :> {}, 
+       TaggingRules -> <|
+        "CellToStringType" -> "InlineInteractiveCodeCell", "CodeLanguage" -> 
+         "Shell"|>, 
+       UnsavedVariables :> {$CellContext`attached$$, $CellContext`cell$$}]]]},
+   
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"2d352a89-57cd-4db6-ba13-834d04a4e144"],
+ "\n2. ",
+ StyleBox["Connect to Ethereum Network",
+  FontWeight->Bold],
+ ":\n   ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     BoxData[
+      DynamicModuleBox[{$CellContext`attached$$, $CellContext`cell$$}, 
+       TagBox[
+        Cell[
+        "const Web3 = require('web3');\n   const web3 = new \
+Web3('https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID'); // Use Infura or \
+another provider", "ExternalLanguage", CellEvaluationLanguage -> "NodeJS", 
+         FontSize -> 13, Background -> None, CellFrame -> None], 
+        EventHandlerTag[{"MouseEntered" :> (Quiet[
+             Needs["Wolfram`Chatbook`" -> None]]; 
+           Symbol["Wolfram`Chatbook`ChatbookAction"]["AttachCodeButtons", 
+             Dynamic[$CellContext`attached$$], $CellContext`cell$$, 
+             Cell[
+             "const Web3 = require('web3');\n   const web3 = new \
+Web3('https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID'); // Use Infura or \
+another provider", "ExternalLanguage", FontSize -> 14, CellEvaluationLanguage -> 
+              "NodeJS"], "NodeJS"]), Method -> "Preemptive", PassEventsDown -> 
+          Automatic, PassEventsUp -> True}]], 
+       Initialization :> {$CellContext`cell$$ = (FinishDynamic[]; 
+          EvaluationCell[])}, DynamicModuleValues :> {}, 
+       TaggingRules -> <|
+        "CellToStringType" -> "InlineInteractiveCodeCell", "CodeLanguage" -> 
+         "NodeJS"|>, 
+       UnsavedVariables :> {$CellContext`attached$$, $CellContext`cell$$}]]]},
+   
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"5f0cf2f3-21ce-4b4a-926a-609db3051086"],
+ "\n3. ",
+ StyleBox["Get Contract ABI",
+  FontWeight->Bold],
+ ":\n   - Obtain the ABI (Application Binary Interface) from Etherscan or the \
+contract's repository.\n\n4. ",
+ StyleBox["Create Contract Instance",
+  FontWeight->Bold],
+ ":\n   ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     BoxData[
+      DynamicModuleBox[{$CellContext`attached$$, $CellContext`cell$$}, 
+       TagBox[
+        Cell[
+        "const contractABI = [/* ABI array from Etherscan or contract source \
+*/];\n   const contractAddress = '0xContractAddress'; // Replace with actual \
+contract address\n   const contract = new web3.eth.Contract(contractABI, \
+contractAddress);", "ExternalLanguage", CellEvaluationLanguage -> "NodeJS", 
+         FontSize -> 13, Background -> None, CellFrame -> None], 
+        EventHandlerTag[{"MouseEntered" :> (Quiet[
+             Needs["Wolfram`Chatbook`" -> None]]; 
+           Symbol["Wolfram`Chatbook`ChatbookAction"]["AttachCodeButtons", 
+             Dynamic[$CellContext`attached$$], $CellContext`cell$$, 
+             Cell[
+             "const contractABI = [/* ABI array from Etherscan or contract \
+source */];\n   const contractAddress = '0xContractAddress'; // Replace with \
+actual contract address\n   const contract = new \
+web3.eth.Contract(contractABI, contractAddress);", "ExternalLanguage", 
+              FontSize -> 14, CellEvaluationLanguage -> "NodeJS"], "NodeJS"]),
+           Method -> "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> 
+          True}]], 
+       Initialization :> {$CellContext`cell$$ = (FinishDynamic[]; 
+          EvaluationCell[])}, DynamicModuleValues :> {}, 
+       TaggingRules -> <|
+        "CellToStringType" -> "InlineInteractiveCodeCell", "CodeLanguage" -> 
+         "NodeJS"|>, 
+       UnsavedVariables :> {$CellContext`attached$$, $CellContext`cell$$}]]]},
+   
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"cc549b7e-092f-4ee5-828e-8f5ce74797d0"],
+ "\n5. ",
+ StyleBox["Call Contract Methods",
+  FontWeight->Bold],
+ ":\n   ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     BoxData[
+      DynamicModuleBox[{$CellContext`attached$$, $CellContext`cell$$}, 
+       TagBox[
+        Cell[
+        "const value = await contract.methods.someMethod().call();\n   \
+console.log(value);", "ExternalLanguage", CellEvaluationLanguage -> "NodeJS", 
+         FontSize -> 13, Background -> None, CellFrame -> None], 
+        EventHandlerTag[{"MouseEntered" :> (Quiet[
+             Needs["Wolfram`Chatbook`" -> None]]; 
+           Symbol["Wolfram`Chatbook`ChatbookAction"]["AttachCodeButtons", 
+             Dynamic[$CellContext`attached$$], $CellContext`cell$$, 
+             Cell[
+             "const value = await contract.methods.someMethod().call();\n   \
+console.log(value);", "ExternalLanguage", FontSize -> 14, 
+              CellEvaluationLanguage -> "NodeJS"], "NodeJS"]), Method -> 
+          "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> True}]], 
+       Initialization :> {$CellContext`cell$$ = (FinishDynamic[]; 
+          EvaluationCell[])}, DynamicModuleValues :> {}, 
+       TaggingRules -> <|
+        "CellToStringType" -> "InlineInteractiveCodeCell", "CodeLanguage" -> 
+         "NodeJS"|>, 
+       UnsavedVariables :> {$CellContext`attached$$, $CellContext`cell$$}]]]},
+   
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"5d39ea8a-15f6-40e7-9ed1-39750b483908"],
+ "\n\n",
+ StyleBox["Using `ethers.js`", "Subsubsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n1. ",
+ StyleBox["Install ethers",
+  FontWeight->Bold],
+ ":\n   ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     BoxData[
+      DynamicModuleBox[{$CellContext`attached$$, $CellContext`cell$$}, 
+       TagBox[
+        Cell[
+        "npm install ethers", "ExternalLanguage", CellEvaluationLanguage -> 
+         "Shell", FontSize -> 13, Background -> None, CellFrame -> None], 
+        EventHandlerTag[{"MouseEntered" :> (Quiet[
+             Needs["Wolfram`Chatbook`" -> None]]; 
+           Symbol["Wolfram`Chatbook`ChatbookAction"]["AttachCodeButtons", 
+             Dynamic[$CellContext`attached$$], $CellContext`cell$$, 
+             Cell[
+             "npm install ethers", "ExternalLanguage", FontSize -> 14, 
+              CellEvaluationLanguage -> "Shell"], "Shell"]), Method -> 
+          "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> True}]], 
+       Initialization :> {$CellContext`cell$$ = (FinishDynamic[]; 
+          EvaluationCell[])}, DynamicModuleValues :> {}, 
+       TaggingRules -> <|
+        "CellToStringType" -> "InlineInteractiveCodeCell", "CodeLanguage" -> 
+         "Shell"|>, 
+       UnsavedVariables :> {$CellContext`attached$$, $CellContext`cell$$}]]]},
+   
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"b535fce0-66dc-42b3-a8e5-9a17bdcf2e04"],
+ "\n2. ",
+ StyleBox["Connect to Ethereum Network",
+  FontWeight->Bold],
+ ":\n   ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     BoxData[
+      DynamicModuleBox[{$CellContext`attached$$, $CellContext`cell$$}, 
+       TagBox[
+        Cell[
+        "const { ethers } = require('ethers');\n   const provider = new \
+ethers.providers.InfuraProvider('mainnet', 'YOUR_INFURA_PROJECT_ID'); // Use \
+Infura or another provider", "ExternalLanguage", CellEvaluationLanguage -> 
+         "NodeJS", FontSize -> 13, Background -> None, CellFrame -> None], 
+        EventHandlerTag[{"MouseEntered" :> (Quiet[
+             Needs["Wolfram`Chatbook`" -> None]]; 
+           Symbol["Wolfram`Chatbook`ChatbookAction"]["AttachCodeButtons", 
+             Dynamic[$CellContext`attached$$], $CellContext`cell$$, 
+             Cell[
+             "const { ethers } = require('ethers');\n   const provider = new \
+ethers.providers.InfuraProvider('mainnet', 'YOUR_INFURA_PROJECT_ID'); // Use \
+Infura or another provider", "ExternalLanguage", FontSize -> 14, 
+              CellEvaluationLanguage -> "NodeJS"], "NodeJS"]), Method -> 
+          "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> True}]], 
+       Initialization :> {$CellContext`cell$$ = (FinishDynamic[]; 
+          EvaluationCell[])}, DynamicModuleValues :> {}, 
+       TaggingRules -> <|
+        "CellToStringType" -> "InlineInteractiveCodeCell", "CodeLanguage" -> 
+         "NodeJS"|>, 
+       UnsavedVariables :> {$CellContext`attached$$, $CellContext`cell$$}]]]},
+   
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"5bcadfad-b376-4c4e-a361-cfe5421cffcb"],
+ "\n3. ",
+ StyleBox["Get Contract ABI",
+  FontWeight->Bold],
+ ":\n   - Obtain the ABI from Etherscan or the contract's repository.\n\n4. \
+",
+ StyleBox["Create Contract Instance",
+  FontWeight->Bold],
+ ":\n   ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     BoxData[
+      DynamicModuleBox[{$CellContext`attached$$, $CellContext`cell$$}, 
+       TagBox[
+        Cell[
+        "const contractABI = [/* ABI array from Etherscan or contract source \
+*/];\n   const contractAddress = '0xContractAddress'; // Replace with actual \
+contract address\n   const contract = new ethers.Contract(contractAddress, \
+contractABI, provider);", "ExternalLanguage", CellEvaluationLanguage -> 
+         "NodeJS", FontSize -> 13, Background -> None, CellFrame -> None], 
+        EventHandlerTag[{"MouseEntered" :> (Quiet[
+             Needs["Wolfram`Chatbook`" -> None]]; 
+           Symbol["Wolfram`Chatbook`ChatbookAction"]["AttachCodeButtons", 
+             Dynamic[$CellContext`attached$$], $CellContext`cell$$, 
+             Cell[
+             "const contractABI = [/* ABI array from Etherscan or contract \
+source */];\n   const contractAddress = '0xContractAddress'; // Replace with \
+actual contract address\n   const contract = new \
+ethers.Contract(contractAddress, contractABI, provider);", "ExternalLanguage",
+               FontSize -> 14, CellEvaluationLanguage -> "NodeJS"], 
+             "NodeJS"]), Method -> "Preemptive", PassEventsDown -> Automatic, 
+          PassEventsUp -> True}]], 
+       Initialization :> {$CellContext`cell$$ = (FinishDynamic[]; 
+          EvaluationCell[])}, DynamicModuleValues :> {}, 
+       TaggingRules -> <|
+        "CellToStringType" -> "InlineInteractiveCodeCell", "CodeLanguage" -> 
+         "NodeJS"|>, 
+       UnsavedVariables :> {$CellContext`attached$$, $CellContext`cell$$}]]]},
+   
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"f23945e5-bfe0-4ed4-b6b1-9238a8829f54"],
+ "\n5. ",
+ StyleBox["Call Contract Methods",
+  FontWeight->Bold],
+ ":\n   ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     BoxData[
+      DynamicModuleBox[{$CellContext`attached$$, $CellContext`cell$$}, 
+       TagBox[
+        Cell[
+        "const value = await contract.someMethod();\n   console.log(value);", 
+         "ExternalLanguage", CellEvaluationLanguage -> "NodeJS", FontSize -> 
+         13, Background -> None, CellFrame -> None], 
+        EventHandlerTag[{"MouseEntered" :> (Quiet[
+             Needs["Wolfram`Chatbook`" -> None]]; 
+           Symbol["Wolfram`Chatbook`ChatbookAction"]["AttachCodeButtons", 
+             Dynamic[$CellContext`attached$$], $CellContext`cell$$, 
+             Cell[
+             "const value = await contract.someMethod();\n   \
+console.log(value);", "ExternalLanguage", FontSize -> 14, 
+              CellEvaluationLanguage -> "NodeJS"], "NodeJS"]), Method -> 
+          "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> True}]], 
+       Initialization :> {$CellContext`cell$$ = (FinishDynamic[]; 
+          EvaluationCell[])}, DynamicModuleValues :> {}, 
+       TaggingRules -> <|
+        "CellToStringType" -> "InlineInteractiveCodeCell", "CodeLanguage" -> 
+         "NodeJS"|>, 
+       UnsavedVariables :> {$CellContext`attached$$, $CellContext`cell$$}]]]},
+   
+   "ChatCodeBlockTemplate"]], "ChatCodeBlock",
+  Background->None,ExpressionUUID->"353bd895-bc8b-4a21-a703-477270cdde56"],
+ "\n\n",
+ StyleBox["Step 3: Use Oracles for External Data", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\nIf your smart contract needs data from outside the blockchain, you can \
+use oracles like Chainlink. Oracles bridge the gap between off-chain data and \
+on-chain smart contracts.\n\n- ",
+ StyleBox["Chainlink Documentation",
+  FontWeight->Bold],
+ ": ",
+ ButtonBox["Chainlink",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://docs.chain.link"], None},
+  ButtonNote->"https://docs.chain.link"],
+ "\n\nBy following these steps, you can discover and interact with existing \
+smart contracts on the Ethereum network and integrate their values into your \
+own smart contracts."
+}], "ChatOutput",
+ CellDingbat->Cell[
+   BoxData[
+    PaneBox[
+     TemplateBox[{}, "ChatIconPlainChat"], ContentPadding -> False, 
+     FrameMargins -> 0, ImageSize -> {35, 35}, ImageSizeAction -> 
+     "ShrinkToFit", Alignment -> {Center, Center}]], Background -> None],
+ TaggingRules-><|
+  "CellToStringData" -> 
+   "To find available smart contracts on the Ethereum network and interact \
+with them, you can use several tools and resources. Here's a step-by-step \
+guide:\n\n### Step 1: Explore Existing Smart Contracts\n\n#### 1. \
+**Etherscan**\n[Etherscan](https://etherscan.io) is a popular blockchain \
+explorer for Ethereum. It allows you to search for transactions, addresses, \
+tokens, and smart contracts. You can use Etherscan to find existing smart \
+contracts and examine their source code, transactions, and events.\n\n- **How \
+to Use Etherscan**:\n  - Visit Etherscan and use the search bar to find \
+specific contracts by address or name.\n  - Navigate to the contract's page \
+to view details, including the source code, ABI (Application Binary \
+Interface), and recent transactions.\n  - Example: To find the Uniswap \
+contract, you can search for \"Uniswap\" and view the contract details.\n\n\
+#### 2. **DappRadar**\n[DappRadar](https://dappradar.com) is a platform that \
+lists decentralized applications (DApps) across various blockchain networks, \
+including Ethereum. It provides information on popular DApps, their smart \
+contracts, and user statistics.\n\n- **How to Use DappRadar**:\n  - Visit \
+DappRadar and browse through the list of DApps.\n  - Click on a DApp to view \
+its details, including the smart contract address and user activity.\n  - \
+Example: To explore DeFi applications, you can filter by category and find \
+DApps like Compound or Aave.\n\n#### 3. **GitHub Repositories**\nMany smart \
+contracts are open-source and available on GitHub. You can search for \
+Ethereum smart contracts on GitHub to find repositories with source code and \
+documentation.\n\n- **How to Use GitHub**:\n  - Use GitHub's search \
+functionality to find repositories related to Ethereum smart contracts.\n  - \
+Explore popular projects and their smart contracts.\n  - Example: You can \
+search for \"Uniswap GitHub\" to find the Uniswap repository with its smart \
+contract code.\n\n### Step 2: Interact with Smart Contracts\n\nTo interact \
+with existing smart contracts, you can use libraries like `web3.js` or \
+`ethers.js` in your application. Here\[CloseCurlyQuote]s how you can get \
+values from another smart contract:\n\n#### Using `web3.js`\n\n1. **Install \
+Web3**:\n   ```bash\n   npm install web3\n   ```\n\n2. **Connect to Ethereum \
+Network**:\n   ```javascript\n   const Web3 = require('web3');\n   const web3 \
+= new Web3('https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID'); // Use \
+Infura or another provider\n   ```\n\n3. **Get Contract ABI**:\n   - Obtain \
+the ABI (Application Binary Interface) from Etherscan or the contract's \
+repository.\n\n4. **Create Contract Instance**:\n   ```javascript\n   const \
+contractABI = [/* ABI array from Etherscan or contract source */];\n   const \
+contractAddress = '0xContractAddress'; // Replace with actual contract \
+address\n   const contract = new web3.eth.Contract(contractABI, \
+contractAddress);\n   ```\n\n5. **Call Contract Methods**:\n   ```javascript\n\
+   const value = await contract.methods.someMethod().call();\n   \
+console.log(value);\n   ```\n\n#### Using `ethers.js`\n\n1. **Install \
+ethers**:\n   ```bash\n   npm install ethers\n   ```\n\n2. **Connect to \
+Ethereum Network**:\n   ```javascript\n   const { ethers } = \
+require('ethers');\n   const provider = new \
+ethers.providers.InfuraProvider('mainnet', 'YOUR_INFURA_PROJECT_ID'); // Use \
+Infura or another provider\n   ```\n\n3. **Get Contract ABI**:\n   - Obtain \
+the ABI from Etherscan or the contract's repository.\n\n4. **Create Contract \
+Instance**:\n   ```javascript\n   const contractABI = [/* ABI array from \
+Etherscan or contract source */];\n   const contractAddress = \
+'0xContractAddress'; // Replace with actual contract address\n   const \
+contract = new ethers.Contract(contractAddress, contractABI, provider);\n   \
+```\n\n5. **Call Contract Methods**:\n   ```javascript\n   const value = \
+await contract.someMethod();\n   console.log(value);\n   ```\n\n### Step 3: \
+Use Oracles for External Data\n\nIf your smart contract needs data from \
+outside the blockchain, you can use oracles like Chainlink. Oracles bridge \
+the gap between off-chain data and on-chain smart contracts.\n\n- **Chainlink \
+Documentation**: [Chainlink](https://docs.chain.link)\n\nBy following these \
+steps, you can discover and interact with existing smart contracts on the \
+Ethereum network and integrate their values into your own smart contracts.", 
+   "ChatData" -> 
+   "OEM6eJztXNtuJMd59mF12LFkS5HtKEAclKgNSG6Gs9JKSiLqYMxyuVra5C7D4UoRVmuxZ7pmps\
+We7nFXN8mJZcCXAfIEzhvkJvdBHiG3eYDAAfwAQR4g3///VdXVPUOu5MRBLiIE8bK7uv7zsf6a/\
+s2tQadvTGLKKBtpc+24qDQ9qsr8Xl7MotI/\
+uhMZfVjks3lprtNrvEtGW4Pv70yjcifPSn1RHhZ6vrziD2jF3SI509mDvNTDPD91m75Mr+\
+4DeF4s9nU2Kac7MZ7eXWTRLBktI/GHu1k0TDV99VGRV/\
+OBLsskmxjzzL0oNbShLNjfPxjo4iwBRe7Tl+4V+ueVzkaLQ51Fabko/v7X9N8//\
+Rjv7kdZnOriXpWNyiTPTP/bW4PnCcphbgD8QZ5hh+f4QaHd388faZOnZzp2IL7f3uanemHGz5pr+\
+6BwcO1OHi8G1+n/70yr7HTQGZRRWZmdPNaDa8eRwRP+//x0cH0X/CofRDNs/\
+N29bJRWsbacanD3e3vZVBcJi+9YG88qPE/KJEpZPDpN3fNXDqIL+ntQFuCcMP2Lv30FTKAXIsfj/\
+FRn5otvvLQ1+CM8fViV86pc+ug/v7k1uI7XsrqB1IsHupjoA3A/mtQieOYApKb9b4GVVjqDZx/\
+Oddbf2xpcI0oHz07m5dbbObTtoErLZJbHEKuT7StOez4Budi8nObx4LsQiIbGQbv2k+x0a/BD2bF/\
+uLcDTUw1CeLR0f7g5rQs52b71q1onvRyrImS3iif3Tp789YILLo18qsNmEdihq7oZV15BTZAagU+\
+1OryLKky+HOcE7sd3Wuf5Om4iGYn9JAQP1laszV4Ifxi/E3zvNsV/\
+742SPNyB2zu0KJBNZwlTdN6ScyD3oqQzGtLMNtLQAIzsH7C6nFj6cMVq1Yo/XPWJ4y/IXqO7a1w7+\
+pxBCmK0EGElXUt5BcH0/z8IMmSWfI32DAk7AfQNA0fkE0EuJd2VJBSWwexNfjOMYSvC1hMoYsx//\
+dbCOlF1knsWrBaPcMQIaPjPE93ojT1vqAB9Dv0+uFcRHpta/CqZcl+\
+lE0qiGf3LEqrCBbYfwZU9tM0P9fx7oUeVaU+jMpp0wZesguOdBTL22/3iYMv2+\
+fM3uXPXrVQgMRxMtOwSFMWUZKVO+/DlR6CI63HfwL1+EQP7+lyBEdAjPaWnJXWVP+tB+\
+qwaKCjglddc3j0Y4jILjbXrS/RcMLPO6qbT7H1XqlnZgcseNZK5dmP8nySko8FiL0Zvvk9w/\
+kuCWqgU1176wZ14MGL5FZdYPNOcRnBS5e2eLp60csNRI4Xc93/\
+BkyanhqJRN5Orh3n80Oy5VePi2h0OhgVeZpCmp9MdXaYRqN65TP8+fjbNm4EiCzjP/\
+6WeQ7Bjr7oXycsoyzPklGUst6HTAGL7iZmnkYLfvUCXqn6nbjfF8718HNTP9wbsRt6/\
+ig6v5NfwD19y7DBpVGp8cCZ/OAVgk+LW/C0GRUJ29Pge/\
+JclVOtAAX66B2d2VhyPcyBk0PkDIB0cu52hQGINytD77t1icujRSclccbnESXh9ewgrwrEnufuVEla\
+7mWQNdwK6Mdb8sBME0i9dlSl8B1wFMWCVWwP2lvMC1qHTTgUgkn3dTofvGzJ48WKYii7yp9XSeEEWz\
+vIa3ejMiKlet77/ZflHcXGa0c5wD47WBjoP2UdYjSDf1avq490BmeXqj2y/\
+krI73RuKlIifaYLtQBpCrFrjhdaQSIlfIRRkRqm+ehU5WM8i3VXmapA/\
+pTFKinVeVKSXBBH1RCaCS90ii/onWQdLLPUWqk6BygVzecptAz6vd05OTlxLzu0OT0ASv39T/\
+qfDgJAGbRdM3iBGOcVvg9AlrmKzvIkVtFsmEyqpFzIwpEkJQouX5ttdXJysLB5Cv7ltODxxRMGy15V\
+QdRTpS8gK1gsWKEqitdqPzrWf82kebRA28zhk6ZRoUwyyQDlxo2Ln91Wf6YWP7t94wb23Ts4fHh03H\
+9w/FqD2eqc4UUqxf+QZBw5auNkU+VFuKvauLEJNrB2dB1/\
+YCLRXHsxRLyBSSMz7andi4hykm21V4IJSO3UTKvPbrz7bu/\
+ddxRhAE1DLGA8xjkSrpJ4aHf87ITAf3ZDISNHhEwXr4EKSpFUDJ0clemCFlvTUc4JA99RNYO6cQBSw\
+4XlHKnAOCdHTn+ZBRZcbKvHaTTU6ZONeTRC6rRdFclmT8HSwHrBvHP9pnp8THriFxV6fIufbPJLD/\
+jhGWUN+twvhAbE+pZ7717LV3sZcgI1YDT8ByXMvEBycIvfystNaxywibEuEPEJ/\
+SWizWI2hMOphSNSZd2IyHqaXIEin/\
+bUwwwsjHOsSoIvs7xkHe8B8IAVAVwekqPZwhrDRq3GVmkjaM2ip/qs9aDilHyBqrIUaqvMXI+\
+SMflywOF8Bd/\
+GvU7n9WUCBuUCpvQRcYysjH3CT7Wei7mZhIQhljvPYRHgPhY8goeoMSE9mWBTyrlADmBFMfmLOaW7c\
+QXdxid3cyYwMqzPkzQf4sOzCFzHlkYgJOW64VWZpjw5Khb48JD5r5DQ6yK7XABkmjMO9gYfHUTZAru\
+c+9fT6AwOQ5MDimMdswLvgzwk6uL5TrP8HDEXOyIny8djFSN+\
+wNvlCiEJsmjKEaLNtMZGTklGyDkpaqg58m7TJSgql3wQHgPuHV+\
+wygumqZ7oLGbHNYtOrb7oyCSgFM/gXhBQkC7EJDMKaS2//SnslkmKRsQp+\
+obCFfExAbBRBAPUMEChVFQNxW5XjSkdINqirqK6pSIi8axHX6biEJgW3QwIcCkRxWBCpQTGpLdkSCD\
+rJ4OHDwILj+SBAdtmUU/dh+2oqJBQEJ1FSUoCt9hG4kaTgvQiHyUAG9svzXanw4RTerFNgf/\
+zsaQyHZuM2DeUjdxzb+q0YVseQh6RtTByagllQGyFRo1RfQBbVHi9zoBhbnd+0bm+\
+ViIXW9tey4dfwNetdfFE/GCZoC7bxorra1WRyr/8asMxnVbjWVyjgVfHIBxA1vDql/R+\
+bcwJxdfbgFZJDOaQTlJFNlEk8OVq47O1Q6KSiPxsjX33Gqd65LPNZ2ubDLrD0NcKm1msbT92lIRIda\
+4/6fxyifPMNp/erRAAg/NJYVMOzfSNwo2IwXxttnOK9NX5tpRYXcEH2Xo19VfQ/VUo/\
+j9MpqIQARsgawxCV2jNMPHMJgtw5fSo4RfISh8+3N/p7+9vq/fZPVCy9SHT+\
+v7cJcf8UL354RoWUZFK/16x4Haw4PaHwHH3wd3+0UePDnYfHA/oDwer0+\
+mn59GCsjONKJIiCLLXgVlI8FswHX57CbNT8TtMNWKn7CC0+pfrJvRfX2vDewmYaR8zDbzo/Q/\
+VkMo2jSTM5sv+NdmC3RYBv6J0j/brIejlZ4jI5F5nxP8ALh55uFa6xhPDwSTPArRYgiw/v8jK+\
+TxXnFcP4e7hDoca2GgEIefmmSiId6pd8nFOBGrpWjASPrcI4cGnc3pLi5Eu6oTClNtiJmWLqy9cggg\
+aUOT3FMU1Cl4lxVSSLadI8pZkMcYnZsoULKmi5ya+\
+K3oSI2eVKQO9dupDcuFvdx4dHUG3gjBn8xQEX/\
+4G3PPEED5iK0ykFkILT5PlIGTgyAr5uDfGx4QaJAh2064U6XlPl7BZQ6R3B48Gx4rKztm8dAsZHYFv\
+at53KaFH8jSWPaeUqHNRAJSJlPO8QM4J8B6jMaIwcgGGDeXSKGhqKgBrlBeU5/\
+MHiTEwRk7MJZSeTxe0Pe2BnFI92P149yhkV+\
+Sozgi4y0JINlFDz8EFtoccWURZLDh3xLYJ8h7RgxhGzTmxpCNAxti8gdMyIjYWYVHuBrwixnjBCkQC\
+sijEuVUGA1hpTMDqgpFSOrhRFhinJKhb2BU5DfHaJWWtJLeQV3SqJlJSI8eOhkwFZzIuL26UM10SD9\
+4XFBEoIVJZNRvq4nPKRotA7OeMooNTRump3XwNKwlL+\
+c6ssUQXTsUtGY75lgjZ0pItCqRV0MqxBR6q5SBr91pCO4BzVzUWXn78juIWMArOUQI5P6lXX/ctr+\
+CD3z5zh7oJo6kkZaNplqf5ZIFc1qgJHfOoImEpgxIqDjRwo0oijUpKUCB59k8IgKgioFbsUL31jDV3\
+c7EKdWw0TFAjJfQXiY7IH0VGfDIqlVhS03XDFThYCDAmn2nHghmqZpQ8c1bWYY20R4VsEGtnC+\
+T1WFrNqWBAOHyzp27e3GVZVzO1sXt8f/PmzW0ULNCLqSbZqttvvPlOV/\
+k1iakhnlMdthCbcaDYeGIYeZrPSQViONWshOZR79s1VKTU2Ljbn8/\
+NpjQqZrA2NVK9Xo96DAtYDTx3wf+i98E2UtSg2IObjTKdVyZdiOsH12qKURaR+\
+2IkVYEKjLkVlqTMbk6sbeWI/TMTuUJRgoARH0PvL3ztyFVBpkvyVkbkl/\
+L2U7CFqGbKQsJyQn5UGluaeG6RLiUlFcMJPGSoFGTHmamoGQJhIpLMrHKUEbdAvI50ZfdkWJXiGSRI\
+UWkVQ0sLk4he0tNAN/QoFwp7tRlcQ61cBBbww9dfVwP2CQ3JPcVu/\
+vE5py1duFQXXlKYrNScgaK0uNMW9SUa02W2aWk8OxFHRRExnY0volGRo+Qk84SiQJ/\
+jirJTykJ8sReB7efkm1mK1gkaxzLEx9gs7TvXOXGFOh5wRJm3D2dTdxtE3EsyOrcE/\
+vpesqkOnZKSrdEjoWdGh4kxm2rWNG3SSSQmMIkyr7O5QJhmHo3gQVnnV1hdimQsi2gPqb4LiMJq+\
+ZhRS0jf7Umyb8gZ1xnd7iilttg2pXUAgoFeEwi8clUwlbUNcozlCCcHP9BYhGW8mPvDRRb5PILvL13\
+7sqUUXYS1uBo5PaJWhtRl1Kae6TiJRJ4sgsSMyEUBpJUju0ruaXi8vLPwokb2QWphI7ciowGVqTUc7\
+/u4R9bQX5b/1W4OsQ+\
+UNWlqdsaYBVbE1nPCc8HnzOAV8Jrz5ISSFefiR9MckrJcyPKziNUizfNT6wFsGkJNpTiZJGUgXoEWI\
+ni5/f8x2X8T8y3Pjqd4gX+\
+5fscxJ8pCgKG5AP0zOmYFg6jRS2iWeu7cct1ZcsIfRgahE8iM9LxkqwyMgJpHep7mC59tt7iei9144\
+NaDB8GVoG8NF1v0v4o7s7TrVKdzzk7I7wKfAoksDP3114k9tPLNbfXI48ow7hCiptO5I2k2HLH0Gxl\
+HFjFlQV3pIsISKCUC9QSMO2VqkudxiwEtauuEhIBOkVV6wjgu9dSxtGzZhs1StK+\
+TGw75KMwzm765JcQSVOsoSEYUlbp2L8l+zaoQpTZQDAJP/N+AOm827/Awb/fegPeWQxppEfK+\
+joAgABt2zdZPUD/4NiEvyrjj4wW5JBvwDogpD0Sinc5D2yv9za9+\
+XXABN4YsqRVFHonPFLjJqGwElxoCuYxVkRLFilMPSUzJi4l2iWpRJHKgZwR6WasOiAFwiloaYNTW5+\
+WyDclftF3yfz74sObA7W+\
+vXe9uM3FUgvLSR3MkIbFGtjumZkS9XRfRAh4jLwIUyUfAnXDHjHjCOYlNrXrqDrFYo9KR3mslO68yH\
+sESZknWHUtP2fa9ezXtc2kFhEkLY+\
+BN0EKAhVMxNZlKEWRbA2ByocdVSj42y1xwkBqeihSY0yJo90iRZR2Gk5FEZMkjWFrR5b55ySHU5gWf\
+gIULOlgAqNcud5E/WnaRFJhAJUF4io/\
+89xecnq6fOb3Q8UrfZVWtrWVdGxMvnC6Vi7k9S7G6VKNjfWhrY3seV0u25k+X7cB9x/\
+FWjLPrmuEZ637YHCGlCxxqrEuuvRX8Cjdw4A3OXaOCbSpn7NvudM8ires21D2LIfcCOSbWWk6tiq0x\
+8oAsThesDOvUUNCi1jYaBkSyG3AEBa0uL4Imk6wrrUwVcta7VDueB8MEDIcm/\
+oGalGRE7vWREfj2EWoc4H+E+pCOSLMJRfUuNS4+rnTvC+MO06wqcCOGsR0jzbOuEDqUaVGMT/\
+TwrRpImgwLWKWAOKGpgrew5Qmfk56caFIgIw/wqeNBzYIVxiDRmFFZpSawyzqAUiWF+\
+lbHYQJGvp3L/2Qyre1DX6GOzJoamiSGQJkcPv5mLRM+\
+WG9YBwXiBDLsTFxfXtrQ6jwPUb3Kv1kZOxTFdvCXtRw6haJPKaWqfWIy5iNvPr+\
+EOyefR0ebFLrkyK3XeYuRJAkOqvk8L0rGz7ZMjTxiVEnKJoyxrVM8ChLIUlH2Fy6Za4SJv9gGD1zOS\
+Kt3XYVn1fSOuMZ6FWGyI7ZBmGd04OcxCbWjS21AxS08Cs1i/tbXo3jSMZ3mqw3dm/\
+S61LNBPI276linJGdUgUc6RsGxaSW2m02od3fXpbosMRqa2zI8sSLiwfZfWP2OSpu/\
+kWrWKbItzW3ta5teM0JL165I+\
+H8QFae6dBHlYUVTd6OplcQsL0NfUk4Ljkx8xpcqrjA4Z5lYwsGiSvoCDrEZ5XjMta8Uo1CPUOhEpIM\
+zYTvvWs8jAGY+2v9+Y9erUJ3jOuWqI+1TwtZ/vNRvmy21hbgaU2tGp+Mtu1U2WVNDPYqoWUEVjJv/\
+YzeqM3DSVSS2U2/\
+PC7R0cPiP2jXwwT5SFY2iVVPKlEkZKwY30zTR4Jq0V1WKbOgOF9BNfyHNhV7FXvoywIMsqaR2dbbKV\
+SEHBqnOBncd87hXoJqZaqfDB+/cBnZpyVMCfC1PqhKIi7B8Y/vSy/\
+0ceN8EZi09DJ4NKC6ra7g5nvkynpwzSUAmntpoObnYAP26giu56zPO34GuRlZtOJRIU5TKn0AZ7Xdh\
+xcPdBDfrJaoxm3N2MVygRiGJtXTGyjrcl308qU8w+\
+sWNTjs81nWHQkVDu2UWhNtNtlcXxTHNXV1aVTqGweft1alTHWhr3eAk0KUe3VWqZqjeypfaPiy2iN5\
+5NbfVU4+SgUJMS9xmHbTIBTXjPunXgoXBPiuswigKUPIvxBI/\
+yaGFoGRgIkg77alsMQsbrnLeRuE7B6CSW+ZpRbWfpDeGR0yitgqcnLxx8ebtt/BdNBwh/\
+tMuLtU8OcFGeOZB2NzBnz92lUQkXrjx9u3Nk5PfQSGYZrX78UHTR7Whd6WrLnkK3V/QMc0/\
+Spp1cvL2bQCXPtrNmx/\
+ZhDFSHxMTKA4dBzMSrAC8Q4tJRL2DPmlAt3TZWZqYGog6YbkHgm1yd8OO33DhOYkMz/FxiwtUR/\
+aA1C5KaAKFBicrOqLSJlt3yc5SJ5IO1zYv5dmkxTPQXBW+eEBZWlBZLIfq0J4mJ326U81mNG/\
+V2aNYyv9eaTUeNrs2OjAhvqzUNGlUEndt75WNyo3eWu7abkSQ/29ZX+gJaHm9IChj7eASAwu/\
+XPe2JgnYWc7NvxAZ7HQAhS0abVR74hjs3FU+\
+CDdxk9FYPmdyGrtKiNwmTagzF8ZzlfEJhaLGT6Fti7dJOgdvbqyvCvdxGO7j1QF7Ws2cjzqTw8Irmp\
+R/Co3YqUUuRccW522kxoWmbPRpZxb/+sMdNxS3KoJN+\
+cYTPEuZkH629q67mMwVXy7MabB7tHSWxadJCXdj2GMVmuo/\
+q2h8KkHxRpJKIEUHfskoLKeWMZTISCenYBwl1w5Th+FV2aJ4jroAo7kIHjOB/\
+KZ5wZknahHuMVPSG4sIuZ/\
+VhiODeZ4NjFhOE6QyOSKLg0m6ZQh8XGAHBakiByOhiXQnyukasHXMIPWsK05SHToqiNyoZ1XMc0MZ3\
+x55c+LlFkJzSmN7OqMjofAc23cLIIck5inOQvujP9uioqSHjvTtlCSLWWejYjEXf3aFbF19dH/vsN/\
+fFFUo8mHF5ztML8sgT4PmWU/RmLnJ0wSZ7qIzL6LJDNK3f6ufvdH7y94b73U6XnoHoplHVhy/\
+oIhjO61KHtpn9rnT1fuRmb6n1K1biv7lD58aeu5iUj4eb7Hq+I0qmOrtd/6cJ3dgWbP5e/zql50Q/\
+KGVfg3fOTqrF3358732+\
+8dPAj25K2pSLxKqsMaqYAP0DIUQSNxwkD740KGxKdZZeq20H674Ypjnab08dgjwcjCMLzAa/\
+otmW0olKPY9yn6vJIvh92IHsavaL2TvzfeWNjvSFAf+ezsJo/\
+o0UXz5Pi2V2KzJPEA1ObYjvzJlnNhcG86C+lN2gBxghZFuPZm/\
+ULGxGQjfGtSG5efjmZn0KDTr4klXre34TXkQ2268RgRRDjm+\
+JdRsbqsBKaX4iunlquvOZbyG2lzs5MTqw8nJNkcRX1tYltTxuBsMXyz7LbHneoXVRriu29KAYLWiVo\
+cD7PSOIOO1qd2jwNMuN0hksEfLCWGAsbUsT4pFhTbky1c0dzUBPrqo8QRC0hGx4gkxqiVFW+z6CN+\
+U8dKevfD7gJ2rNwh42/iw3zLxK1DIlvkfTCfarTtvE5n+9lRApiOghnNknxB5fGbapMtDq7/\
+w2NZaz7GxDly1/nhV8PDJmEPo9He90brx9Nn+\
+qsMjjkXtGYM4dui2dN2Nr4k2bXD4vSzQIpZb9DY9GOToNn4IdlKVCFUt9V4JKwz1+\
+VNiPKB23uGmIHvRQEptL8r6MKN+jG9VWL4nJoDRa35vHeelH7d5rXiCk7/xOwWOc8U+JADL+\
+MTIhQ2XOdeFSJgsXykP0R9uApKBLmrmrpt22tm1LVhJWsd0z8tlPin1SOVaC6egrWO/eyK1Io/\
+lksYWUqN4YSeeunUGxGNRPK5HIGI/NOJ2AkaRUNbKazlAXDVZ8AMk7TST3j/co340SvbEPLXv+\
+NsffUonh3xmjuBR8o2SSk4SZEjL3d1YzuAjnucncKvOfpptVspzKIkOBg2jxtDM4K/\
+2OUQOI5rCtV22qR3MRgLOp/\
+J8tOyPiBrtQC6zM8LGKzxnqCEMQrdxFicf1EesiJXzHHS4MZuUowmrEZfuINoe/\
+PrxJ18ZuvzV3QSiQpzHs+ouBh9HxTqVtnnThw2SWZJGBR21LdUiHj9fsAp+cqiwgU1b/\
+ajNBsrNxhTn1y7tbLe/\
+XGxtzloNRHhfg7EMhCoJgYP6N9zPydnIgRpE3yXT57kxu85Zc7lwKXxdu9jhHnfxKXFBby/\
+zVTNf91mu6pYQu7yG6yrfpmkdGPCRiG0LuxMuHTmZZDndKptwxVauRF/SmqQUvyhMo31lrI7H/\
+bM81n4mzQ8/BGeCI2/fROaphjfibMZsY9WXqs9/qPC/Lyl/\
+8QJzfmLpvy9bXfbGZFF7LSBtLf2nVj38nZfZtYAEpSTZeV1kZHdWatUGNGozpKmpzo2ujLilBk18EE\
+wyYyB2ixBSrZtL3GtA6sJIUIvynUwrxTYkpklO5vn0EFsccLuBGvArjKGGJIkcLwsIqgeI2pAGNsB4\
+oiBqevR0SOEyqsppYHcO43D3LduQ+\
+nLLj4f9rJzu6jm3CHPvCPi8FT6rwb37yWTqLgnKrGBcaRlCa80qOzmZshYSb/Ewm+Q88Sjb+7M/\
+LeOi0pr9snFGN9akM9yu5XaHP3UKaOL1FAuzkaNpHx6br1/\
+ENXEcrEIWfqnu8ZFk6b8vudritogrV8h/hUmxNDeozc1HT+y27dotm6AV2rZApsnc+\
+HORy20XQXPLKTa9aiXxjVR4o9VEWC5hbbLcTNUaeasjqU583a52wWaYCFNzbHX+\
+22aNzfGXUXQPbJXeKChW1RMra4l2KfGVwEg+3Eh/\
+GUSPOR7cd2iE0S11dzkQr45DJH7bQ7ED8Fyj2tvDjd6kzAbxfK/NZzlWNvTKtfx/iqhxNxnL5Xa6+\
+M0KYq2z75X4zIROjbdwFNCBRJgGUERJfM9NDhFXhnTbtouclc5qlxepqY7Scjqys4qU+BSbPQ+vPX/\
+KP+Gj2fjaR/v+WJQ5WAdmTvHcZVog2hPSm66YGVf7zEBkiV+\
+StPMgy4CAHE5I2vR3m9e0I3VWpXSVSHxe71JQywMCug4CS2fXK2ZJu+\
+5yGrIP6tigfpjTcGnPeQcjneSD2mM60vtLhLrLh2B9w+\
+WG7pbPSllE8h27357dsE1OBmY3zxEv9czu0IxbWW7UcRm+\
+pSt03ozSMYVlr8X0x2pZtjz7kiDZe8yrYJxoqYzrtWEsCxEKntCcBI+ELYmxbCPfjMG+\
+Am0e3cmhwYq6rS4hjKs4mrUcz0HbWZG6GK4ro8axOI37uqKCZypSnjmf2NbGcubM6Gp34nXZ+\
+HVYhvvRgDNUrrxziCEnWN0Gk+ztpob9XFE2/9037+\
+fUnlJ7dHGDpyrtzHb9awXtud0gsP7YzaCpxM2ZrzpJopMQ46/9kqClZGvt/JRq/\
+R9eO84FyytxWzU7YY/iW6OJs3qCiuaJ3I2B+tcZoME8QGaunOiXSRY/abp7MU/\
+poGf3IpFZ19aMuQ1A9ey8AQI3b3Ye+z+ebLjf3NPuUS/JN6VbuuJWnhaI0rN0pNM1ETl289dt5Sq/\
+dDYb57q+QQxd4h8l7K6+avZpwC2Prb2ZTEewluBVg950wEbjutJ+\
+tnN5cnDcwoUWn0liyP6LFBQgHoUwnff6ODFJGaDi7jqy6Qu1Q75WLhj6u5I1bhR03dxNYW990s4Por\
+NkYhtBreP0ub0ozOeVPueoxywZeEhg/86e2ugHo3Z3kowGavfcBK47vGOH0eCHION/\
+0MgZAIF4hJh2Hs2D8t6PA9ZyXrOr1uoT1sbZukXfZUXS/kC2dRTFUUFK6f+\
+olTLGo4Ie0e9AOq10l5jY3qmpu9Q5WHlTs3mbLtBpdxkyZGxDtX1bKMnk1zvsDKOzD4bQdfrWvgFmF\
+aXgyQQ+D1+hbgEjQnXzj3mXYQEL037ML+\
+xpMwoiwZ2UftKI0zR30YOFkTCfVqtQ05E6LfWY8wUvnzGFKmL9gdwEDPleq8g4oSt8XNRCySd5IdGV\
+lUvumnJzijqp/HNfUKU+/LvTEz7x+\
+Sgp71dDVADz3NAlkUSjnurwjw8teQAKd8FAbtRw4mCL7FV7mECFvS9f4estCs6+\
+iwAVezu6tkMJjOEI9LLEZT8n7vrJuvEYNS7arQTM1akc/V+\
+Gu5OZyMmprJ1QDn8Z6JLvrKxXcMsZvEV8zaMYugyP7sKN6y1dKJTf4qoD2+1tP3Qo3yxFteN2r/\
+WyeNCMunK7IHHtUH+9gG8X1JcL/E8ShPcEOCr/5le/Nv5CAO1Kl+\
+rCXCPKVmUb7oLII7kJ4MDa9jr94BSV5fYmBLVYT05Ohij/6Z/ZfMa9fFpBH9rXnaWLFF7+\
+9h5ZvdUXUH/5HRt6QNVKycDUB/\
+4ge522Xpcjd1lwLguo7UBrN9adS6asHx6zB19YFRGShVtnb9369OGjo8/3Htx7dNT//PDo4U92d44/\
+37uLDen0nXR7j1fzkZplkSs5PUFi6DpoqyCY+\
+Vb4w2EZ2T7t02OcCKOO1fZ8NQistVq601Z7mcADZ7H4uuwyProtCacP1ONbNxk7uc+9jEQ9Eyu+\
+4uatJ++t2MuNb6j1Ny52mg/XmaPwg/\
+RzpHZodFRWXPE1vffyvlacrH7Q9p7beiMgotvGQnSCBcRnnTTcUDNJfvXVXM0jmYj8QEU07luPN9um\
+Zo9mG2Wfjc0eHaVs1HqIBL2HOmWDtwhQCc2pNtyWQcmLq01K1vwPGdUv7Hbql6FpybOGcTndtxKxFL\
+inpifWYi/aFBvr1ubWu2r9f93S/t+ULjclK7hlQ3JTNw3L8k2235tJhab0VWxI4u1bcvvuYUG/\
+0Sl9h90L/tWFlLtj/JNKq+51Sq3NDQCptKvSJHF7rLoZg3MLRXI+em9/qtM+HxZJbCezJ0gfhrA7+\
+jFJP7dXH0zmmX2ylLhIj83tTWNodSJG8+qP/bug0siRlsvRLL3Y/Cp3oWK6LeYOP75aQvLUroG/\
+XIiMzP+2mbv2l58vU7s1eGF//8D/7vngOv9EIf3O8n8BDtc49g=="|>,
+ GeneratedCell->True,
+ CellAutoOverwrite->
+  True,ExpressionUUID->"3675f4a7-ad8b-4aad-96c2-750c1c5f1cae"]
 }, Open  ]]
 }, Open  ]]
 },
+ScreenStyleEnvironment->"Elegant",
 WindowSize->{Full, Full},
 WindowMargins->{{492, Automatic}, {Automatic, 78}},
 TaggingRules-><|
@@ -1072,7 +4248,8 @@ DefaultNewCellStyle->"ChatInput",
 SpellingDictionaries->{"CorrectWords"->{
  "Blochchain", "Basics", "Platforms", "Languages"}},
 FrontEndVersion->"14.0 for Mac OS X x86 (64-bit) (December 12, 2023)",
-StyleDefinitions->"Chatbook.nb",
+StyleDefinitions->FrontEnd`FileName[{"Report"}, "StandardReport.nb", 
+  CharacterEncoding -> "UTF-8"],
 ExpressionUUID->"e4f98c4c-1c73-47d6-b408-72fd88b7daf1"
 ]
 (* End of Notebook Content *)
@@ -1087,25 +4264,46 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 181, 2, 98, "Title",ExpressionUUID->"bce29e67-016d-48fd-99de-918e4f19dcc6"],
-Cell[764, 26, 13145, 229, 783, "ChatOutput",ExpressionUUID->"268f42d1-75d5-4118-b8ac-49fbfbff5ef0"],
+Cell[580, 22, 181, 2, 97, "Title",ExpressionUUID->"bce29e67-016d-48fd-99de-918e4f19dcc6"],
+Cell[764, 26, 13145, 229, 774, "ChatOutput",ExpressionUUID->"268f42d1-75d5-4118-b8ac-49fbfbff5ef0"],
 Cell[CellGroupData[{
-Cell[13934, 259, 156, 3, 67, "Section",ExpressionUUID->"0337bdc6-7b4a-483b-aa2e-d4102e996e33"],
-Cell[14093, 264, 13608, 222, 585, "ChatOutput",ExpressionUUID->"24fd3974-b5c3-4cf5-9aaa-3413ad225bad"]
+Cell[13934, 259, 156, 3, 69, "Section",ExpressionUUID->"0337bdc6-7b4a-483b-aa2e-d4102e996e33"],
+Cell[14093, 264, 13608, 222, 576, "ChatOutput",ExpressionUUID->"24fd3974-b5c3-4cf5-9aaa-3413ad225bad"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[27738, 491, 154, 3, 67, "Section",ExpressionUUID->"d46e9964-aaa2-4fdb-9a1c-ad506aaff867"],
-Cell[27895, 496, 16372, 261, 739, "ChatOutput",ExpressionUUID->"2e52c295-5334-4b2d-a986-f61d86fa406e"],
-Cell[44270, 759, 351, 7, 55, "ChatInput",ExpressionUUID->"907b2140-14c2-476f-a6bf-a1ff1aa2d042"]
+Cell[27738, 491, 154, 3, 69, "Section",ExpressionUUID->"d46e9964-aaa2-4fdb-9a1c-ad506aaff867"],
+Cell[27895, 496, 16372, 261, 730, "ChatOutput",ExpressionUUID->"2e52c295-5334-4b2d-a986-f61d86fa406e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[44658, 771, 165, 3, 67, "Section",ExpressionUUID->"e3bec527-5f5f-4bdd-92a0-4d92ff5bd3ac"],
-Cell[44826, 776, 17540, 284, 629, "ChatOutput",ExpressionUUID->"c35ea2fc-e540-4b97-9eb7-5d57beab5cb8"]
+Cell[44304, 762, 213, 4, 69, "Section",ExpressionUUID->"e3bec527-5f5f-4bdd-92a0-4d92ff5bd3ac"],
+Cell[44520, 768, 17540, 284, 598, "ChatOutput",ExpressionUUID->"c35ea2fc-e540-4b97-9eb7-5d57beab5cb8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[62097, 1057, 269, 4, 69, "Section",ExpressionUUID->"87b4f322-fc5b-437d-905f-a2942ea428d1"],
+Cell[62369, 1063, 35275, 644, 2649, "ChatOutput",ExpressionUUID->"0eed61b5-a022-48ca-940c-bf6ad8449f00"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[97681, 1712, 171, 3, 69, "Section",ExpressionUUID->"c94b0f29-bfad-4ab1-b9ca-f0b48b1687fe"],
+Cell[97855, 1717, 27131, 470, 2216, "ChatOutput",ExpressionUUID->"5b11376e-f852-47ae-b90e-ce6388c0a7f9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[125023, 2192, 212, 4, 69, "Section",ExpressionUUID->"c1bd4254-b54c-4043-899f-cb843e4d4d09"],
+Cell[125238, 2198, 22950, 406, 1389, "ChatOutput",ExpressionUUID->"7f7c58e4-dc4c-49f8-bd99-73c13e30a844"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[148225, 2609, 181, 3, 69, "Section",ExpressionUUID->"125a423a-a46e-40d7-bfe1-8a4b6ba483b8"],
+Cell[148409, 2614, 27167, 448, 3284, "ChatOutput",ExpressionUUID->"31874010-b00a-4421-bfc7-32ba809c5bbb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[175613, 3067, 163, 3, 69, "Section",ExpressionUUID->"daf9fb61-4bbd-4491-831c-36066e0f3d37"],
+Cell[175779, 3072, 26139, 499, 1505, "ChatOutput",ExpressionUUID->"04cbf88d-7b8b-4e5f-9703-8bb7dc237873"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[201955, 3576, 173, 3, 69, "Section",ExpressionUUID->"47987359-735e-4621-a421-989f3f31dbe2"],
+Cell[202131, 3581, 34524, 654, 2152, "ChatOutput",ExpressionUUID->"3675f4a7-ad8b-4aad-96c2-750c1c5f1cae"]
 }, Open  ]]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
