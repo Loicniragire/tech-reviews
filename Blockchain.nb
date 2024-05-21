@@ -1,0 +1,1111 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     63946,       1101]
+NotebookOptionsPosition[     62394,       1064]
+NotebookOutlinePosition[     63065,       1087]
+CellTagsIndexPosition[     63022,       1084]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Blochchain Basics", "Title",
+ CellChangeTimes->{{3.925266204849153*^9, 3.9252662221108522`*^9}},
+ TextAlignment->Center,ExpressionUUID->"bce29e67-016d-48fd-99de-918e4f19dcc6"],
+
+Cell[TextData[{
+ "Blockchain technology is a decentralized ledger that records all \
+transactions across a network of computers. It helps to ensure the integrity \
+and transparency of data without the need for a central authority. This makes \
+it particularly useful for various applications, such as cryptocurrencies \
+(like Bitcoin and Ethereum), smart contracts, supply chain management, voting \
+systems, and more. \n\n",
+ StyleBox["Key Features of Blockchain:", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n1. ",
+ StyleBox["Decentralization",
+  FontWeight->Bold],
+ ": Unlike traditional databases managed by a central authority, blockchain \
+distributes its data across many nodes in the network, making it more \
+resistant to censorship and tampering.\n\n2. ",
+ StyleBox["Transparency",
+  FontWeight->Bold],
+ ": Transactions on a blockchain are visible to all participants and cannot \
+be changed once they've been confirmed by the network, ensuring a high level \
+of transparency.\n\n3. ",
+ StyleBox["Security",
+  FontWeight->Bold],
+ ": Blockchain uses cryptographic techniques to secure data, making it \
+tamper-proof and secure from hacks.\n\n4. ",
+ StyleBox["Immutability",
+  FontWeight->Bold],
+ ": Once a transaction is recorded on a blockchain, it cannot be altered or \
+deleted, which prevents fraud and ensures the integrity of the data.\n\n5. ",
+ StyleBox["Smart Contracts",
+  FontWeight->Bold],
+ ": These are self-executing contracts with the terms of the agreement \
+directly written into code. They automatically enforce and execute the terms \
+of a contract when predetermined conditions are met.\n\n6. ",
+ StyleBox["Tokenization",
+  FontWeight->Bold],
+ ": Blockchain can create digital representations of physical assets, known \
+as tokens, which can be traded or used to represent ownership or \
+participation rights.\n\n",
+ StyleBox["Applications:", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n- ",
+ StyleBox["Cryptocurrencies",
+  FontWeight->Bold],
+ ": Digital currencies like Bitcoin and Ethereum are the most well-known \
+applications of blockchain technology.\n- ",
+ StyleBox["Supply Chain Management",
+  FontWeight->Bold],
+ ": Blockchain can provide transparent tracking of goods and materials, \
+ensuring authenticity and reducing fraud.\n- ",
+ StyleBox["Financial Services",
+  FontWeight->Bold],
+ ": From cross-border payments to streamlined lending processes, blockchain \
+can make financial transactions faster, cheaper, and more secure.\n- ",
+ StyleBox["Identity Verification",
+  FontWeight->Bold],
+ ": Blockchain can provide a secure and unforgeable way of managing digital \
+identities.\n- ",
+ StyleBox["Voting Systems",
+  FontWeight->Bold],
+ ": Blockchain could offer a secure and transparent way of conducting \
+elections, reducing the risk of fraud and tampering.\n\n",
+ StyleBox["Challenges and Limitations:", "Subsubsection",
+  FontSize->0.8 Inherited],
+ StyleBox["\n", "TinyLineBreak",
+  FontSize->3],
+ "\n- ",
+ StyleBox["Scalability",
+  FontWeight->Bold],
+ ": High transaction volume can slow down the network and increase \
+transaction costs.\n- ",
+ StyleBox["Energy Consumption",
+  FontWeight->Bold],
+ ": The proof-of-work mechanism used by some blockchains, like Bitcoin, \
+requires significant computational power and energy.\n- ",
+ StyleBox["Regulatory and Legal Issues",
+  FontWeight->Bold],
+ ": The decentralized and global nature of blockchain poses regulatory \
+challenges, including compliance with laws across different jurisdictions.\n- \
+",
+ StyleBox["Complexity and Adoption",
+  FontWeight->Bold],
+ ": The complexity of blockchain technology and the need for significant \
+infrastructure changes can hinder adoption.\n\nBlockchain technology \
+continues to evolve, with ongoing research and development aimed at \
+overcoming its current limitations and expanding its applications across \
+various industries. Whether you're interested in developing blockchain \
+solutions or simply exploring its potential, understanding the basics is an \
+essential first step."
+}], "ChatOutput",
+ CellDingbat->Cell[
+   BoxData[
+    PaneBox[
+     TemplateBox[{}, "ChatIconPlainChat"], ContentPadding -> False, 
+     FrameMargins -> 0, ImageSize -> {35, 35}, ImageSizeAction -> 
+     "ShrinkToFit", Alignment -> {Center, Center}]], Background -> None],
+ TaggingRules-><|
+  "CellToStringData" -> 
+   "Blockchain technology is a decentralized ledger that records all \
+transactions across a network of computers. It helps to ensure the integrity \
+and transparency of data without the need for a central authority. This makes \
+it particularly useful for various applications, such as cryptocurrencies \
+(like Bitcoin and Ethereum), smart contracts, supply chain management, voting \
+systems, and more. \n\n### Key Features of Blockchain:\n\n1. \
+**Decentralization**: Unlike traditional databases managed by a central \
+authority, blockchain distributes its data across many nodes in the network, \
+making it more resistant to censorship and tampering.\n\n2. **Transparency**: \
+Transactions on a blockchain are visible to all participants and cannot be \
+changed once they've been confirmed by the network, ensuring a high level of \
+transparency.\n\n3. **Security**: Blockchain uses cryptographic techniques to \
+secure data, making it tamper-proof and secure from hacks.\n\n4. \
+**Immutability**: Once a transaction is recorded on a blockchain, it cannot \
+be altered or deleted, which prevents fraud and ensures the integrity of the \
+data.\n\n5. **Smart Contracts**: These are self-executing contracts with the \
+terms of the agreement directly written into code. They automatically enforce \
+and execute the terms of a contract when predetermined conditions are met.\n\n\
+6. **Tokenization**: Blockchain can create digital representations of \
+physical assets, known as tokens, which can be traded or used to represent \
+ownership or participation rights.\n\n### Applications:\n\n- \
+**Cryptocurrencies**: Digital currencies like Bitcoin and Ethereum are the \
+most well-known applications of blockchain technology.\n- **Supply Chain \
+Management**: Blockchain can provide transparent tracking of goods and \
+materials, ensuring authenticity and reducing fraud.\n- **Financial \
+Services**: From cross-border payments to streamlined lending processes, \
+blockchain can make financial transactions faster, cheaper, and more secure.\n\
+- **Identity Verification**: Blockchain can provide a secure and unforgeable \
+way of managing digital identities.\n- **Voting Systems**: Blockchain could \
+offer a secure and transparent way of conducting elections, reducing the risk \
+of fraud and tampering.\n\n### Challenges and Limitations:\n\n- \
+**Scalability**: High transaction volume can slow down the network and \
+increase transaction costs.\n- **Energy Consumption**: The proof-of-work \
+mechanism used by some blockchains, like Bitcoin, requires significant \
+computational power and energy.\n- **Regulatory and Legal Issues**: The \
+decentralized and global nature of blockchain poses regulatory challenges, \
+including compliance with laws across different jurisdictions.\n- \
+**Complexity and Adoption**: The complexity of blockchain technology and the \
+need for significant infrastructure changes can hinder adoption.\n\n\
+Blockchain technology continues to evolve, with ongoing research and \
+development aimed at overcoming its current limitations and expanding its \
+applications across various industries. Whether you're interested in \
+developing blockchain solutions or simply exploring its potential, \
+understanding the basics is an essential first step.", "ChatData" -> 
+   "OEM6eJzNWd1uHMeVVmxKFieyY0XZXe1NUKYFWNbOjGBtsoAJw4sRfyxuSIlgj6wNosSs6a6ZKb\
+O7q11VPaPZIA+SvEleIXf7Bnu12MfY75yq7ukhKSO+CBDBoMn6O3/f+\
+c6p6tGjQdIbOaedl2Wq3NbY1oqGam8OjS2kb4eeSqdOrSkq77ZpGnM6HSQ/\
+25tLv2dKr974U6uqqyt+Siv2rV6o8rnxamLMRXPoXZp6BuHGro5VOfPzvQyj+6tSFjq9qsQ/\
+HZRykiva9ZU1dZUo73U5c+7mocwdHRgWHB+fJMouNCxqtn54aNV3tSrT1akqZe5X9k9/pH9//\
+nfMPZNllit7WJep16Z0o3cHyW2ScmochD83JU54jwesav6+\
+faacyRcqa0T87PIxv1IrN73lto5hYbL11GSrZJt+7s3r8iLpJV762u2ZTCVbY+kwwj95NNk+gL/\
+8c1ng4A+OyjSvMxU9teHdnxyVc2U1h2+sXOsqjGuvZc7hUXnejN87kW/o78RbeC44Xd/\
+47p0bcANNhUiOzYUqnb5xg8b/GeMval/V/vLGb/8PjtrGdFi/\
+odj7J8rO1AkiIGfrMNw8gbn56B24M0YoufWiUuXoaJBskbXJvVnlB78Y+\
+NpOzKCyaqHVEvA7qXOvC5Mhzk2w7zVwegX7IcnPTZZ8gAgpQBBwO9blxSD5x3D86PRoD9DMFUXm5dl\
+x8mjufeV2Hz+WlR4arJF6mJri8eKzxyl89jhtVzt4k+IO8Kir4LmHpCCcwSlr/NwibMNZY0P+\
+b5yw88rkUyuLcxokxc+vrBkkd7o7pj9yt5tT8ftWkhu/\
+9yO4gxYl9aTQm7n2YcgXmg0Rcx9dkXl5CUxgB65HGC8Prmy8ZtU1WfBeJInpjQB8HB8jva+\
+mElEMCIARMfBvifj7ydwsT3SpC/1fOL1r5T8AgwoMUc6CJm3opSXIR/oYJD8eAwnKIp+sslP+97+\
+I2PuMVpxqGXA3g/jk7tiYfE/mecsUG0J/TNMvqhDfrUFyP/\
+rnWJazGrE6WMi8lsjP0U2YPMpzs1TZwRuV1l6dSj/fzI4P44IzJbMw++\
+6I3Hk3jrOvr267H6VAibEuFLLVeSt16fe+\
+ANGewiOXhn8OrLxSk0PlU9AEeb3N8tLHJP6fIazDokRJy6u2Gj1GGeIVF7vtyDQKFH27sXpzFEcfeV\
+W4PbjgVozKra+MmeXEwBBxVGDP31jOBxSoROVqzeUb1sEH7xPpNmWvpcyrCr516SWfXr/\
+o7oYi41WlRmDTOzTqQp1qk2ZrbKpTSuz7YyvTiyS1Js8RzVdzVZ7mMl2vvMnbp+/GqtJR5Kr+\
+03fceyiFtGO0TVrK0pQ6lTnjvusUuGhfuyqXK566gymxngvEfGepJt+49eBRypx0+\
+0wun5o34Kp3HCdcLr3CQJP/yT2ST4svyVMutZrzKflJGBd+rgSkAI8t67mHV3iIPXB+\
+io4Cks6XzalIgEBtvkvFg7fwHy069+SZtsvwpNetxNQWVem9p7XO/\
+VGJWINWYD9miY7ZJpi6dVbn4A4QhV0xxI6AXgv2wk8cwkUSTnqm8iq5G83jxYLqK/\
+Pmd7W2TWDXbLm1L70kUN1ui0AMNlXNrTMDsbeSlQP+\
+qScJSZP85f7H4itVguxycUTZXwfze71HgkCkFsqKFUwTKGQVJpRARDw4wgkpJrlJL4SZYixTfeFqi+\
+6qzIT2Yqk9xQVFVUyATLDQBXbQXOhJOGZ5zFKxhCghqyoHyoDv3d75+\
+Xkz2aPDaYBUokwW8PlcqDdwGlIHOomaqqg4lmP1nyyjVQRCiqBKhsSQVjg9K92uePDgze+\
+eiH8Rq989efAA5x6dnL44G4+ejz/asFosWZ4UOf5HLmpMEQ/PPxXGdk8VDx98CuM4TH0xOn41+\
+nUigFVZqdYfkg9wuXTzoTh4I6lT2BVHHv5DByYKJV4/+Pzz4ee/FKQBQg5SZj2mBj2RF940J74+J/\
+GvHwg0zihV+eqjXu9jQQi/FMZfY/\
+dcLmBESt0GHUHodXC5BrRSWYqJggNVRlMZZufUGffFlNhBZABVX1BPg3LUFxgb0s48qJWinHq1iQ8Y\
+JiklSRUvL5SDU7BZSCf+\
+I3nxHKYQc1O8ZBhwSOxCDsUzZaGlDciQC6lzgkLUVoZgaotznEk1xGZxp9vt9dhwYptd4oFvpoHZep\
+Gb4gyR02Ezs2aR3TAosDKGj1yriRAR9xKwnaIzgbbo/oa9hGXu9n7f297xoOad3R0z+\
+RZUvdPHSIiG1+jZdrFie6e2efitXe04xWk1xrK1Gpgaw3AI2cHUH2h+\
+Z8r88sMOoFUhJTnDKaogF6uBKPHw9c4pWUlGvt5hBO0w81PL617vfMqieyx9x0ai2dn9TWNJV6ne9m\
+97f7jieXZby/bXBIDFtTViMw6bbE6gD2FwP9jtzJh/vd+u8Oz3+\
+CEcfb3132P3X2Px37GZIIo8Rw5QNvYjLZLWnWxGipeRsrKadNjkBcrSFy+\
+O90bHx7viC6YHtNvqS7b1i6qplTwoPvtyB4uoZ6Xfr1nwpLPgyZfQ8eD5/ujsq5cnB8/\
+HCf3RyOr1RvlSrqhGKIH1Ogusg7RwlUr1dMV2tMc75vB54B22eijiCcHWdvIT1+\
+WvH3TgoYYz4zDbwIu++FJMqItTKAWxfLbTlAvxWNSfmooOnTcUuDUtNMop6LUg/\
+3fkYqiVG6PrWmMKULMwZUctjiDHr10U47w0RIQo5KB70OFEQRslVEvzbBTCC2GOGwyoj/\
+NUuMSwEnw1cp6rTCsPnM5FlhZblSpNZao5oghdTNNuEJ7CQQ49/\
+1BQXaPi5alzoNiibrk4S7GYYoubswVXoNh6E/vsMNTIona+g+\
+sGPhQX3rv38uwM2OqUuX0jSuMFWnfeA++1xpA+\
+IVfYSBUMta1N0YOIQWNW149HU2wm1RBBuJtOhUHhzAAxncZEpLmTl8lYUBeK23OzkNUJ8t3a931qK0\
+qhp+FMFPqL0JpAZTJlaezFUEB8q9EUVRi9AMsGuBTaqrUVkJUai8B53qCdQzJiHp0Zl9LlfEXH0xkq\
+G4rnB18fnHXdJRurSxLedCEUG7mBc3iB88Ggi/\
+B2RS6jY7V1EQcZkpqOiO0IlHGxb0BPatjYLATrokQCL9k5c7ViAFGAogqZiWBwkJVnJIyMlAsDAQWK\
+KWiUA8YtyWQVqKhBSIuu0OXC4TKjeMkLMQsddr4ScsJWcCczjXcN8AF7jdvBPoUH85YqAjVEoqyLib\
+LfyCxTthP2JavYyPEyv4iH72AlaRn2uR2O6KqBeDSjcX40IhwZzQ4AUqJzs4ttpl+1Ak0HJXQCPLe+\
+Z2y9dHQnam8ZP+WLQjonVLi6qoztXEq22wtwZ8d/33+\
+63uJVOi9NbmYQT9eODFxRejiUXngEwDUjz1BUAUZjM6wBorGgdDL0weh+\
+rXG0t1SeYB46JO5qLUgRLfgcNy5uj1WJ60PwAHVKM3DCKvSfdCCASU88tJ964zUwsbxULX6jgkLWmK\
+YThmJMBFWEjth3AA5UwOPTOuetC2m1qV1zGWLt6WYFrkUqp3ZVeZPiegMl0AeIh7kGjz/\
+VPjU6YPmAwVMXn2JXASFMoCgrno/BqYA9exXlAllMeOiLhWGWDNSLhXRQAYoaClwrPv5Y/\
+ArJcqj4QcyR6evgoKx/\
+NhSPHu2vY8JKP3q0K16WrB1GM01j8Af5bCKdclF8Rgi8xl190YFMpqmpmSBW5DoXHB8jykWvxA2xrb\
+Mxwv2GXuFsMoXyM8CMiQtRNtbNdRVCK+\
+nBD6sB4ydkzrgTazJl3AUTp09HP7q0LLTT4brC4Avh1RU963QpBiyHPSUZbsqUUbb6ZEEVAcRMDyPa\
+FsEpG6YwJsOdaa5nc2B+oXLOwY6e0P1fSfcEZZd8SHp3sqgmrwcAzays5lREKLE0VQduX2ifile+\
+tfOCbwZgAMjj23VYx7eiOd1nIfgXJPioKGqEV+dR+AuyUHYTUXCNphxlB2y4sU/\
+C1m6SOVKTVuGWrXLF5SvcWemplx78oIGss1hhHUNzM2kjR5FBUPGX7BtOib0mJTi0XC4ohk7l00HoW\
+sj2NnHW3RhUKlxzrpzRJwO6Y2WaqiAyixoITyW25OKYKUp75I5snmK5CKgSmZ6GQtFtktrTZSs7vIz\
+A4ox6ugJdWEZzIZ8ca41uD9b9G6M2PFC3CdiJPpW6WB8zPdOoF4K+\
+utHXCS8jrKeimq8cKUm3bEWMQQWz5E6Sv9T0N58NKLNDiJoHhPZMgX0qJBim23RgEFhA2BNqiFpGHa\
+IDmQxgxt4lliNT9qPSHe57K/\
+W1rwiFoaaOvjdEOzqyyNzJdTVmyDokgSr3ePKkpcprvFrFDnyditSmIC8IQxAyMyYLHAAEgGQktSXr\
+hK6pgyXnxCqDUNcpzTC6gzKHupSwGeY3nydJj0NKQGbBwYQyity8KjgzKJv5W0fOiMnRgdKRVfjkpN\
+wGvZIRfB2YtmI2audUoirYPohLyYp+aapDZIKg41FGZsCIr2HjNHr5e9wlGx6h0+\
+qSX7j4wQc3D3Ib1wdSuoGrDgI0PQeQwK9DzQpPmu6yJO5kzHRKXXRXUjdKURLlE72X4bD29b+/\
+jgPfOrTjlmHNON2KQTAGUHK4eaZCqI91of0GqBOkVYcbnxGNd5lxYfIajRa5yNE1MyPAdopA83iKqD\
+q1sZMfD4NPDpBz6JLoQ05dVE0E6GLG9D3Af3xWoagKaVeExEW5cQbC16CAA7rp1W8vkPzWyfEtfeyg\
+ZKztlVmSt5mOSY2g0pmaocuh78/BMWpGT810V2jY91I/R6tmuZlIaiyp47iUqZWhQmbXx6at6/\
+vxdTmwN9ppTZ+3A33nctm2gZkmYBAEvkUWukyHoAeFw+feN00+\
+jjKz4ch0Pf02BmleK9cNYddpugSKwhMtGRfaAceBx42M0lhGkYDW9V0wVQddxrKtFvQdtR+\
+sNOXMkPVEwvzYQ6pk1C2YikuV1NRfoFU2C2VhSyjyLvKqR9Rb4Mb6hB4ma1ZtEGh0ZtOxQvea+\
+jR6ZHg1V8TFdKv4xIaSbMP1n9q5oA6d2b0XAP+\
+RmMlfBbEv3SSNbYRXhq4GoCdcSMlP1MxlTYaiqdSp4/tBKYjjeGW4JYILVTUcJHeOj0/az63JNj+\
+F0ued/wdyq0Xy"|>,
+ GeneratedCell->True,
+ CellAutoOverwrite->
+  True,ExpressionUUID->"268f42d1-75d5-4118-b8ac-49fbfbff5ef0"],
+
+Cell[CellGroupData[{
+
+Cell["Languages", "Section",
+ CellChangeTimes->{{3.9252662635127707`*^9, 
+  3.925266264974646*^9}},ExpressionUUID->"0337bdc6-7b4a-483b-aa2e-\
+d4102e996e33"],
+
+Cell[TextData[{
+ "Creating smart contracts, which are self-executing contracts with the terms \
+directly written into code, requires programming languages that are \
+compatible with blockchain platforms. These languages vary depending on the \
+blockchain network. Here are some of the most commonly used languages for \
+creating smart contracts on various blockchain platforms:\n\n1. ",
+ StyleBox["Solidity",
+  FontWeight->Bold],
+ ": The most popular language for developing smart contracts, primarily used \
+on Ethereum, which is the leading platform for smart contracts. Solidity is a \
+statically typed, contract-oriented language designed to resemble JavaScript.\
+\n\n2. ",
+ StyleBox["Vyper",
+  FontWeight->Bold],
+ ": Also used on Ethereum, Vyper is an alternative to Solidity with a syntax \
+similar to Python. It's designed to be simpler and more secure than Solidity, \
+with some trade-offs in terms of functionality and flexibility.\n\n3. ",
+ StyleBox["Rust",
+  FontWeight->Bold],
+ ": Used by Solana, Near, and other blockchains, Rust is known for its \
+performance and safety. It's not specifically designed for smart contracts \
+but is used due to its robustness and efficient execution.\n\n4. ",
+ StyleBox["Clarity",
+  FontWeight->Bold],
+ ": Developed for the Stacks blockchain, which aims to bring smart contracts \
+and decentralized applications (DApps) to Bitcoin. Clarity is designed to be \
+predictable and transparent, preventing many common bugs found in smart \
+contracts.\n\n5. ",
+ StyleBox["Michelson",
+  FontWeight->Bold],
+ ": The language for Tezos smart contracts, designed to facilitate formal \
+verification, a mathematical process used to prove the correctness of smart \
+contracts and ensure they execute as intended.\n\n6. ",
+ StyleBox["Go",
+  FontWeight->Bold],
+ ": Hyperledger Fabric, a permissioned blockchain infrastructure, allows the \
+development of smart contracts (known as chaincode in Hyperledger) using Go, \
+a statically typed language developed by Google that's known for its \
+simplicity and efficiency.\n\n7. ",
+ StyleBox["Java/Kotlin",
+  FontWeight->Bold],
+ ": Hyperledger Fabric also supports these languages, making it accessible \
+for a wide range of developers familiar with the Java ecosystem.\n\n8. ",
+ StyleBox["Scilla",
+  FontWeight->Bold],
+ ": Used by Zilliqa, Scilla is a security-focused language designed to \
+automatically detect and prevent security vulnerabilities in smart contracts. \
+It's an intermediate-level language that aims to bridge the gap between \
+high-level readability and low-level machine efficiency.\n\n9. ",
+ StyleBox["Move",
+  FontWeight->Bold],
+ ": Introduced by Libra (now known as Diem), Move is designed to be a safe \
+and programmable foundation for the Diem blockchain. It's unique in its \
+ability to define custom resource types, which can mimic real-world assets \
+and are used to ensure security properties.\n\nEach of these languages has \
+unique features and trade-offs, tailored to the needs of different blockchain \
+platforms and their respective approaches to security, efficiency, and \
+developer usability. When choosing a language for smart contract development, \
+it's important to consider the specific requirements of the project, \
+including the target blockchain platform, security needs, and the developer's \
+familiarity with the language."
+}], "ChatOutput",
+ CellDingbat->Cell[
+   BoxData[
+    PaneBox[
+     TemplateBox[{}, "ChatIconPlainChat"], ContentPadding -> False, 
+     FrameMargins -> 0, ImageSize -> {35, 35}, ImageSizeAction -> 
+     "ShrinkToFit", Alignment -> {Center, Center}]], Background -> None],
+ TaggingRules-><|
+  "CellToStringData" -> 
+   "Creating smart contracts, which are self-executing contracts with the \
+terms directly written into code, requires programming languages that are \
+compatible with blockchain platforms. These languages vary depending on the \
+blockchain network. Here are some of the most commonly used languages for \
+creating smart contracts on various blockchain platforms:\n\n1. **Solidity**: \
+The most popular language for developing smart contracts, primarily used on \
+Ethereum, which is the leading platform for smart contracts. Solidity is a \
+statically typed, contract-oriented language designed to resemble JavaScript.\
+\n\n2. **Vyper**: Also used on Ethereum, Vyper is an alternative to Solidity \
+with a syntax similar to Python. It's designed to be simpler and more secure \
+than Solidity, with some trade-offs in terms of functionality and \
+flexibility.\n\n3. **Rust**: Used by Solana, Near, and other blockchains, \
+Rust is known for its performance and safety. It's not specifically designed \
+for smart contracts but is used due to its robustness and efficient \
+execution.\n\n4. **Clarity**: Developed for the Stacks blockchain, which aims \
+to bring smart contracts and decentralized applications (DApps) to Bitcoin. \
+Clarity is designed to be predictable and transparent, preventing many common \
+bugs found in smart contracts.\n\n5. **Michelson**: The language for Tezos \
+smart contracts, designed to facilitate formal verification, a mathematical \
+process used to prove the correctness of smart contracts and ensure they \
+execute as intended.\n\n6. **Go**: Hyperledger Fabric, a permissioned \
+blockchain infrastructure, allows the development of smart contracts (known \
+as chaincode in Hyperledger) using Go, a statically typed language developed \
+by Google that's known for its simplicity and efficiency.\n\n7. \
+**Java/Kotlin**: Hyperledger Fabric also supports these languages, making it \
+accessible for a wide range of developers familiar with the Java ecosystem.\n\
+\n8. **Scilla**: Used by Zilliqa, Scilla is a security-focused language \
+designed to automatically detect and prevent security vulnerabilities in \
+smart contracts. It's an intermediate-level language that aims to bridge the \
+gap between high-level readability and low-level machine efficiency.\n\n9. \
+**Move**: Introduced by Libra (now known as Diem), Move is designed to be a \
+safe and programmable foundation for the Diem blockchain. It's unique in its \
+ability to define custom resource types, which can mimic real-world assets \
+and are used to ensure security properties.\n\nEach of these languages has \
+unique features and trade-offs, tailored to the needs of different blockchain \
+platforms and their respective approaches to security, efficiency, and \
+developer usability. When choosing a language for smart contract development, \
+it's important to consider the specific requirements of the project, \
+including the target blockchain platform, security needs, and the developer's \
+familiarity with the language.", "ChatData" -> 
+   "OEM6eJzNWt1yHMd5lSWQImBJlizHUW5SLZhV/\
+MliWVJsJ0Kp5AIBgoIFkCjMUowTxmLvTO9uC7PTo+mZBdcpP0jyJnmFXOcBcpXyY+\
+Scr3tmZwFQsS5SFZZLJqd7+vs/3/l6du/+TrK15731tS5S4zdGVWP4qKndoavmuu4ePdTenFZuXtZ+\
+k8tYs+lO8rP9ma73XVGbV/VpZcqrO37KHQeVXZjiiavN2Lnz9tAPuPQlhLtqeWyKaT3bz/\
+D0YFnouU2vKvGXjwo9zg3fely5pkxMXdti6v2NQ517Hhg2HB+fJKZaWFjUvvr+YWW+\
+a0yRLk9NofN6Wf3bv/LPv/8Ga1/qIstNddgUaW1d4ffe2kluUcqp8xD+\
+xBU44W15UJn237fOjHf5wmStiJ9dPuYrs/STm37jGBYmGw9dtkw2+d/\
+9WVOcJ1tJrevG77vMJBsj7fFE/\
+itPk81H8Ff9RM9x8HtHRZo3mYmeWvPuT46KmamshG9kfOcqPLe11bmEx+R5+/zDE/2K/\
+07qCp4LTrdvfPfmG3ADl0IkR+7cFN6+8Qaf/xWeP23qsqkvv/jtn+CoTSyH/\
+WuKvXtiqqk5QQT0dBWGGycwN997E+6MEUpuPi1NsXe0k2zQ2uTDaVnv/\
+HKnbqqx2ykrs7DmAul30uS1nbsMcW6D/WGbTs9hPyTVM5cl7yFCBimIdDu2xflO8vNw/\
+N7p0T5SMzeMzLOz4+T+rK5Lv/\
+vggS7t0GGPtsPUzR8sPnmQwmcP0m63hzcZdySPuZo8H6IomGdwyip/bjK34ayRo/9bJ2w/d/\
+mk0vOXfEjFX17Zs5O8039j8iN/qz0Vf99Iclfv/wju4KakGc/teq29H+qFqyFi/\
+uMrMi9vgQniwNUTyZfbV168Ztc1VfB2BInJGyHxcXyM9IGZaEQxZACMiIF/TcTfTWbu4sQWdm7/\
+gNP7Vv4FctAAIYpp0KQLva6Y8hE+dpIfj5AJpkI9VaaayJ//RsTelWzFqZUk3I0gPvlg5Fy+r/\
+O8Q4o1oT/m8tMyxHdjJ/ko+\
+udYF9MGsXq00HmjUZ97N2DyXp67C5M9emXSpjanup6tV8f7ccOZ0VlYfWuP7vwgPhdfX33toygFSoz\
+s3KBafV1pW9T7nwNoT+GRS4//\
+Grny3IwPTZ0CJuj1rsqLOhbxfw1hHTYlRleya6PVYy9DvOJmvxmRxgCib7VWrz/\
+F0Ue1mft9uOBmjMrNx85NcyIwRBzN8c7/sZz3GKjE5GaF5WvWwQfvEnTbttdB5lUFX7v1kk+v3/\
+TBmiKjZWn2gKbv8KkPfaormo2RK09Z2B+NKp2eJ2nl8hzRfD4zxWmu09XOG/L65K3YVXqKXNV/8qZ/\
+G62Qb+xtUktduMKmOpe87zsFLjqwvsz1UpbewZJarQVgfufCjL/\
+xq4dHqWDSrTN98dC9Ala96aXgcl0bPGjrP/mQ8rn5kjzj08pKPSU/\
+Cc9VPTMKUpCPHer5u1dwSDzw8hSMApJeXrSnogACtNV9KN55Df5x08uanulYRk29biauqdCV3n7Y2L\
+w+KhBrwArsxyrhWGyCqRtnTQ7sAFBUS0mxI2RvBfTCf3GINEk46UuTl8kH0TzZrNhfBTe/\
+a2zVBnaFlhsHutZMqltdE7gR1tg1N84cxN5Mlh75T04Siib5j49+\
+oR6bAmCXqyNWfxPM39q6r5hEZmEqtYRpCo2sxIJRiEgNjPBKq3Hu0nPlJniWmYHyTQV2VWTK1urC1o\
+wLmqoaIzOBQud4g2uBk0jM8lil6gKilC7LHFmG/\
+N7devnyZbu4xcP5gCqxkhV8PlPmFZyG0oFOqmEXVcd6ZP5BZHSKQMg8qJKhMHSlvJ0Wflfdvv3q95+\
+qv1HL3396+zbOPTo5fXo22nsy+njNanUh8rTK8X90UWuKuvvynnJV/1R19/Y9GCdhGqi94+\
+d7v0sUclWXpvOHlgN8rv1sqB690mQKu+qohv/AwNTcqBe3P/ts+\
+NmvFDVAyAHKosfEgRPVqnbtiS9eUvyL2wrEGa0qX368tfULxQy/\
+FMbf4e2ZXsCIlGyDRzB7PVxukVqpLtTYwIEm41KG1RmZ8UBNiA4qQ1INFDkN2tFA4dmQb+\
+ZBrRTttDbr+QHDNEuSqtT63Hg4BS8r7dVvk6dPYAqRm/HS4YFHYc/\
+1UH1pKmhZhczQC21zpkLUVodg2grneJdaiM3im353a0sMJ9rsEge+\
+mQRk24rYFFcIToftygpFdsNDhZ0xfHStJSAi7gXSdgJmAm3B/\
+oZbicjc3fqXrc3tGtC8vbvtxt8CqrcHeBKiUVtwtl3s2Nxuqjz8rdvtpcS5G8+ylRpYGsFwCNnG0h+\
+5vj0RfPlhB3BXKEmpcEYV4FJZZJS6+2L7lFbSyBfbkkHbgvykvP7F9j0RvSXSt6sINNu7/\
+9Ra0ldqa/Oft/54xfPitg7trwmAiOt6xHoc1tGcSR/C4H+w2wUx/3y/XcHZ7/FDOPp667/H7j/H4v/\
+HZgIo8hw1wGocRFik1r1qRokXEbKyhjqs4wKr9OnT4/294+Nd9bnAA+i2+UJs/\
+bxse6U8VJ98sY1N5Kz8+zUbPu1t+PQL6PjoycHe2eNnJ4+ejBL+o5W1tbWXX+gle4RR2G+zgDooC1+\
+a1E6WYkd3vBcMnwXcEauHKp4QbO0W7/g+\
+fv2gAw8tnBkfiw2y6fMv1JgszqAVxPbZLbMW4rHoPw2bDs8bKkxNC4t2Cnid0/\
+89uXjUyY3R9Z0xc0CzckVPLYmgxK/\
+bFON84QiEaOSAe8Dh2EAbo0wH82IUwgthXggG1Md5JgwxooSMRr6WLtPJA6ZLk+\
+XmyqTGsk21R8wDi2npBvMpHOTB+YeKfY3NqyZzYGzRt3xcZSwmeMXPxIIrqdh5E+\
+9Vw9Aj542ve3ndpg/jIu/uPzs7Q2712tyBU4WrFai7vAPvdcZQn1ArYqQJhladTdGDiEFrVt+\
+PRxO8TNUQQbibp8KgcGZIMZvGQuTaybNkpMhCMT23G0WdIN+\
+vfD8grSiUnYQz0ejPAzWByjTlwlXnQwXxnUYTdGFwAZGN5DKgVSsrICt1FQJXywvWexQj1sHMpJVez\
+JY8nmeYbKiePPr60VnfXbq1uqDwloUwNnotz+\
+EFqQcHFlFXS7qMx9rKxzzIUNQ8ItIRKOMjbwAndWJsFoJ1XqCAL8Q5M7OUBGKAogqZi8ngISvPKIxG\
+6oWDgDmaKWBUAiaUZLwMUNRmSJddgeXC4TpjvPS5mgaGnS+VHosVwmQmcdYAHojXhA4OGB6sV+\
+wIJESqaOZjU32js8xUvbBfiIqtnFrn5/HwbeykluE9vy0RXbYpHs1onR+\
+NCEdGs0MCGdWb7CLNrJedQNfLEp4Az63mjI1nnjNRN2X8VAaFdMas8E1Zuqo3lGx2A3Dvjf/\
+86OHqldqks8LlbgrxHDsyYEVRw6G84VFIrik9w6giGV2VYQ8yGhsKrwMPBvutnOe7hamZ5oEhCautA\
+Iqg4DNMXEKPTYHxIXiATGkKTFgG/\
+skDkZi84uH75MarxMT2wnT5GxVUusEyTxiqEQFqHhhx3UtwZAU8PmlyeXWhK+\
+sa3w5Doj0nK2AtSjmtlmXtUow3UAI8QN3NLXD8oa1TZ0MuP5Lkaeb38NYcQgRA0VZqOQanIu3Fq2gX\
+qGLmw0AtnKBkgF5s5EFzQNRQYazAH/UVquXQyI2Yp+2r6KCvfzJU9+8frIIiWt+/v6ueFaIenmaWz+\
+AQOm2svfFRfsYUvMZfA9XLmcyS1YwRLPrOB8/\
+HkErXKzAido02hnjQ4iu8TVtYoCHPBLkQZlf5mS1DbDVv/\
+LAbefwpzRn1gk1TRv1skvrp6cepZWG9DfOKZF+\
+Iry15r9PHGMAc3ilouCtSSbPlnQVbApCZNyO2mgenrJkiSRmGppmdzpD0C5NLEfb0hO5/\
+S90T9F36kHr3yqih10MGTStdzthFWFmW7UH4C98zceZbOS/4ZgcQAHkyXod9MhbNONBC8C8p+Gg+\
+bxBem0fhT2mh7leikibNIhUHrLlxQGErN+kctcldGLNNbqR/haGVd7288YMGuslii/\
+WSmutVG0GKBkHFX4lvpCb225qQ0Eq/\
+YAy9ySc7gbbQ9q5yVnQMKs19e66e8psBh6zMsg2itMggavbYQrpjZlj3qB3d3sVKFzAFSj0NnaLPkr\
+rTdSc7XI3A4oykbg4alnEt1JMXrUH3YN2vJWvDDXVXgL3os9fFBpnZqUXDUPzsxs8TtY5pPVHlbOmp\
+JMdsQ8hgxyyESsqnmsH6vQErO4SovUHozlR4z4QCw3JXDpIEFVK4ZtYItuz1oA5osgM79i/\
+hHG05iFr30O+14NfdI8wdaR2/OERDerJo7/\
+i6LjMUHZIAlvuyeNKB5TVuLSMHX9UiiQoKg0kEIVPnsgACSAGgjCYxWVV0Qw5L78Q+\
+g1g3KVckvYMyh7bQsBnmtx8oqcchK1BgcGfMkqKfl3MpDZazfO3IJWVycFAeWYaPTsav4SuNkIFg0o\
+lZ654Tjb5QDYBcRpf8S9sfIhQEHY8ymgEjvoaNk+\
+jl73GXboGEpzWF3HHJlQ9mD7pNGgSVbvPVBgGWFwIU+HXoWuFS01+WJFzGTSbk0X1J/\
+ShFSSwo3pjhsO7+f7CKg8wd1gtpWEFOv2VIHiNTcvh5akKsj+\
+3c1mtZnaCweuj4JYG8j40LlzfgWvSR56SZMWN7baC9P0VYvVl7U+\
+4Pg1MeoepAlPgtp5mXbQg4mwmA7+B/ctbcsA9ZPw+\
+li4bjHYSvsgIe6NfXoJsh5bpTAlzUkUTp2N1Ld0F3CyBTjaDSmZmC6PATdHCMmfK2meNCi7+\
+XKB13TXM31uSW5ByXSrV0bGXV6ti0c/0gXjAH/\
+AajtvzCHQA81xcdE8wsM4M58C3K0Gc2RD0oHL74vmoLci9za45MV8uvg5D2wnLFCftOswXSKNzS0rh\
+ACLwEHkMZ61hHkcit64kw+\
+4MtYuM2C35KHQQrXTF1tJ4wLPc9VCUjX3ClNCttyTDAlt3CVLAltHkfgbVG1LvEjR0KLCZrd60haHR\
+mS1qhe0OmxnuG5zNDMOZgcacKTbkKNwAkdEEdntkfDZD/EZnprznhl8Okq1rhpeN0AHzCTEo/\
+kc5lbYmCVtrUy4hQKIKc7AyDIsDQlMPXTyi/lqGw/eTgL9+Lx8apL1Hq3/wvU8yffr7PF4VaX+\
+bioY/+ENbxepLRq00UOcjdXIK6MifM21VIXSgkKMvT+\
+0WFWuLdrh9GRrR6HfFdImZlbCIuoFLv3QhQvUt8AZPIk6QJQ/\
+LcFWHYyXpnszbS13iJktrcuk7TdvZIXG6ziKqjVmDpSrk/\
+6D4yTYRJdol3JSJlZfHItipCdksn2mjZQDBzDMDSTKMeob7XjxuqVqkws/LeI7I/\
+XtRmg27rDtIbydJzCrQkWrSEyps54/VbvdCJ3Oa2M8rXOKiizXu5d9coLeuxHoRNA0x5x4ZTO+\
+Xidym/BAt8xaKz4W5RnS4xiRUcje/\
+4NYVQFlKbEeh7NIBpVnRHRziSRBCeiNYzCUNaS3PbGxCdt1A7Ia6GFtlOM2eAFBkmY5vC+SAGA/\
+UE6BaYiBOgWetcfImWB9YnXxIIH6aSrxdF5N5eTwxHc7FRLvPi9ZrEqTP6mvAqDKM8X5yeNeJTSqjc\
+GJILfmkT6JzgMEY30vyA6DIr7cPPMWUPQlJGScywpOZYtTYbRbywc0H8cXVduQSkX+ukfbS+\
+ewCq7e/x/djUhyqqQVsuBZkzB7qiMLJLvGnQjmBUQgbwUN3wypQVLd+\
+AiyslEUewExhikLFdP12r0JH5g/NXi7Ov3ESnzBAisoQzV4se40ROyBdiE+etlvN2YE7+\
+GaaDeH0p4UI6XufO1W3QshvVtJd2hgaUtYPXYyeMjgUX76MONWKUUpmSc5t8qWYCr2BsnQUMeG3gLg\
+LC9Nv1NYrd7aYyOYktgP7uib8Xv4k/\
+doNrwKePNG3qobLCL2GkWdy5XDpS8qsZpU1suXT4O3qA8PTgK1dj3rjeFbAPKBWv/3y8pe36QP/\
+CIXyqliYVbtMuOC5UJEly7xZ1rjiYAK8sAKtrlVRDGfBhGQqg3N9Lg0DC5LqPIv+IB/\
+Y7wEhYiiAdL052Jpg9/\
+esQeX2W51ye1uKUWBTdMWrR5Lz4FTyz4YLqSpsQ7NFFIEggZvy0vROudzrpoX2vSj+bhvyd6hKVWl/\
+w7ojXQvE9dNMszhmiF9Iqrsx1OuOXnLXwfSZFiZqgf46gmMPcE7x0bMeVVnd5a96l3IE1vFzkC9egh\
+hZQje4IVESHQAIUwvTfghwP6tVDdEUj91F0lbDNaAZ/m2AmVB2BgfvZFuUHN5LQa9cSc/\
+SwlD7IOehgBgxXGaISmUkLA7Gyu2Ctvq7CJ/\
+IbhkBf1pjQTHcaTtrr0AiOscENMBhaUNYgpB0BBF9WM8d1ZKb3Gwd+\
+SuAYyu9hJfSCMr0bOumtqwgO+gTf8CYmOk04OGbDmXM+\
+XB2uAe16JvYhhxdxiAQqHpXa3peigVj5AsGvfO1XqEg7w5VDZHvQl1+s+\
+4OYcFgtP2G5xvLBKgbiqkE3PHVG3VmVekda+j8gGu4k7xwfn3S/pUw25XcO/O3W/wCW2ZEV"|>,
+ GeneratedCell->True,
+ CellAutoOverwrite->
+  True,ExpressionUUID->"24fd3974-b5c3-4cf5-9aaa-3413ad225bad"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Platforms", "Section",
+ CellChangeTimes->{{3.925266300933258*^9, 
+  3.925266304632497*^9}},ExpressionUUID->"d46e9964-aaa2-4fdb-9a1c-\
+ad506aaff867"],
+
+Cell[TextData[{
+ "Blockchain technology has given rise to a variety of platforms, each \
+designed with specific features, capabilities, and use cases in mind. Here's \
+a list of some of the most popular blockchain platforms as of my last update:\
+\n\n1. ",
+ StyleBox["Ethereum (ETH)",
+  FontWeight->Bold],
+ ": Launched in 2015, Ethereum is the most widely used platform for \
+developing decentralized applications (DApps) and smart contracts. It \
+introduced the concept of a programmable blockchain that can execute scripts \
+using an international network of public nodes.\n\n2. ",
+ StyleBox["Bitcoin (BTC)",
+  FontWeight->Bold],
+ ": The first and most well-known cryptocurrency, Bitcoin introduced \
+blockchain technology to the world in 2009. While primarily used for \
+peer-to-peer transactions, its blockchain serves as the foundation for \
+various innovations, including sidechains and second-layer solutions.\n\n3. \
+",
+ StyleBox["Binance Smart Chain (BSC)",
+  FontWeight->Bold],
+ ": Developed by the Binance cryptocurrency exchange, BSC is a blockchain \
+platform that runs in parallel with Binance Chain. It offers smart contract \
+functionality and compatibility with Ethereum's tools and DApps, aiming to \
+provide high throughput and lower transaction costs.\n\n4. ",
+ StyleBox["Cardano (ADA)",
+  FontWeight->Bold],
+ ": Founded by one of the co-founders of Ethereum, Cardano is a \
+research-driven blockchain platform that aims to provide more advanced \
+features than any protocol previously developed. It's the first blockchain \
+platform to be built through peer-reviewed research.\n\n5. ",
+ StyleBox["Solana (SOL)",
+  FontWeight->Bold],
+ ": Known for its incredibly fast transaction speeds and low costs, Solana is \
+a highly performant blockchain platform that supports DApps and smart \
+contracts. It uses a unique consensus mechanism called Proof of History (PoH) \
+alongside Proof of Stake (PoS).\n\n6. ",
+ StyleBox["Polkadot (DOT)",
+  FontWeight->Bold],
+ ": Polkadot aims to enable different blockchains to transfer messages and \
+value in a trust-free fashion; sharing their unique features while pooling \
+their security. It is a multi-chain framework that supports interoperability \
+between chains, whether they are public, permissionless networks, private \
+consortia, or other configurations.\n\n7. ",
+ StyleBox["Tezos (XTZ)",
+  FontWeight->Bold],
+ ": Tezos is a blockchain network linked to a digital token, called a tez or \
+a tezzie. It facilitates smart contracts and DApps without some of the \
+security risks of other platforms. Tezos uses a unique self-amendment process \
+that allows the network to upgrade itself without having to split (\"fork\") \
+the network.\n\n8. ",
+ StyleBox["Avalanche (AVAX)",
+  FontWeight->Bold],
+ ": Avalanche is a highly scalable blockchain platform for decentralized \
+applications and custom blockchain networks. It's known for its high \
+throughput, low latency, and commitment to environmental sustainability.\n\n\
+9. ",
+ StyleBox["Ripple (XRP)",
+  FontWeight->Bold],
+ ": Ripple is a digital payment protocol more than a cryptocurrency in the \
+traditional sense. It facilitates fast, decentralized currency exchange and \
+remittance and is used by various banks and financial institutions.\n\n10. ",
+ StyleBox["Algorand (ALGO)",
+  FontWeight->Bold],
+ ": Algorand is a blockchain platform that focuses on speed, efficiency, and \
+security. It uses a pure proof-of-stake (PPoS) consensus mechanism and aims \
+to solve the blockchain trilemma of achieving scalability, security, and \
+decentralization simultaneously.\n\nThese platforms offer a wide range of \
+functionalities, from simple transactional systems to complex programmable \
+networks capable of hosting DApps and smart contracts. Each platform has its \
+unique features, consensus mechanisms, and target use cases, contributing to \
+the rich diversity of the blockchain ecosystem."
+}], "ChatOutput",
+ CellDingbat->Cell[
+   BoxData[
+    PaneBox[
+     TemplateBox[{}, "ChatIconPlainChat"], ContentPadding -> False, 
+     FrameMargins -> 0, ImageSize -> {35, 35}, ImageSizeAction -> 
+     "ShrinkToFit", Alignment -> {Center, Center}]], Background -> None],
+ TaggingRules-><|
+  "CellToStringData" -> 
+   "Blockchain technology has given rise to a variety of platforms, each \
+designed with specific features, capabilities, and use cases in mind. Here's \
+a list of some of the most popular blockchain platforms as of my last update:\
+\n\n1. **Ethereum (ETH)**: Launched in 2015, Ethereum is the most widely used \
+platform for developing decentralized applications (DApps) and smart \
+contracts. It introduced the concept of a programmable blockchain that can \
+execute scripts using an international network of public nodes.\n\n2. \
+**Bitcoin (BTC)**: The first and most well-known cryptocurrency, Bitcoin \
+introduced blockchain technology to the world in 2009. While primarily used \
+for peer-to-peer transactions, its blockchain serves as the foundation for \
+various innovations, including sidechains and second-layer solutions.\n\n3. \
+**Binance Smart Chain (BSC)**: Developed by the Binance cryptocurrency \
+exchange, BSC is a blockchain platform that runs in parallel with Binance \
+Chain. It offers smart contract functionality and compatibility with \
+Ethereum's tools and DApps, aiming to provide high throughput and lower \
+transaction costs.\n\n4. **Cardano (ADA)**: Founded by one of the co-founders \
+of Ethereum, Cardano is a research-driven blockchain platform that aims to \
+provide more advanced features than any protocol previously developed. It's \
+the first blockchain platform to be built through peer-reviewed research.\n\n\
+5. **Solana (SOL)**: Known for its incredibly fast transaction speeds and low \
+costs, Solana is a highly performant blockchain platform that supports DApps \
+and smart contracts. It uses a unique consensus mechanism called Proof of \
+History (PoH) alongside Proof of Stake (PoS).\n\n6. **Polkadot (DOT)**: \
+Polkadot aims to enable different blockchains to transfer messages and value \
+in a trust-free fashion; sharing their unique features while pooling their \
+security. It is a multi-chain framework that supports interoperability \
+between chains, whether they are public, permissionless networks, private \
+consortia, or other configurations.\n\n7. **Tezos (XTZ)**: Tezos is a \
+blockchain network linked to a digital token, called a tez or a tezzie. It \
+facilitates smart contracts and DApps without some of the security risks of \
+other platforms. Tezos uses a unique self-amendment process that allows the \
+network to upgrade itself without having to split (\"fork\") the network.\n\n\
+8. **Avalanche (AVAX)**: Avalanche is a highly scalable blockchain platform \
+for decentralized applications and custom blockchain networks. It's known for \
+its high throughput, low latency, and commitment to environmental \
+sustainability.\n\n9. **Ripple (XRP)**: Ripple is a digital payment protocol \
+more than a cryptocurrency in the traditional sense. It facilitates fast, \
+decentralized currency exchange and remittance and is used by various banks \
+and financial institutions.\n\n10. **Algorand (ALGO)**: Algorand is a \
+blockchain platform that focuses on speed, efficiency, and security. It uses \
+a pure proof-of-stake (PPoS) consensus mechanism and aims to solve the \
+blockchain trilemma of achieving scalability, security, and decentralization \
+simultaneously.\n\nThese platforms offer a wide range of functionalities, \
+from simple transactional systems to complex programmable networks capable of \
+hosting DApps and smart contracts. Each platform has its unique features, \
+consensus mechanisms, and target use cases, contributing to the rich \
+diversity of the blockchain ecosystem.", "ChatData" -> 
+   "OEM6eJzNW+\
+tyHMd1lmWIEmHJtizHUfIjNYZZRZDZhS6xnQhRybUEeIEFkCjM6mJHsdm707s7xuz0aHpmwVXKD5K8\
+SV4hv/MA+eXyY+T7TnfPZbGQpR+pCktFEXPpPtfvfOf0YHR/GO+\
+OrE1tpfKptjvjsta8VFfmkSmXqmouPVBWn5dmWVT2Nm/jXjodxj8+WqjqyOSVflGdl7q4/sSP+\
+MRxma50/tRUemLMZVj0Td56gs1NuT7V+bxaHCW4erzO1TKdXhfirx/\
+mapJpvvW4NHUR66pK87m1rzxSmeWC7oHT07NYl6sUGoVXf/io1F/WOp+uz3Wusmpd/se/889//\
+gr3nqg8yXT5qM6nVWpyO/ruMH6Nu5wbi82fmhwrvCoXSh1+fu1CW5OtdBK2+PHmMh/\
+rtZ3dsjun0DDeeWCSdXybfx8t6vwy3o0rVdX2yCQ63hkriyvyt1yNbz+EvaqnaomFv3+\
+ST7M60d5SPev+4CRf6DIV9421bUyF62mVqkzco7MsXH/\
+rTL3gz3FVwnLO6OlLX778EszAW86TY3Opc5u+9BKv/w2uP6uroq42X/\
+zDn2Go27jtnu8J9saZLuf6DB5Q89YNr5xB3Wz0MszpPRTfelbofHQyjHeobfzWvKiGPx9WdTkxw6LU\
+q1RfIfzO6qxKlyaBn4Oz3wrh9Bn0x07VwiTx9+EhjRBEuJ2m+eUw/olbfnR+coTQzDQ988nFaXx/\
+UVWFPXznHVWkBwbPqPRgapbvrN57ZwqbvTNtnrawJv2O4NHXg+ctJAXjDEZp4+\
+cWYxvGGhvaPxhh7zOTzUq1fM6LFPz5tWeG8evdN2bfsa+FVfHvnTgz1dF3YA4+FNeTZdrPtR+\
+6fOFd5zH702t7bj4CFcSA7RWJlzvXXtzy1JYseNWDxOwlF/hY3nv6WM8UvOgiAEp4x9/\
+g8Tfihbk6S/N0mX6F1bta/hViUAMh8rmTpHG9KhnyHj6G8ffGiARdIp9KXc7kz5/\
+gsTckWrFqKQH3its+fnNsTHaksqxBit6m3+PtZ4Xz784wftvb51Tl8xq+\
+erhSWa2Qn6NXoPIoy8yVTh6+0NO60ueqWvSz44f+gQutEnf3uyOa801/XWx9/bW3/\
+S4QYpwuNbLVVqVK8+roQwDtOSyycfnvECuf6ckjXU0BE7R6k+V55ZP4fw6gHR6KtSrlqZ0gxyiBv/\
+zD9rZHGg2Ifi1o3b+KpU8qvbRHMMEt75Vbj42ZZ0RgbHGyxDv/x/t8n46KdaZbLO9pBxu8QdANZa+\
+BzOsC3vjohk23P/RmT5DxutAjoOnrvGpdnWqSZmdsinMm9tvjUk0v42lpsgze/Gyh8/\
+NMTdsnX5HXZ9/1VaUjyHX5Zy/bV1EK+\
+cboNqVUucnTqcok7rtGgYmOU1tkai23XsetqL3ngPn1Kz35vW0vnkwFk167UFcPzAtg1ctWEi5Tlca\
+FkP/xW9yfD2/sp+20TCWf4h+461G10BF2QTw2qGf3r+GQWOD5ORgFdnp+FVZFAjhoq7pQPLwB//\
+jQ84qWaVhGRbluxaYuUZVefVCnWXWSw9eAFeiPu4Rj0Qmq7lzUGbADQFGuJcROEL0l0At/\
+YxEpkjDSE50V8ZtePXk4Yn0V3PyyTsvg2BYtd45VpRhUrzVF4FV3j1Vz58Jg21vx2iL+yUlc0sT/\
+9fbPosc6B9hl0Qmzv3bq7+\
+7ejxhEeqXLaA3VIhSyAjd0BI9UwAgbqWiSmellZGa4luhBZOsS7CpPorSKrtKKfkFRjSaITKDQJd7g\
+PcdJxGeZz9LoCltFqigyRBni+3D3+fPn4eYuF+\
+cFisRMjmDzRaRfwGhIHcgU1ayi0aka689lj0YQbLJ0oiRIDFVGNp3n9jC6c+fF796P/j5a/+\
+79O3ew7snZ+bOL8ejp+Kc9raMr2U9FGf5HEwVVov3n9yJTdleN9u/\
+cg3LipkE0Ov1s9Js4QqyqQjf2ULKAzZRdHEQPXygyhcPopIL9wMCipY6+uPPBBwcf/\
+CKiBHA5QFnkmBlwoiqqTFjxi+fc/os7EYgzSlW2/unu7s8iRviGG3+\
+DtxdqBSWmZBtcgtFrYfIUoTVVeTTRMKBOeCvB3QWZ8SCaER2iBEE1iMhpUI4GEa4d8M3MiTVFOa10P\
+z6gmGJKUpRKXWoLo+DlSNno1/Gzp1CFyE1/\
+KXfBIrGX6iB6oktIWbrIUCuVZgwFL61yzkxLrGPNNMW2iX/THu7uiuJEm0PiwO9nDtl2PTb5OwSnR+\
+FOiyKH7mKEJ737aNqUgAi/5wjbGZgJpAX7O9iNZc/D3X/bvb1XAZr3DvfM5A+\
+A6r0BrjhvVCk42yGeuL1Xl5n7V/O0lRTn07iWtGLg1hiKY5M93Poj7+/NBF++\
+3QJ8yqWkZDi9CnApU0RUtP/F3jm1pJJf7EkE7Qnyk/LaL/buyda7svte6YFm7/BfgiZdoXZv/+\
+vuH69ZXszWoP0WB8h2TY3o+6GP5gx65wb7rc0uiPnN7XYNZ7/GDm7p7dp/jd7fROP/\
+x2oCKLIMOcBsHHhYpNSdbEaK5x6ykpoy9HGBWfrs2enR6PT0MPpQ4AF0W38kun5YhFopF6P3PtrDQ+\
+Ss/PeWB97vPPD+R5Dx4dPj0cXjT84ePh3H/CHstbs7yq7UmjVCR3g+\
+TRzqIC1soafpbC16NMtbwfCFwx3R+iDyKzhdm5t3bRe/vtWCj1IY018WHeShDz+KJmRxGqXAl8/\
+mNnPBL4v6U7PocL2DCF3TKkU5Bbwuaf/OvrjU7Ou9axtlloDmyOQdscSD4r/mIe/\
+nK0MgRCEH3AMOJxrS6Eg3MC9Kwb3YzArBgPhYT7smRoSQ1shWUmWa/\
+YDpUmT5cKmnOmWZCkssHYsJdIPx5Bay4PwHEesai1dF5kDfom5Zf5e+\
+mOEVuxANroViY028Vx64GrmsbdWJ6xA+9Iu8e/\
+TJxQViq1Pmjk2UmyoCdZd3YL1GGcrjckWU1E7RstHJWxA+\
+CGp17Xgyw8sUDR6EubkqFHJruhBLpz4Ree/sk3gckYWiew4Pijhuf9vafkBakUfpzK2JQn/\
+pqAlEpipXprw8iLB9I9EMVRhcQPZGcGnQqlYL7DU1JRxXyQuptUhG3Aczk1J6tVhzea6hk4Po6cNPH\
+150zaWC1jk3DyyEvlG9OIcVJB8MWERVrmkyLpuW1sdBgqTmEp6OQBjreQM4qRFlE+\
+esyxwJfCXGWei1BBAd5EVIjA8Gi72yhJtRSbUy2GCJYgoYFYcJJZmsHRSFCGmiy7FcGFwl9Je6jOaO\
+YWfrSE1EC2EyM99rAA/\
+EakIHB3QP7pesCCREUV4vJ7r8vUoSXXbcfiUihn0qlV36xffwJKV079k98eg6hLhXIxjfK+\
+GW9Gq7ANJRp7PzNLNaNxuaTpRwBViu7TN2PrHsiZou40fSKEwXjApbF4UpO03J7aYB7rzx328/aF+\
+p9HSRm8zMsT3bjgRYkVcwKCc8EYJrTsvQqwhGUyZ4BhGNB3KrHA8G+\
+y2N5bu5rhjmjiEJqy0BiqDgC3RcQo91jvbBWYBMaQ5MWDv+yQURmBzx8H1y4zYw8Xium/\
+j1Akaqxm2ucBCNCVBLx4irToAjKmDxWZ3JqytVpqa2oRkS6dlZAWuRytNyXVRmivYGQoAHRPtZChx/\
+kFZTk7pYfijBUy/\
+v4a0lNhEARVmpZBmsirAXq6JcIIsZD4NoZQQlHfTiQS60BEQdRGgr8Cf6GNnySMtEzFL31juo6+\
+8dRPfvH7dOEanv3z+MPslFPFxNUl6DQWi0ibLa+\
+v0ThuAWew2iTswkKVnNBM6i7ayzvHepVL0cLWJTaL2LBwFfYW3qwgR1cSbIBTeb0i7SwvlWceKHpxH\
+H71OdccfZVGXcjSbJn4587FpWqU1dvyLR5/\
+ybFpzrdDEGMId3cipu8qmE2fruiiUByMzJSFounVF6qkhQuqZpkc4XCPqVziQJO3JC9n+\
+g7DHqLm1IuTtpVNPqLoLmpSoWrCLMrJTlQfgL39O+52uN52wzBARgP2mv3XPSFi3Y0GLjn3Pjk+\
+WyhnvTzG/+\
+jBqqbiZGUqSZpGKAnhkH3Kw1k8qQm3wKbbbOtNQv17Ry1suJHyRQdeJLrJXQ7GetBykqBBF/\
+IbaRnDgKOSGulXpBH1qdzYaOtlD3JnNaOgaRljasq+\
+Y8M2CTlaQsg0gtMoiKNTaX6pho5j1yR4VZrFQBnSPVp65SdFlSs7pq9najEWickNQtQcMS3nP5ZEVq\
+0D1o90uJWjehbhKw433WOl8gk3SeomBEPHbj8USlfFjPomKxthSSbbYmZLBi5kIl5ahm0J8bMLOdi8\
+IEoVkzwnvaJRhuN+\
+kgQVAihCtGjWDLqAN1QJMh9DjawDnqcuyl7qDfjeDXzBGWhrSOJw5ekc5e1HeyrcociAyxA8sjuXnW\
+gOUWsxaeg7e5SKKCxGAQYZO5MYkDAYQAUEaRmLQZXZPD0jq+zsDX9ZR3JLydMI/\
+SXEFnqB8OKCnHI2agwOBwwpSinddLSQ2ms5x2ZBIyGTgolyzcoZO2PXylEtIQzJptetVzplAXygGQS\
+6uC/wj1wUOBk/EkoRpQ4lPoOPNW/hpzqQAkXK3OZcYlIx/\
+0HjSbFAgKHeI1dRukHAhww09d1XJDTbu5k3AZM5uRR3d36nrJ78SE4sQMizXz/0HrB+\
+k7UiukoYWcbsmQOEakZLDzXDtfn6bLtOpFdYzE6qDjEwJ5FxtXJqvBtWgjy04zYcR2ykCYn8KtVvfe\
+lPmhM8pDZB2IEs9y6mURXMDeTAB8iP9kraVmHUrt0qUuCo412LyNCligm1+DpoeUcac4OK88iVK+\
+uhfmiuYWQKYYTqQLPQfR4RG0M4yec9rMdiHg7wal41PzzEwUuSU5x0aqFoalrGyXnTamH/\
+gBs8NvMOqUJ9wOwDN11TDBJGVkMAb+\
+gDS0Seq87gR2J74vQkKOEtMz5LS9fROEhIFlywm7RktzhJGb0lI5RwisOB5NGfNY+\
+S0RW9uJMOtDmvvCrVc8Sh04LU0+N9SeMCzzHoqSkC+\
+YQoqVSskwwJbNSpfQxZV564G1gtebwPUVCiwmCU/\
+1ENQbM5BWyF6TqXHO8NlCE4zZWNwtXVEu3QSAhM6JwzW7rQHi3yMz7bUk/\
+LKZNGXYvDDsDoBP6ElpJ9K5JKQoaGU6tdIi5BFBTp50jSLAUBcHN3cov5SmMBw52M25uC+caoNS/+\
+ovdDF//skRXxRqvcnFXR39NqzjZpLRyU0kOcjdUpzaquP67dKFLgQSlOXq3aRCLnG2aw88I2pfh3/\
+X8Fnhi4hxqNR51wNUZ4gvYOJ5khRh7Lw0uWt2ks7azI3pDVbiTiG2tkkaeo/\
+YZGniUXUcNixMIfOD5pBpJkyyCbxrHinKFJfSICL2DnQieCt1BDNDAyzF1Mvh8ru/3EEUhHI9K+\
+cenv1xUJsMmkeHCG8ES8cokJJoEQiV1Uv669dqpWKZ5oYe5VMsVFLnUWbNFqHlvs8HYdMAU87YsGoj\
+nD+XsmuwwBdMutTNFqPzNTqxnK3xXdsTCGkhuemBvkMDGGZ5s7SHIwkE4YkoPTPXpAWaGyYgKgtQOy\
+OuuhIZupkLQIo0k75MYX0Qg0H0FOjmmIgRoOlVLr5EzR3rk5MEwocu5fQi99zbqplmay46yjDPj9fE\
+T43SW9wboRnl+\
+mL0pBabcofSTLBzzpM2gc4ZFqN3Pc13iC690hHs7EP22AWl34kRFldsq3q9kceLdCmIPym3pYtD+\
+l4l7aL1/jGotr3H931RP4i8GNRlw8nsOVAVhZFt8KZBaMEohDTgLrthlTkzWs6A82sp4VuwMyiiEbF\
+NPe1l6Fh/Zez15OwKN1NTRggRWdyZRasO40RMyAmx9v1W4LwNmJN/uu7Ajy/\
+FXQjHbeZsp0HrplVTVsoZClASGq/HRhgdE87Pox4p+\
+GhKYQr2bXJSzQBuYazPAgYcG5grhzDdcr1FsP2mK5OVWAJo78729/yZ+GMz2AI+XaQJoYfMcl/\
+CSLG4u5k6kvJtjxICW4YO/0gLEJ7e+dhU6De2mwL6AaX8+M/\
+6KW1TB7oDB3dULUXKTdOu2C6UJEkyd/Myl2xMgFcpAKsplRQj0uDD0hRAuH+SAoGAyVQXRX6LC+\
+mXgBF3y4O0H5wMZ+g97U2I3O/\
+l2ZdPKzGKT4pmmWhVZxz8Cp6lbkB1rUwI9qjcESQQMx5tD914p9ndle829ZO5i9+5KpCp1RVnRxwL+\
+fdQTRPfZ4hcCCt/Z6mmC57k9Nz3gSQlcoL2OYFgBn2Ps9JpOilVtM+\
+peRNyx6nmcJEvbEENJaDqzeGoiHKOBCi47j+AHBfq5IM3RS3zKJpK2KZXg98m6BlFh2NgfpZF+\
+eBGAro3lliihk1pg4yNDnpAN8oQkchMAgz4zG6c1Z6uwibyDYOjLz0mtFCNhLMwDvXg6AvcAI1hCsr\
+qNgktgOBL23NsIzOdbxx4lMA2lOdhBeSCMJ0JndTW1oODLsHXnMR4owkHR2+\
+4MMa60WEPaPuR2IUcDuLgCWQ8MjXMS1FAUjmB4ClfOIXytNONHDzbg7w8se42YsJhlXzCskXzQesDM\
+dWgaZ4ape62qd6Qlu4HRF/D7N99TDMu3Vc8tvIjmUAOKU7fDX+J0//\
+pb7c3ZIyMOT9W56jAjYGFu2rXJTbrD9zBaZM2jiQFg4agAj1URQMcziI8l5nK6JzTe/\
+Rajm4TPkQ1qRSbtLur6PWIE6ct17AjHq0LJKgOnLoZpe0/HD+5R2g4VaBrC9fAvf/\
+ue78YtOM2T4zdtA1hEjh0jyF3uPc3ICnCz66DJXEyAJQr4SBzReWGpj3E6fblxE9iQ6jg7quI8OFYQ\
+N88jDE6h0RFPYFs7oAh8O4wcdx/MD66F0iMazMdI+7PHHuHNkjX8HpHk+0zBI8fDsXE6O9+\
+wKTm51cbzQrtW2gEfmWG/\
+H9vfjcQKO022rpc6eYDgQ1obpv53KzCAVSby0QBx7LDWYDJk2Gm1ti0aeADd38g80TwWTd1l833H8T\
+Oasdd7kFBwtN9g8FpbkACy8VHrlBviWZ/AFjnkh78DCLLUPEkvcLCR6HOuLngJs3c0o+\
+EftlVIVksBP1d2/k2TYJ2wBrtDoibIaec1lSL0tTzhXwG5+px30Nhfuc7A1UmKjfR/\
+uh4JIZ6RAc5M/GLDZ/eUzMUz1EPXGrbvvC+WCpMgYaJ/\
+CbNzZYL9CIILn2dSlY0XNIWO2nx5EOT0sBHJhPWw4ARLuQ96mt51eTF1m2FMEz4vWywkIth9ym/\
+Thrhm8Mbaf2i/fjZqRjm4x5FlcloAtq4loF1z8AAWO1n8Jysir0HvpV0hqKj8GbTIt4gM03VcFjx+\
+o1IJedtKtAFFlBSDtuZvJJBQs1zOVnDf/4XdaL9c/MECJiZfM50ax+I+\
+UUlb8f3QudxbrJLlaB33T9+NharNFeCS7V8NL6VfrgPQmkozsn9lx1OJfdxVSqfCpQgXcMZP+\
+aFZRcw6D9HdqFKX9vBWDY5kftGtEB+tM+EKu9gnKZZ8pdzhs7E/NhaC+r2bSzITA4QqGAgvKHVv/\
+KDRmnRSPAcZA86fVfGBs+Duhv08BNwcYnhr34MOHB0UwQ5gp3XpQo4Js2Na0r3Px//1uG9/\
+LiJRKFq8KNR3yk0RxdyejYIDodF9VeRtDb4x1epFpO0be21/rfFmOaDg26lb/\
+gTTykEDZwy3ZGeiNwPSRk8wup5Io1m6JMdHLTNaNCL3xYVcxJdphvebWRZqJWHPYtKjlDkR6KXe/\
+e6r4dWbIS4UuQRwLdPR5+LPdtr3VS0clzSr+QbhOJGFiHY7TqF6x4KXVe/\
+w91A6oEABX8poeHYHHKk1dJ/VavzVVqanD/CwUhsfqammtmVdFUXKYSCpp9fnIui/\
+mf3FYsPDX9k1wKqIK/D2c1SGD4l7HxQQVC5Hj8EwMGGga4VVH/aCJ2qZiQWZlqoNc3kVeX+2/\
+32eJCfAaVVU+zfe1dcm81Nyef2R6ePnznPhktfX7Zdvy3zXkHq6/\
+1NDzx8GBfs35pTLeuxkeC4FW2lAfSQKL97tjnFrsCnNNijkEk0ylqi2randoNOA7Yxa3P8yaaENJVr\
+qYfum0iw9pZxh/PI/kSjyzuE7sunFW7K2i1jdLc77HQtmRxD9VlvCHHXP2Sy/\
+MK4vudrypX0u41P2MswJTZQfbDNrKFdc+1d06P4+TY/\
+2vHQ4E5R2fqAiJS2831GxwXt5GYYv356etb8dlx8W75c52/j/C908Ivh"|>,
+ GeneratedCell->True,
+ CellAutoOverwrite->
+  True,ExpressionUUID->"2e52c295-5334-4b2d-a986-f61d86fa406e"],
+
+Cell["\<\
+What sorts of applications people build on Ethereum? Give me a few examples\
+\>", "ChatInput",
+ CellDingbat->Cell[
+   BoxData[
+    TemplateBox[{}, "ChatInputCellDingbat"]], Background -> None],
+ CellChangeTimes->{{3.9252659461041393`*^9, 3.9252659783781137`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"907b2140-14c2-476f-a6bf-a1ff1aa2d042"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Sample applications", "Section",
+ CellChangeTimes->{{3.9252666975161963`*^9, 
+  3.92526670124583*^9}},ExpressionUUID->"e3bec527-5f5f-4bdd-92a0-\
+4d92ff5bd3ac"],
+
+Cell[TextData[{
+ "Ethereum, being the leading platform for smart contracts and decentralized \
+applications (DApps), has enabled a wide array of applications across various \
+industries. Here are a few notable examples of the kinds of applications \
+people build on Ethereum:\n\n1. ",
+ StyleBox["Decentralized Finance (DeFi) Platforms",
+  FontWeight->Bold],
+ ": DeFi has emerged as one of the most active sectors in the blockchain \
+space, offering decentralized alternatives to traditional financial services. \
+Examples include:\n   - ",
+ StyleBox["Lending Protocols",
+  FontWeight->Bold],
+ ": Platforms like Aave and Compound allow users to lend and borrow \
+cryptocurrencies without an intermediary, using smart contracts to manage \
+collateral and interest rates.\n   - ",
+ StyleBox["Decentralized Exchanges (DEXs)",
+  FontWeight->Bold],
+ ": Uniswap and Sushiswap are examples of DEXs that facilitate cryptocurrency \
+trading directly between users, without relying on a centralized authority.\n\
+\n2. ",
+ StyleBox["Non-Fungible Tokens (NFTs)",
+  FontWeight->Bold],
+ ": Ethereum has become the primary platform for creating, buying, and \
+selling NFTs, which are unique digital assets representing ownership of \
+specific items or content, such as art, music, and collectibles. Notable \
+platforms include OpenSea and Rarible.\n\n3. ",
+ StyleBox["Gaming and Virtual Worlds",
+  FontWeight->Bold],
+ ": Ethereum enables the development of decentralized games and virtual \
+worlds where players can truly own in-game items and properties as NFTs. \
+Examples include:\n   - ",
+ StyleBox["Decentraland",
+  FontWeight->Bold],
+ ": A virtual world where users can buy, sell, and develop parcels of virtual \
+land.\n   - ",
+ StyleBox["Axie Infinity",
+  FontWeight->Bold],
+ ": A digital pet universe where players can raise, battle, and trade fantasy \
+creatures called Axies.\n\n4. ",
+ StyleBox["Decentralized Autonomous Organizations (DAOs)",
+  FontWeight->Bold],
+ ": DAOs are organizations that are run by code rather than by people. They \
+use smart contracts for governance, allowing members to vote on decisions \
+directly on the blockchain. Examples include MakerDAO, which governs the \
+stablecoin DAI, and The DAO, one of the earliest experiments in decentralized \
+organization.\n\n5. ",
+ StyleBox["Identity and Verification Services",
+  FontWeight->Bold],
+ ": Applications such as uPort allow users to create and manage their digital \
+identities on the Ethereum blockchain, providing a secure and portable form \
+of identity that can be used across different platforms.\n\n6. ",
+ StyleBox["Supply Chain Management",
+  FontWeight->Bold],
+ ": Ethereum can be used to create transparent and immutable records of \
+product movement through supply chains, helping to verify authenticity and \
+improve efficiency. An example is VeChain, which, though now on its own \
+blockchain, started on Ethereum.\n\n7. ",
+ StyleBox["Prediction Markets",
+  FontWeight->Bold],
+ ": Platforms like Augur allow users to bet on the outcome of future events, \
+such as elections or market trends, in a decentralized way. The outcomes are \
+determined by consensus, ensuring fairness and transparency.\n\n8. ",
+ StyleBox["Insurance",
+  FontWeight->Bold],
+ ": Ethereum enables the creation of decentralized insurance platforms that \
+can automate claims processing and payouts using smart contracts, reducing \
+the need for intermediaries. Etherisc is an example of such a platform.\n\n\
+These examples illustrate the versatility of Ethereum as a platform for \
+building decentralized applications. Its smart contract functionality and \
+active developer community make it a popular choice for innovators looking to \
+create new digital services and applications."
+}], "ChatOutput",
+ CellDingbat->Cell[
+   BoxData[
+    PaneBox[
+     TemplateBox[{}, "ChatIconPlainChat"], ContentPadding -> False, 
+     FrameMargins -> 0, ImageSize -> {35, 35}, ImageSizeAction -> 
+     "ShrinkToFit", Alignment -> {Center, Center}]], Background -> None],
+ TaggingRules-><|
+  "CellToStringData" -> 
+   "Ethereum, being the leading platform for smart contracts and \
+decentralized applications (DApps), has enabled a wide array of applications \
+across various industries. Here are a few notable examples of the kinds of \
+applications people build on Ethereum:\n\n1. **Decentralized Finance (DeFi) \
+Platforms**: DeFi has emerged as one of the most active sectors in the \
+blockchain space, offering decentralized alternatives to traditional \
+financial services. Examples include:\n   - **Lending Protocols**: Platforms \
+like Aave and Compound allow users to lend and borrow cryptocurrencies \
+without an intermediary, using smart contracts to manage collateral and \
+interest rates.\n   - **Decentralized Exchanges (DEXs)**: Uniswap and \
+Sushiswap are examples of DEXs that facilitate cryptocurrency trading \
+directly between users, without relying on a centralized authority.\n\n2. \
+**Non-Fungible Tokens (NFTs)**: Ethereum has become the primary platform for \
+creating, buying, and selling NFTs, which are unique digital assets \
+representing ownership of specific items or content, such as art, music, and \
+collectibles. Notable platforms include OpenSea and Rarible.\n\n3. **Gaming \
+and Virtual Worlds**: Ethereum enables the development of decentralized games \
+and virtual worlds where players can truly own in-game items and properties \
+as NFTs. Examples include:\n   - **Decentraland**: A virtual world where \
+users can buy, sell, and develop parcels of virtual land.\n   - **Axie \
+Infinity**: A digital pet universe where players can raise, battle, and trade \
+fantasy creatures called Axies.\n\n4. **Decentralized Autonomous \
+Organizations (DAOs)**: DAOs are organizations that are run by code rather \
+than by people. They use smart contracts for governance, allowing members to \
+vote on decisions directly on the blockchain. Examples include MakerDAO, \
+which governs the stablecoin DAI, and The DAO, one of the earliest \
+experiments in decentralized organization.\n\n5. **Identity and Verification \
+Services**: Applications such as uPort allow users to create and manage their \
+digital identities on the Ethereum blockchain, providing a secure and \
+portable form of identity that can be used across different platforms.\n\n6. \
+**Supply Chain Management**: Ethereum can be used to create transparent and \
+immutable records of product movement through supply chains, helping to \
+verify authenticity and improve efficiency. An example is VeChain, which, \
+though now on its own blockchain, started on Ethereum.\n\n7. **Prediction \
+Markets**: Platforms like Augur allow users to bet on the outcome of future \
+events, such as elections or market trends, in a decentralized way. The \
+outcomes are determined by consensus, ensuring fairness and transparency.\n\n\
+8. **Insurance**: Ethereum enables the creation of decentralized insurance \
+platforms that can automate claims processing and payouts using smart \
+contracts, reducing the need for intermediaries. Etherisc is an example of \
+such a platform.\n\nThese examples illustrate the versatility of Ethereum as \
+a platform for building decentralized applications. Its smart contract \
+functionality and active developer community make it a popular choice for \
+innovators looking to create new digital services and applications.", 
+   "ChatData" -> 
+   "OEM6eJzNXN1yHMd1lm3qh7BkW5bjyLlIjWFWCVQW0E9sJ2JUcoEAQcECSRQW+\
+rGj2Gzs9O6OMTu9mp4FuEr5Li+RvEleIdd5gFy5/Bj5vnO6e2Z2lzR1kaqoXBY509Pd5+873zndq/\
+23d4db+94XvjHVyPob5/XC8tGicUeunpkmPbprvD2t3Wze+Jt8jXfFaHf4o4OpaQ5c1dgnzWlt5+\
+sjfsgRh3VxZauHrrEXzl3GSV/nq4+xuKuXJ7aaNNODHE8Pl5WZFaP1Tfz1vcpclJZf3a/\
+dYj60TVNUE+9fPDKl54Q64OTkwdDWVwUkip/+4Ki2Xy1sNVqe2sqUzbL+j3/nP//\
+5K7z72FR5aeujRTVqClf5/e/sDl/hKqfOY/GHrsIML8uD2sa/v3JmvSuvbB6X+NHqNJ/YpR+/5G+\
+cQMLhjbsuXw5v8v8Ppovqcrg1bEyz8Acut8Mb58bjify/PB3evAd9NQ/NDBN/\
+77galYvcBk31tPv942pq60LMd259UhWeF01hSjGPLcv4/I0H5gn/\
+PmxqaE6VXrzw1bdfgBr4Si157i5t5YsXXuDzn+D5o0UzXzSrH/\
+7hz1DUTbzW8b2NvfbA1hP7ABYwk9YMLz6AuOX+t6HOYKHhS4/mtto/\
+3h3eoLTDNybzZvfnu82ivnC789peFfYa7vdgUTbFzOWwczT2G9GdPof8WKmZunz4PVjIwgXhbidFdb\
+k7/LFOv396fADXLC0t8+nZyfDtadPM/\
+Z133jHzYs9hjCn2Rm72ztV774ygs3dGabSHNml3OI9dd543EBT0Myil9Z+X6NtQ1rmj/\
+qMStj935bg2s8d8yI0/XhuzO3y1+8X4W/6VOCv+fGNYuubgW1AHBw0XF7OiH2s/0HjhW7WY/+\
+namqtDIIIosH0i/nJr7cMNozZEwcsBJMYvqONj+mDpQzs2sKJ6AIQIhn+\
+KxV8bTt31g6IqZsXXmL0r5V/BBy0QoproTpLpTU2XD/CxO/zuOTzB1oin2tZj+\
+edPsNhr4q2YtRaHe1GXH75+7lx5YMoyIUVv0e/y9aO52vfG7vDNoJ8TU00WsNW9K1MuDOJz/0WIvF+\
+W7trm957Y0aKxp6aZ9qPjB2HAmTW5vv3OPtX5enguul7/7M2wCjZxXswsotU3tSmq5uBDAO0pNLLy+\
+G/hK5/biyPbjAAT1HqK8qoJQfw/e5AOg4bW1DLqRtzHfg57hcH+ZkAaC4h+\
+JUrdf4qpjxs78wdQwUvBKi/dd25SEoGxxPEM3/wfr/\
+M9GmpoS9tieU866OA1gm5Mewky1zf41KErOt086PXeRs6Xc7sPNH2VT73mqRQ0N87d/JSB/\
+eZ5bUaXw1HtyhLW/Hxqq9PSjNqRL8rn4++ErNLZyPr+x9/\
+2LyMV8ov9m9ylqVxVjEwpft9VClR0WPh5aZby6lW8ytp3CsyvXtuL3/\
+v24fFIMOmVM3N91z0BVn3bS8CVprF4EON/+AbX5+CV9awf1YXE0/D7+jxrpjbDKvDHhHp+\
+Zw2HRAOPT8EosNLj6zgrAkChrelC8e5T8I+DHjfUTGIZDff10tAtamSll+\
+8uirI5rmBrwArkx1vCscgEUW+cLUpgB4CiXoqLHcN7a6AX/h+\
+TSJKEkj625Xz4ehBPBmfMr4KbXy2KOhq2Rcsbh6YxdKpXUhK4qe+YNW+cOSz70nDp4f/kJBo0w/\
+9682fZfVsB7MrsmNG/\
+UPG3tt7O6ET2ytbZEqJlSGRzvLAZLNIAI3xmsovSjS4zN8az3A4yv6jBrqo8K5rsumhoFyTV7AKeCR\
+S6xBd8p5xEbFaGKM2usVRm5vMSXgb/vrP1+PHj+HKLk/\
+MBt8RIzqDzaWafQGkIHewpWzCLZifm3H4ha6SNYJGZbiVHYJg688Wk8neyW7ee/O797O+y5e/\
+ev3UL8x4/OH10dr7/8PynPamza1nPZCX+RRVFUbKdx7czV3dnzXZu3YZwYqZBtn/y+\
+f5vhhl81cxt0oeRCXxp/HQvu/fEkCncyY4b6A8MLJvZ7MtbH3yw98EvMu4AJgcoyz7GDpyoyRoXZ/\
+zyMZf/8lYG4oxUVS5/urX1s4wevmLG3+DrqbmCECOyDU5B7/\
+VQeQHXGpkqu7BQoM35KsfbKZnxIBsTHbIcTjXIyGmQjgYZnu3xy1K3NUI6bWzfPyCYYUhyK425tB5K\
+wceZ8dmvh48eQhQiN+1l9IFHYM/MXvaxrbHLWj3DXJmipCuE3Ro1ZlFjHu9GBZbNw5f+\
+ztaWCE60uUMc+\
+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\
+JXDPLPFT4mYYuEo53WLz1CmigG1+\
+DVENKu1MMXDWBRJmQ3efumuoWQOY2dEtndgKiwyNoVYydsNvMciHi7wql46hJ6S4MuSU5x0qozh1TW\
+d1OO0qqH4QGs+I3GHXBE24F8NJcJyaYF/QM+sAfEIY+L9TqumE98X0SA3I/\
+dz1FjtrXT4OQ2LBsOWFXaUUFN9IuLYVTQuDF8CjKGMcmLAnf2kyEmR+KKiRue8Wj1IFK6aqJo/\
+SEYen3cCs5+\
+YKbS7IyBRkG2LK7sjVk0TTvA7A2sHpy3JChwGLyOKqHoEGZkbRi7wsyNfYZPp9agjELi7dqTcq1dgB\
+I6HQ7nLNbGsD/\
+AzJTXzPCL4tJV8fF547VAfAJNSn1RDqXxxAFrSxGXkqEKiPIyUgtFAGGdr739Arll1IUxiMHv9oXD4\
+nTrFDqX/2FKubPPz7gh0KtV7m45tFvwjqeTjI6sYkgB7mbiVFbcbTertV1sSFBWc7eDSrEEnu7fi8w\
+ovZz2HcJm81DEnGKSp1vA0B1mvgCJoEnSRLGyjNXabGTd+\
+ZmbIyeoiWuFH1r005j7TF0ZZEHVD2PC87dXPoH6ZBpLEwyOd6aReZ1gUdF3CLWjnQiWqtQglmiAJZk\
+Gvah8d2fbi+Lm9KalX2PwP7YqM0Haegu3BvO0lEKdkm0iITK2xnt9WtzZYbSzY01ymeYqKbM+\
+6V3GzYt70M8CJsGmLLHhlnT5sK5lF+CBT5h0BXaW8xOl6jEKpbGb/\
+nehhAWEpsB6Ds0gG5WpakDHIkjCE9E6hlrkRZpbuyAmDJC7Zi4qikyVjNngBQpJkOawvwgBoPsIdBN\
+mYgToOllLn5EyZX1yUkC4cPWcnpRBe7tzdiyNBcZpZkX2mtipyT0BvNmKEY5vyg9X4hOuULtLrByxZ\
+M2gc4xJqN1A81XRJda6QB6Di57qE4ZVqKHDRuWVb3aKOBFMRPEv6g3hYsifS+TdtF65xBU29/\
+m9yGp72VhG5RlxcisOZAVhZGt8KZBLMG4CSnANbqhlQkjWs6Aq7WQCCXYAwhi4bEpn/Yi9Nx+\
+7fx6cHY3NzYjeggRWcxZZlcdxgmfkBNiG+qtyHkTmJN/\
+anUQ2pdiLrjjJnW23aBlKtWMl3SGBJTHwuu+\
+E0bHgAv9qCMDG424mTnrNjmppgO3MNZnAQO2Ddy1Ikw3XW/\
+Y2E6qymQmpgDqu7P87XAmft8NNoBPF2mi6yGy9CaMJIu3VkNHQr6tUaJjS9PhH6gBwtM7n7gG9cZmV\
+UA+oFRo//nQpU15oNtw0KNqSVLaTbtmuVCTJEnfLey5ZmECvCoAWClVchuZBR+WogCb+\
+0dJEHCY0nRR5Ld4UHwFGNFXAaRD42R3jNrTPw2R+7U86/JRI0oJQZGmya4WJRu/\
+gmeFNqjW0oRgj6mUIIGY8Wh7V9s7aXVN323o5xP134mZI1Kba/\
+aO2BYK3yGb5qHOkH3BrcKbmRlNeZLTM98HEpSICernGBtzqHtUSyfFRW2yHXbNk8sdFpbNRX6wATWM\
+gGpQh1IRo4YEKGj1H0GOE3XiIahiIf0oqkrYZhCDdxPsmFuHYaB+\
+pkW5cCMO3WtLzJDDRtRByUIHNaC2MmRLZCYRBkJkJ2O1p6vQidxhUPrSY0JTk3Y4ju3QAI4hwQ1QGB\
+agrLpILAEEX9qaYxOZ6dxx4FECy1Ceh82xL2ym06GT3NpacNAl+\
+JadmKA04eCoDafOeW0d9oC274ldyGEjDpZAxCNSY78UCaSQEwie8sVTqEA7teUQ2B72yxPrbiEmHNb\
+IFZYNkg9aG4iqBql4SkK91YZ6Ii3dC0TPYPbv3qcaZ3qLxzehJRPJIbfTN8Nf4vR/+\
+pvNBRk9Y8LL6mwVaBtYuKvVKjHNP9CD0xQ2SpKiQqNTgR6aeQIO1QjPZUbSOmf3HrWW0m3Ch4gmmWK\
+VdncFXfc4MdpsCT1i6GKOALWRU6dW2s69849vExpODOjaVAu499997xeDtt0WiLF22+\
+AmkUP3GHKHez8HSRF+\
+tg6WxMkIUJrCQebmjTZNe4jTrcuJn8SGmMH1VkS8OBbRt4ptjM4h0Xxxgb3pAUPk3bHjuHP3/\
+OB2JDFaZioj7vcce4c2CNf4eUeSzT2EgB+KYqL0dz9gUPP61UqxQv3OLRy/cbv8d69/\
+NxAo7Rbatr6y6YLACjS3xXzlruIBVBvLRAFl2fEswFX5bmmWWDQV8JG735V+\
+Ivisdt1l8Z27Q9XaYZd7cCNxdF9hMJo2SKC54YEm6g3eHA4AF5WEB69BlCUynoRXnPgg5hntC67SzA\
+31SKyXNQvJZNHp3/Kdu2nitAPmaD0gTk1OOa1pprVbTKZyDU7zcd9CsX8XKgNT56Zy2c7+\
+4b4o6ogGUjXxxkYI75HbFctRDjxqy774vWgqdoF2c/klzdM1F+lF3LjUdSa/\
+ouLyNtlJiScXTWoHG7lSWA8dRrhQsGjI5U2Ki43LCmG44H3ZqCH1Yb3Kb/O0+XR4I6VftjN8dCKK+\
+aRHUaUzmoM2LqVh3VMwANaGHjw7q6LvQSglVVE0FL5MJeJT9kxVJQ4rVn8qUsl5m4l0gQmUlMN3Oq9\
+kkBDzVE7W8L/wQ51s59R9DAQsXTVhuLUDhrxRydfD27HyOHXlpclRu+\
+4cPjoXraQn0aRWLo1vpB96IZSKYp883OxQkfRyVSFXBWqQrt0xL/NCs1Mo9J8yPzV1yO1gLKucSO+\
+IzhEf7ZiY5RXGqZoZf5yzqyrmZWsrqNvXsSAzOUCkgpHwxlL/\
+OjQapUQjwVPIHnTqrpIFXgB1bfTwCriYxPGnHwM2HLWLIEewk0VtIo5JcaNF6c4X579VvJe/\
+riJRzBq8NBoqhXR0Iadng2hwaNR+nUlpgz98XVhRSVvWrtW/LcakCwfdTJ/\
+4E08pBA1UmG5LT7bcd0lpPELrVS6FZqyTFQ7aYjTKxbtF8wmJLsMN36a9TM1VgD2PTA5X5CXRy+\
+3b3c9jKbYPvzLkEcC3z/a/EH22z7qh6OW4pJ/JVwjFU1mEYLdWCusWilVXv8JdQeqBAAV/\
+lJA4NpscRTMLt2ptdVXUruJfYWAENq+\
+pmdS7kqrqrMCmIOkXZ6ciaPi73mIJrhGO7FpAFeRVnF1NhfEqYedCBUFl3X8IgIMVBa0l1HDaCJma1\
+BKLPS3kmtR5NVW4u98eD/IaUNGkZP/eu2LacuJqjtvZP7n/SC0bHz07bWu9Lf1eQer1+\
+qYHHsGN56zf0qmWD9hIcNyItlIABkiU356tdrEb8CkL9ihkEoWyFa/27andoFOArfTalD/\
+5gpBmKiv5UO9EgrW3jDueR/Y7Gl3eIXRfrlZol7WbxmhuPezUkkyOofqsN7q41g+\
+lTD91Wvc8I11JvZtswlqGIbGC6oNNao3lmpZ3qUYJ/W1e2gnQoKeoLH1ARGrfuZ/\
+RMUHbuXl6RffJ55IgJDvQUt24n1tHnZFU9Jrhv8raMnBsr+NtO/8Xir1/+0lLqy5sLGWfp///\
+nL3YgehaE3Qe/cLUtZ5LP+9ZWzp1UeEqp13bKGTU8yW+\
+eX6VbbjYhS0eBSq9c2iPitvZafRsJfRHhcoz4294c6kvq349arStgTgC00lXtrq1ydyMQPUlUDaUiu\
+0xRqQuCQlbdPLhjkT6kY2PPzu6s5VlGY94T8JZ1mlAXREgSaMn3/\
+vyuxnYkefB0tSWrCh3c2V13qqQAReurkkrV6/nxQTZ6+/\
+Vy0EoPFd9BlPqrTg8K5l65EqcNNP19BSQ0bAODUL0TXPvSTxI3jm894W/rTfwCn9t9I7bcAHqpn+r+\
+87B4QGI29b6SuoRTctljHAKGXmYaGOQRK1R/IdDwnStT02XrkKGMvqhq3aPFtVEGr36S/Bs5+\
+HRue489RboUBfAhZkN7SUWvst+8MUDRETpYin/1pwhP4bMOGf3wDXAWkzAoT+Ybi7J7tvLS+\
+O2O1MI9Lo6/rimvZgJOw54wVY6/\
+kIVSrlIAtHghQ9DQLZ5IP4Kjj9lHloj35whsjEq1s735ZfK8uazom4W2Onn7AT4nnYUOjaeGvQjZwK\
+iF4h9mE36CqTqRI+5VPB68A26D/uSGxXV7kTuOIvgoakbuqQUm5p9RpAl/\
+8SXwgb6a4elNZzkxH0hKbYsez1NFvMjW4qnxu85YwqD/\
+SeFzY4rXvnXA7X9llwxJ1WScOwGSWtTeIDNhWkaXr1OnVzEAVidX6pjSUUTqDvXSpV6P/\
+74i9DKzQjOj+qJiffwBOsfqVPzD+KCrjcgHc/\
+Xi4rMSw50ahPKGiPPFKbDdUKm2VXwYBxMeKVDADocJ8kBnZWL4ESXK9fwVx90jUJ/\
+OpnCee1Qf92u2QMwrBoyxGDS5dT5vLi4NLYO949Vl+\
+yLyfBOFkBBXxaEMvuE16e0dSxXQrq67OonVv/\
+pfpmEROfEr3cnrnubMIXn4hRsYRW946UOuZdX6TkL69T162ZROSnqugez2jDRBnvnmpn0zsMR1ozCF\
+3H7qRsZL5isXUlq67ZQ5D/jLmLa0+YrK93bbpJJ9IpuadNdeTY5pQ/\
+Ja9JXep81tmO6F8YBobwjH9icnLgu1y8vgrPK8WrnhCnbr2K2YRnwmT3onGgPMqYNLMUzJqeHPkSer\
+obhWnXTv9wQC/\
+NTPaSmEzwwNX86tSmPL1DQr1of6SuaFWlrFKrp8UJuZOn94hbe061Agv9MFoJmkf2lNbr2k4RrI/\
+f908wa850bvBLjgUp3roKOTVGnuwMrN7uleD7mSIb3U3OAZkIItpYAivhtJw0lVwxnmvi+\
+lBJpnv7jJOrMZglR/GbasnJTMt146zAeYamy38KP4g2t4BJMsKLmtK9UNyWOUpQlyW74dQ+\
+dz0PKMtQQ7a1f35lF9iCs9tknDqwon6MTHIhre87GbsCCGUevzvLcOp22jKYOeBS0IG10kt3SucsQP\
+iE6K7D1CDeRtOpq3Q3uDl89OXmQ/kMhw5vyI17+hwn+F5O5Pqs="|>,
+ GeneratedCell->True,
+ CellAutoOverwrite->
+  True,ExpressionUUID->"c35ea2fc-e540-4b97-9eb7-5d57beab5cb8"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{492, Automatic}, {Automatic, 78}},
+TaggingRules-><|
+ "ChatNotebookSettings" -> <|
+   "ChatDrivenNotebook" -> True, "LLMEvaluator" -> "PlainChat"|>|>,
+LLMEvaluator->"PlainChat",
+DefaultNewCellStyle->"ChatInput",
+SpellingDictionaries->{"CorrectWords"->{
+ "Blochchain", "Basics", "Platforms", "Languages"}},
+FrontEndVersion->"14.0 for Mac OS X x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->"Chatbook.nb",
+ExpressionUUID->"e4f98c4c-1c73-47d6-b408-72fd88b7daf1"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 181, 2, 98, "Title",ExpressionUUID->"bce29e67-016d-48fd-99de-918e4f19dcc6"],
+Cell[764, 26, 13145, 229, 783, "ChatOutput",ExpressionUUID->"268f42d1-75d5-4118-b8ac-49fbfbff5ef0"],
+Cell[CellGroupData[{
+Cell[13934, 259, 156, 3, 67, "Section",ExpressionUUID->"0337bdc6-7b4a-483b-aa2e-d4102e996e33"],
+Cell[14093, 264, 13608, 222, 585, "ChatOutput",ExpressionUUID->"24fd3974-b5c3-4cf5-9aaa-3413ad225bad"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27738, 491, 154, 3, 67, "Section",ExpressionUUID->"d46e9964-aaa2-4fdb-9a1c-ad506aaff867"],
+Cell[27895, 496, 16372, 261, 739, "ChatOutput",ExpressionUUID->"2e52c295-5334-4b2d-a986-f61d86fa406e"],
+Cell[44270, 759, 351, 7, 55, "ChatInput",ExpressionUUID->"907b2140-14c2-476f-a6bf-a1ff1aa2d042"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44658, 771, 165, 3, 67, "Section",ExpressionUUID->"e3bec527-5f5f-4bdd-92a0-4d92ff5bd3ac"],
+Cell[44826, 776, 17540, 284, 629, "ChatOutput",ExpressionUUID->"c35ea2fc-e540-4b97-9eb7-5d57beab5cb8"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
